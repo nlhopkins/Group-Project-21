@@ -1,0 +1,38 @@
+---
+title: "Group Project"
+author: "Y3877831"
+documentclass: article
+output: 
+    bookdown::pdf_document2:
+        theme: monochrome
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+```{r load-pkgs}
+library(tidyverse) # Load the tidyverse. Functions are used for tidying data and creating plots via ggplot2.
+
+library(RefManageR) # Load RefManageR. Provides tools for importing and working with bibliographic references.
+
+library(kableExtra) # Load kableExtra. Table generation.
+
+library(wordcountaddin) # Load wordcountaddin. Counts words and characters in text in an R markdown document.
+```
+
+# Introduction
+
+# Methods
+ 
+# Results
+
+# Conclusions
+
+# Acknowledgements
+
+
+# Word Count: 
+`r word_count("report.Rmd")`
+
+# References
