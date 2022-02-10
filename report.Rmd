@@ -1,10 +1,14 @@
 ---
 title: "Group Project"
 author: "Y3877831"
-documentclass: article
+institution: "Ignotum Universitas"
+documentclass: paper
 output: 
     bookdown::pdf_document2:
-        theme: monochrome
+        toc: false
+geometry: margin=3cm
+bibliography: refs.bib
+csl: nature-cell-biology.csl
 ---
 
 ```{r setup, include=FALSE}
@@ -14,25 +18,60 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```{r load-pkgs}
 library(tidyverse) # Load the tidyverse. Functions are used for tidying data and creating plots via ggplot2.
 
-library(RefManageR) # Load RefManageR. Provides tools for importing and working with bibliographic references.
-
 library(kableExtra) # Load kableExtra. Table generation.
 
 library(wordcountaddin) # Load wordcountaddin. Counts words and characters in text in an R markdown document.
 ```
 
+# Abstract
+<!-- A brief summary which should give the aims and major findings of the investigation. -->
+
 # Introduction
-
-# Methods
+<!-- Description of the background to the investigation 
+An account of relevant literature  
+A clear statement of the major aims (or hypotheses) of the investigation
+What is the question your project is asking and why it is a good question?
+It should explain the basic nature of the problem and how your work seeks to extend scientific knowledge in the area. 
+Be concise. Space is limited, so make sure that the literature you cover is directly relevant to your project. 
+Start broad, then focus in.
+End with a clear statement of aims (and/or hypotheses).-->
  
-# Results
+# Methods
+ <!-- A clear and concise description of the experimental methods used in the investigation.
+Sufficient detail should be provided to enable the experiments to be reproduced.
+Data figures and analysis should not be included in this section.-->
 
-# Conclusions
+## Orbital Shaker
+
+# Results
+<!-- Clear and well-structured description of findings 
+Appropriate narrative of the experimental rationale and the major conclusions 
+May include descriptions of problem solving and troubleshooting
+Well-prepared and consistently presented tables and figures 
+Numbered tables and figures with legends (captions).
+Legends should provide enough information to allow the reader to understand the table/figure.
+Get your figures and tables ready first
+Use enough text to provide a clear narrative through those figures and tables
+Do start with some basic results
+Highlight the key findings, but don’t discuss them
+Make sure statistics are reported in the correct format
+Few references -->
+
+# Discussion
+<!-- Do not simply recapitulate the results
+Explore the wider meaning of the results
+To what extent has your investigation addressed the aims provided in the introduction?
+How have your findings advanced understanding of the problem under investigation?
+How do your findings relate to previous studies in this area?
+Based on your findings, what new investigations might be conducted?
+Work in parallel with the introduction
+Don’t just give a commentary of the results
+How does your work compare with previous work?
+Why might you have got different results?
+How could you improve the project? (Don’t just say ‘collect more data’!)-->
 
 # Acknowledgements
 
-
-# Word Count: 
-`r word_count("report.Rmd")`
+Word Count: `r word_count("report.Rmd")`
 
 # References
