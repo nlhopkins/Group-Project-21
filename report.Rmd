@@ -1,14 +1,22 @@
 ---
-title: "Group Project"
-author: "Y3877831"
-institution: "Ignotum Universitas"
-documentclass: paper
 output: 
-    bookdown::pdf_document2:
-        toc: false
-geometry: margin=3cm
+  stevetemplates::article:
+    latex_engine: xelatex
+    fig_caption: true
+#bibliography: master.bib
+title: "Group Project"
+author:
+- name: Y3877831
+  affiliation: University of York
+geometry: margin=3in
+fontsize: 11pt
+fontfamily: mathpazo
 bibliography: refs.bib
-csl: nature-cell-biology.csl
+css: nature-cell-biology.csl
+# spacing: double
+endnote: no
+abstract: "This document provides an introduction to R Markdown, argues for its benefits, and presents a sample manuscript template intended for an academic audience. I include basic syntax to R Markdown and a minimal working example of how the analysis itself can be conducted within R with the `knitr` package."
+keywords: "Atherosclerosis, Wnt Signalling Pathway, Beta-catenin, Shear Stress, Human Umbilical Vein Endothelial Cells (HUVECs), Angiopoietin-2, Axin, Thrombospondin-1."
 ---
 
 ```{r setup, include=FALSE}
@@ -25,9 +33,7 @@ library(wordcountaddin) # Load wordcountaddin. Counts words and characters in te
 
 # Introduction
 
-β
-
-@Li2014-mx
+\@Li2014-mx
 
 ```{=plain}
 <!-- 
@@ -120,3 +126,14 @@ Word Count: `r word_count("main.Rmd")`. (main body - abstract)
 \end{flushright}
 ```
 # References
+
+```{=html}
+<!--
+# References
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\vspace*{-0.2in}
+\noindent
+-->
+```
