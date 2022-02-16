@@ -23,17 +23,9 @@ header-includes:
    - \linenumbers
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-```
 
-```{r load-pkgs}
-library(tidyverse) # Load the tidyverse. Functions are used for tidying data and creating plots via ggplot2.
 
-library(kableExtra) # Load kableExtra. Table generation.
 
-library(wordcountaddin) # Load wordcountaddin. Counts words and characters in text in an R markdown document.
-```
 
 # Introduction
 
@@ -110,7 +102,7 @@ How could you improve the project? (Don’t just say ‘collect more data’!) -
 
 ```{=tex}
 \begin{flushright}
-(`r word_count("report.Rmd") - 14` Words) # take away headers
+(22 Words) # take away headers
 \end{flushright}
 ```
 # References
