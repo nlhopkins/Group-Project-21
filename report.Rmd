@@ -23,28 +23,57 @@ library(kableExtra) # Load kableExtra. Table generation.
 library(wordcountaddin) # Load wordcountaddin. Counts words and characters in text in an R markdown document.
 ```
 
-# Abstract
-<!-- A brief summary which should give the aims and major findings of the investigation. -->
-
 # Introduction
-<!-- Description of the background to the investigation 
-An account of relevant literature  
+
+β
+
+@Li2014-mx
+
+```{=plain}
+<!-- 
+Description of the background to the investigation 
+An account of relevant literature
 A clear statement of the major aims (or hypotheses) of the investigation
 What is the question your project is asking and why it is a good question?
 It should explain the basic nature of the problem and how your work seeks to extend scientific knowledge in the area. 
 Be concise. Space is limited, so make sure that the literature you cover is directly relevant to your project. 
 Start broad, then focus in.
 End with a clear statement of aims (and/or hypotheses).-->
- 
+```
+
+------------------------------------------------------------------------
+
 # Methods
- <!-- A clear and concise description of the experimental methods used in the investigation.
+
+```{=plain}
+<!-- 
+A clear and concise description of the experimental methods used in the investigation.
 Sufficient detail should be provided to enable the experiments to be reproduced.
 Data figures and analysis should not be included in this section.-->
+```
+## HUVECs {.unnumbered}
 
-## Orbital Shaker
+## Orbital Shaker {.unnumbered}
+
+Plates were placed on an orbital shaker to rotate at 210 rpm for 72 hours.
+
+## RNA Extraction {.unnumbered}
+
+## cDNA Synthesis {.unnumbered}
+
+Verso cDNA Synthesis Kit
+
+## qPCR {.unnumbered}
+
+RNEasy Mini Kit
+
+------------------------------------------------------------------------
 
 # Results
-<!-- Clear and well-structured description of findings 
+
+```{=html}
+<!-- 
+Clear and well-structured description of findings 
 Appropriate narrative of the experimental rationale and the major conclusions 
 May include descriptions of problem solving and troubleshooting
 Well-prepared and consistently presented tables and figures 
@@ -56,8 +85,13 @@ Do start with some basic results
 Highlight the key findings, but don’t discuss them
 Make sure statistics are reported in the correct format
 Few references -->
+```
+
+------------------------------------------------------------------------
 
 # Discussion
+
+```{=html}
 <!-- Do not simply recapitulate the results
 Explore the wider meaning of the results
 To what extent has your investigation addressed the aims provided in the introduction?
@@ -68,10 +102,21 @@ Work in parallel with the introduction
 Don’t just give a commentary of the results
 How does your work compare with previous work?
 Why might you have got different results?
-How could you improve the project? (Don’t just say ‘collect more data’!)-->
+How could you improve the project? (Don’t just say ‘collect more data’!) -->
+```
+<!-- In future look at vascular repair with scratch wound assay.  -->
+
+------------------------------------------------------------------------
 
 # Acknowledgements
 
-Word Count: `r word_count("report.Rmd")`
+------------------------------------------------------------------------
 
+```{=tex}
+\begin{flushright}
+Word Count: `r word_count("report.Rmd")`. (report)
+
+Word Count: `r word_count("main.Rmd")`. (main body - abstract)
+\end{flushright}
+```
 # References
