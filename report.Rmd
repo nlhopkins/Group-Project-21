@@ -1,6 +1,4 @@
 ---
-title: "**Group Project**"
-author: Natasha Hopkins
 output: 
   bookdown::pdf_document2:
     latex_engine: xelatex
@@ -8,10 +6,11 @@ output:
     fig_caption: true
     toc: false
     includes:
-        before_body: header.sty
-geometry: margin=3cm
+        before_body: 
+        - header.sty
+geometry: "left=3cm,right=3cm,top=2cm,bottom=2cm"
 linespacing: 1.5
-fontsize: 11pt
+fontsize: 12pt
 mainfont: Palatino
 bibliography: refs.bib
 csl: nature-cell-biology.csl
@@ -19,8 +18,13 @@ link-citations: true
 citecolor: teal
 linkcolor: teal
 header-includes:
-   - \usepackage{lineno}
-   - \linenumbers
+- \usepackage[switch]{lineno}
+- \usepackage{draftwatermark}
+- \SetWatermarkLightness{0.9}
+- \usepackage{type1cm} % scalable fonts
+- \usepackage{lettrine}
+- \usepackage{booktabs}
+- \usepackage{sectsty} \sectionfont{\centering}
 ---
 
 ```{r setup, include=FALSE}
@@ -110,7 +114,7 @@ How could you improve the project? (Don’t just say ‘collect more data’!) -
 
 ```{=tex}
 \begin{flushright}
-(`r word_count("report.Rmd") - 14` Words) # take away headers
+(`r word_count("report.Rmd")` Words) remove headers !!!
 \end{flushright}
 ```
 # References
