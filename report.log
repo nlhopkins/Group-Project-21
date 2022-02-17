@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.2.16)  17 FEB 2022 12:36
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.2.16)  17 FEB 2022 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -502,22 +502,45 @@ Package graphics Info: Driver file: xetex.def on input line 107.
 )
 \Gin@req@height=\dimen183
 \Gin@req@width=\dimen184
-) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/lineno/lineno.sty
+)
+\cslhangindent=\skip62
+\csllabelwidth=\skip63
+\cslentryspacingunit=\skip64
+(/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+(/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen185
+\captionmargin@=\dimen186
+\captionwidth=\dimen187
+\caption@tempdima=\dimen188
+\caption@indent=\dimen189
+\caption@parindent=\dimen190
+\caption@hangindent=\dimen191
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count319
+\c@continuedfloat=\count320
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
-\linenopenalty=\count319
+\linenopenalty=\count321
 \output=\toks26
-\linenoprevgraf=\count320
-\linenumbersep=\dimen185
-\linenumberwidth=\dimen186
-\c@linenumber=\count321
-\c@pagewiselinenumber=\count322
-\c@LN@truepage=\count323
-\c@internallinenumber=\count324
-\c@internallinenumbers=\count325
-\quotelinenumbersep=\dimen187
-\bframerule=\dimen188
-\bframesep=\dimen189
+\linenoprevgraf=\count322
+\linenumbersep=\dimen192
+\linenumberwidth=\dimen193
+\c@linenumber=\count323
+\c@pagewiselinenumber=\count324
+\c@LN@truepage=\count325
+\c@internallinenumber=\count326
+\c@internallinenumbers=\count327
+\quotelinenumbersep=\dimen194
+\bframerule=\dimen195
+\bframesep=\dimen196
 \bframebox=\box63
 LaTeX Info: Redefining \\ on input line 3056.
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/draftwatermark/draftwatermark.sty
@@ -528,33 +551,33 @@ Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, pa
 File: lettrine.sty 2020-03-14 v2.23 (Daniel Flipo)
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/generic/minifp/minifp.sty
 Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack-based programing language.
-\MFP@loopctr=\count326
+\MFP@loopctr=\count328
 )
-\c@DefaultLines=\count327
-\c@DefaultDepth=\count328
-\DefaultFindent=\dimen190
-\DefaultNindent=\dimen191
-\DefaultSlope=\dimen192
-\DiscardVskip=\dimen193
+\c@DefaultLines=\count329
+\c@DefaultDepth=\count330
+\DefaultFindent=\dimen197
+\DefaultNindent=\dimen198
+\DefaultSlope=\dimen199
+\DiscardVskip=\dimen256
 \L@lbox=\box64
 \L@tbox=\box65
-\c@L@lines=\count329
-\c@L@depth=\count330
-\L@Pindent=\dimen194
-\L@Findent=\dimen195
-\L@Nindent=\dimen196
-\L@lraise=\dimen197
-\L@first=\dimen198
-\L@next=\dimen199
-\L@slope=\dimen256
-\L@height=\dimen257
-\L@novskip=\dimen258
-\L@target@ht=\dimen259
-\L@target@dp=\dimen260
-\L@target@tht=\dimen261
-\LettrineWidth=\dimen262
-\LettrineHeight=\dimen263
-\LettrineDepth=\dimen264
+\c@L@lines=\count331
+\c@L@depth=\count332
+\L@Pindent=\dimen257
+\L@Findent=\dimen258
+\L@Nindent=\dimen259
+\L@lraise=\dimen260
+\L@first=\dimen261
+\L@next=\dimen262
+\L@slope=\dimen263
+\L@height=\dimen264
+\L@novskip=\dimen265
+\L@target@ht=\dimen266
+\L@target@dp=\dimen267
+\L@target@tht=\dimen268
+\LettrineWidth=\dimen269
+\LettrineHeight=\dimen270
+\LettrineDepth=\dimen271
 \Llist@everypar=\toks27
 Loading lettrine.cfg
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/lettrine/lettrine.cfg)) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/sectsty/sectsty.sty
@@ -569,20 +592,20 @@ LaTeX Warning: Command \underline  has changed.
 
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip62
-\multirow@cntb=\count331
-\multirow@dima=\skip63
-\bigstrutjot=\dimen265
+\multirow@colwidth=\skip65
+\multirow@cntb=\count333
+\multirow@dima=\skip66
+\bigstrutjot=\dimen272
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen266
-\WF@size=\dimen267
-\c@WF@wrappedlines=\count332
+\wrapoverhang=\dimen273
+\WF@size=\dimen274
+\c@WF@wrappedlines=\count334
 \WF@box=\box66
 \WF@everypar=\toks28
 Package: wrapfig 2003/01/31  v 3.6
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count333
+\c@float@type=\count335
 \float@exts=\toks29
 \float@box=\box67
 \@float@everytoks=\toks30
@@ -590,7 +613,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks31
-\minrowclearance=\skip64
+\minrowclearance=\skip67
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
@@ -602,32 +625,32 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box69
-\sift@deathcycles=\count334
-\@vwid@loff=\dimen268
-\@vwid@roff=\dimen269
+\sift@deathcycles=\count336
+\@vwid@loff=\dimen275
+\@vwid@roff=\dimen276
 )
-\c@taburow=\count335
-\tabu@nbcols=\count336
-\tabu@cnt=\count337
-\tabu@Xcol=\count338
-\tabu@alloc=\count339
-\tabu@nested=\count340
-\tabu@target=\dimen270
-\tabu@spreadtarget=\dimen271
-\tabu@naturalX=\dimen272
-\tabucolX=\dimen273
-\tabu@Xsum=\dimen274
-\extrarowdepth=\dimen275
-\abovetabulinesep=\dimen276
-\belowtabulinesep=\dimen277
-\tabustrutrule=\dimen278
+\c@taburow=\count337
+\tabu@nbcols=\count338
+\tabu@cnt=\count339
+\tabu@Xcol=\count340
+\tabu@alloc=\count341
+\tabu@nested=\count342
+\tabu@target=\dimen277
+\tabu@spreadtarget=\dimen278
+\tabu@naturalX=\dimen279
+\tabucolX=\dimen280
+\tabu@Xsum=\dimen281
+\extrarowdepth=\dimen282
+\abovetabulinesep=\dimen283
+\belowtabulinesep=\dimen284
+\tabustrutrule=\dimen285
 \tabu@thebody=\toks32
 \tabu@footnotes=\toks33
 \tabu@box=\box70
 \tabu@arstrutbox=\box71
 \tabu@hleads=\box72
 \tabu@vleads=\box73
-\tabu@cellskip=\skip65
+\tabu@cellskip=\skip68
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box74
@@ -638,54 +661,54 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip66
+\TPTL@width=\skip69
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box75
 \UL@hyphenbox=\box76
-\UL@skip=\skip67
+\UL@skip=\skip70
 \UL@hook=\toks34
-\UL@height=\dimen279
-\UL@pe=\count341
-\UL@pixel=\dimen280
+\UL@height=\dimen286
+\UL@pe=\count343
+\UL@pixel=\dimen287
 \ULC@box=\box77
 Package: ulem 2019/11/18
-\ULdepth=\dimen281
+\ULdepth=\dimen288
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen282
-\c@nlinenum=\count342
+\rotheadsize=\dimen289
+\c@nlinenum=\count344
 \TeXr@lab=\toks35
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 105.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 130.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 105.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 130.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 105.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 130.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 105.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 130.
 
 Package fontspec Info: latinmodern-math scale = 1.08916575454414.
 
@@ -711,7 +734,7 @@ Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 13.07007pt on input line 105.
+(Font)              scaled to size 13.07007pt on input line 130.
 
 Package fontspec Info: latinmodern-math scale = 1.08916575454414.
 
@@ -743,15 +766,15 @@ Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 13.07007pt on input line 105.
+(Font)              scaled to size 13.07007pt on input line 130.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 105.
+(Font)              `operators' in the math version `normal' on input line 130.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 105.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 130.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 105.
+(Font)              `operators' in the math version `bold' on input line 130.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 105.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 130.
 
 Package fontspec Info: latinmodern-math scale = 1.08916575454414.
 
@@ -830,13 +853,13 @@ Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
 (fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 105.
+(Font)              `symbols' in the math version `normal' on input line 130.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 105.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 130.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 105.
+(Font)              `symbols' in the math version `bold' on input line 130.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 105.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 130.
 
 Package fontspec Info: latinmodern-math scale = 1.08916575454414.
 
@@ -897,18 +920,18 @@ Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
 (fontspec)             =7.84204pt\relax \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 105.
+(Font)              `largesymbols' in the math version `normal' on input line 130.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 105.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 130.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 105.
+(Font)              `largesymbols' in the math version `bold' on input line 130.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 105.
-LaTeX Info: Redefining \microtypecontext on input line 105.
-Package microtype Info: Applying patch `item' on input line 105.
-Package microtype Info: Applying patch `toc' on input line 105.
-Package microtype Info: Applying patch `eqnum' on input line 105.
-Package microtype Info: Applying patch `footnote' on input line 105.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 130.
+LaTeX Info: Redefining \microtypecontext on input line 130.
+Package microtype Info: Applying patch `item' on input line 130.
+Package microtype Info: Applying patch `toc' on input line 130.
+Package microtype Info: Applying patch `eqnum' on input line 130.
+Package microtype Info: Applying patch `footnote' on input line 130.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: No adjustment of tracking.
@@ -929,7 +952,7 @@ Package microtype Info: Character `ớ' is missing
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
-Package hyperref Info: Link coloring ON on input line 105.
+Package hyperref Info: Link coloring ON on input line 130.
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -937,11 +960,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count343
+\c@section@level=\count345
 )
-LaTeX Info: Redefining \ref on input line 105.
-LaTeX Info: Redefining \pageref on input line 105.
-LaTeX Info: Redefining \nameref on input line 105.
+LaTeX Info: Redefining \ref on input line 130.
+LaTeX Info: Redefining \pageref on input line 130.
+LaTeX Info: Redefining \nameref on input line 130.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -976,14 +999,19 @@ LaTeX Info: Redefining \nameref on input line 105.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: threeparttable package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
 File: images/uoy_logo.png Graphic file (type bmp)
 <images/uoy_logo.png>
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 118.
+(Font)              scaled to size 17.28pt on input line 145.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 118.
+(Font)              scaled to size 17.28pt on input line 145.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 153.57375pt on input line 133.
+(Font)              scaled to size 153.57375pt on input line 160.
 [1
 
 ] (./report.toc
@@ -1028,56 +1056,69 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 [2]
 
 LaTeX Font Warning: Font shape `TU/Palatino(0)/m/sc' undefined
-(Font)              using `TU/Palatino(0)/m/n' instead on input line 143.
+(Font)              using `TU/Palatino(0)/m/n' instead on input line 170.
 
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 24.18509pt on input line 143.
+(Font)              scaled to size 24.18509pt on input line 170.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 34.80739pt on input line 143.
+(Font)              scaled to size 34.80739pt on input line 170.
 Package lettrine.sty Info: Targeted height = 20.1543pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 24.38896pt (W) loversize=0.2;
-(lettrine.sty)             reported on input line 143.
+(lettrine.sty)             reported on input line 170.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 143.
+(Font)              scaled to size 12.0pt on input line 170.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 143.
+(Font)              scaled to size 6.0pt on input line 170.
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/it' will be
-(Font)              scaled to size 12.0pt on input line 146.
+(Font)              scaled to size 12.0pt on input line 173.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 161.
+(Font)              scaled to size 14.4pt on input line 188.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/n/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 161.
-LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
-(Font)              scaled to size 153.57375pt on input line 172.
-[1] [2] (./report.aux)
+(Font)              scaled to size 14.4pt on input line 188.
+[1]
+LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
+(Font)              scaled to size 8.4pt on input line 197.
+LaTeX Font Info:    Font shape `TU/Palatino(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 249.
+
+Overfull \hbox (2.0pt too wide) in paragraph at lines 247--250
+[] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--250
+
+ []
+
+[2] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 21655 strings out of 478181
- 396649 string characters out of 5853032
- 879024 words of memory out of 5000000
- 41929 multiletter control sequences out of 15000+600000
- 473012 words of font info for 75 fonts, out of 8000000 for 9000
+ 22947 strings out of 478181
+ 422478 string characters out of 5853032
+ 902806 words of memory out of 5000000
+ 43212 multiletter control sequences out of 15000+600000
+ 473020 words of font info for 76 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,12n,122p,1790b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,16n,122p,1790b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on report.pdf (4 pages).

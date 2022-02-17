@@ -2,6 +2,7 @@
 output: 
   bookdown::pdf_document2:
     latex_engine: xelatex
+    keep_tex: true
     number_sections: false
     fig_caption: true
     toc: false
@@ -18,6 +19,8 @@ link-citations: true
 citecolor: teal
 linkcolor: teal
 header-includes:
+- \usepackage[labelsep=period]{caption}
+- \usepackage[labelfont=bf]{caption}
 - \usepackage[switch]{lineno}
 - \usepackage{draftwatermark}
 - \SetWatermarkLightness{0.9}
@@ -60,21 +63,50 @@ A clear and concise description of the experimental methods used in the investig
 Sufficient detail should be provided to enable the experiments to be reproduced.
 Data figures and analysis should not be included in this section.-->
 ```
-## HUVECs
-
 ## Orbital Shaker
 
-Plates were placed on an orbital shaker to rotate at 210 rpm for 72 hours.
+HUVECs were cultured in flasks until \~80% confluent. Cells were then washed with warmed PBS and incubated with 1ml of trypsin until cells thoroughly detached. M199 media was added to the cells, before being transferred to a falcon tube and spun for 5 minutes at 400g. The supernatant was discarded, and cells were re-suspended in M199 media and transferred to 10mm radius 6 well plates. Once confluent, 3ml of 1% DMSO in M199 was added to one half of the plates, and 3ml of 1% Wnt inhibitor in M199 to the other half. Cells were subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static control.
 
-## RNA Extraction
+## mRNA Isolation and qPCR
 
-## cDNA Synthesis
+Media was removed from the plates and cells were washed with cold PBS. Cells were isolated from the periphery and centre of the plates using 350μl of PBS, before centrifuging for 5 minutes at 400g and removing the supernatant. Total mRNA was isolated using the RNEasy Mini Kit (Qiagen) and concentration was determined using a spectrophotometer. mRNA was reverse transcribed to cDNA using the Verso cDNA Synthesis Kit (Thermo Scientific). The oligonucleotide qPCR primers were obtained from Ensembl[@howe2020] (Table \@ref(tab:primers)).
 
-Verso cDNA Synthesis Kit
-
-## qPCR
-
-RNEasy Mini Kit
+```{r primers}
+knitr::kable(
+    data.frame(
+        Gene = c(
+            "ANGPT2",
+            "ANGPT2",
+            "AXIN",
+            "AXIN",
+            "HPRT1",
+            "HPRT1",
+            "KLF2",
+            "KLF2",
+            "THSB1",
+            "THSB1"
+        ),
+        Direction = c("L", "R", "L", "R", "L", "R", "L", "R", "L", "R"),
+        Sequence = c(
+            "CGGCTGTGATGATAGAAATAGGGA",
+            "GTTCCAAGAGCTGAAGTTCAAGTC",
+            "TGTCACTTACTTTTTCTGTGGGGA",
+            "TGTCACTTACTTTTTCTGTGGGGA",
+            NA,
+            NA,
+            NA,
+            NA,
+            "AAAGATGGAGAATGCTGAGTTGGA",
+            "GGTTCCAAAGACAAACCTCACATT"
+        )
+    ),
+    booktabs = T,
+    caption = "Oligonucleotide qPCR primers from Ensembl."
+) %>%
+    collapse_rows(columns = 1, latex_hline = "none") %>%
+    kable_styling(full_width = T, latex_options = "hold_position", position = "left") %>% 
+    column_spec(3, width = "8cm")
+```
 
 # Results
 
@@ -108,7 +140,7 @@ How does your work compare with previous work?
 Why might you have got different results?
 How could you improve the project? (Don’t just say ‘collect more data’!) -->
 ```
-<!-- In future look at vascular repair with scratch wound assay.  -->
+<!-- In future look at vascular repair with scratch wound assay.  Flow chamber more control over force nut expensive-->
 
 # Acknowledgements
 

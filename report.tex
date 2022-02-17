@@ -1,0 +1,253 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  12pt,
+]{article}
+\author{}
+\date{\vspace{-2.5em}}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[]{Palatino}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  colorlinks=true,
+  linkcolor={teal},
+  filecolor={Maroon},
+  citecolor={teal},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[left=3cm,right=3cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\usepackage[labelsep=period]{caption}
+\usepackage[labelfont=bf]{caption}
+\usepackage[switch]{lineno}
+\usepackage{draftwatermark}
+\SetWatermarkLightness{0.9}
+\usepackage{type1cm} % scalable fonts
+\usepackage{lettrine}
+\usepackage{booktabs}
+\usepackage{sectsty} \sectionfont{\centering}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\begin{document}
+
+\captionsetup{justification=raggedright,singlelinecheck=false}
+
+\SetWatermarkText{DRAFT}
+\pagenumbering{gobble}
+
+%\begin{titlepage}
+\begin{center}
+\begin{figure}[h!]
+\centering
+  \includegraphics[width=10cm]{images/uoy_logo.png}
+  \label{}
+\end{figure}
+\vspace*{2\baselineskip}
+\Large{\textbf{Working Title}}\\
+Natasha Hopkins\\
+\vspace*{2\baselineskip}
+\Large{\textbf{Stage 3 Project for Master of Biology (MBiol) Degree}}\\
+\Large{Univeristy of York, UK}\\
+\vspace*{2\baselineskip}
+\Large{\textbf{Project Director}}\\
+Dr. Richard Maguire\\
+\vspace*{2\baselineskip}
+\Large{\textbf{Examination Date}}\\
+18 April, 2022
+\end{center}
+
+% \end{titlepage}
+\hypersetup{linkcolor = black}
+\newpage
+\tableofcontents
+\listoffigures 
+\listoftables
+\hypersetup{linkcolor = teal}
+
+\newpage
+\linenumbers
+\pagenumbering{arabic}
+\rule{\textwidth}{0.4pt}\\
+\lettrine[lines=2,slope=0pt,nindent=0pt, loversize=0.2]{W}{ith} diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus viverra vitae congue eu consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae justo eget magna fermentum iaculis eu non diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget duis at tellus at urna condimentum mattis pellentesque id nibh tortor id aliquet lectus proin nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit.\\
+
+\begin{center}
+\textbf{\textit{Key Words:}} Atherosclerosis • Wnt Signalling Pathway • βeta-catenin • Shear Stress • Human Umbilical Vein Endothelial Cells (HUVECs) • Angiopoietin-2 • Thrombospondin-1\\
+\end{center}
+
+\begin{flushright}
+(250 Words)\\
+\end{flushright}
+\rule{\textwidth}{0.4pt}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+\hypertarget{orbital-shaker}{%
+\subsection{Orbital Shaker}\label{orbital-shaker}}
+
+HUVECs were cultured in flasks until \textasciitilde80\% confluent. Cells were then washed with warmed PBS and incubated with 1ml of trypsin until cells thoroughly detached. M199 media was added to the cells, before being transferred to a falcon tube and spun for 5 minutes at 400g. The supernatant was discarded, and cells were re-suspended in M199 media and transferred to 10mm radius 6 well plates. Once confluent, 3ml of 1\% DMSO in M199 was added to one half of the plates, and 3ml of 1\% Wnt inhibitor in M199 to the other half. Cells were subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static control.
+
+\hypertarget{mrna-isolation-and-qpcr}{%
+\subsection{mRNA Isolation and qPCR}\label{mrna-isolation-and-qpcr}}
+
+Media was removed from the plates and cells were washed with cold PBS. Cells were isolated from the periphery and centre of the plates using 350μl of PBS, before centrifuging for 5 minutes at 400g and removing the supernatant. Total mRNA was isolated using the RNEasy Mini Kit (Qiagen) and concentration was determined using a spectrophotometer. mRNA was reverse transcribed to cDNA using the Verso cDNA Synthesis Kit (Thermo Scientific).
+
+The oligonucleotide qPCR primers were obtained from Ensembl\textsuperscript{\protect\hyperlink{ref-howe2020}{1}} (Table \ref{tab:primers}).
+
+\begin{table}[!h]
+
+\caption{\label{tab:primers}Oligonucleotide qPCR primers from Ensembl.}
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright\arraybackslash}p{8cm}}
+\toprule
+Gene & Direction & Sequence\\
+\midrule
+ & L & CGGCTGTGATGATAGAAATAGGGA\\
+
+\multirow{-2}{*}{\raggedright\arraybackslash ANGPT2} & R & GTTCCAAGAGCTGAAGTTCAAGTC\\
+
+ & L & TGTCACTTACTTTTTCTGTGGGGA\\
+
+\multirow{-2}{*}{\raggedright\arraybackslash AXIN} & R & TGTCACTTACTTTTTCTGTGGGGA\\
+
+ & L & NA\\
+
+\multirow{-2}{*}{\raggedright\arraybackslash HPRT1} & R & NA\\
+
+ & L & NA\\
+
+\multirow{-2}{*}{\raggedright\arraybackslash KLF2} & R & NA\\
+
+ & L & AAAGATGGAGAATGCTGAGTTGGA\\
+
+\multirow{-2}{*}{\raggedright\arraybackslash THSB1} & R & GGTTCCAAAGACAAACCTCACATT\\
+\bottomrule
+\end{tabu}
+\end{table}
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+\hypertarget{acknowledgements}{%
+\section{Acknowledgements}\label{acknowledgements}}
+
+\begin{flushright}
+(211 Words) remove headers !!!
+\end{flushright}
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-howe2020}{}}%
+\CSLLeftMargin{1. }
+\CSLRightInline{Howe, K. L. \emph{et al.} Ensembl 2021. \emph{Nucleic Acids Research} \textbf{49}, D884--D891 (2020).}
+
+\end{CSLReferences}
+
+\end{document}
