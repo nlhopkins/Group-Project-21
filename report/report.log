@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.2.16)  17 FEB 2022 16:01
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.2.28)  28 FEB 2022 21:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **report.tex
 (./report.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-05> (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
+L3 programming layer <2022-02-24> (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
@@ -120,7 +120,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-02-05 L3 programming layer (loader) 
+Package: expl3 2022-02-24 L3 programming layer (loader) 
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2022-02-07 L3 backend support: XeTeX
 (|extractbb --version)
@@ -251,7 +251,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/lmr/bx/n --> TU/Palatino(1)/b/n on input line 24.
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2021/12/10 v3.0b Micro-typographical refinements (RS)
+Package: microtype 2022/02/22 v3.0c Micro-typographical refinements (RS)
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
@@ -260,21 +260,22 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count288
 )
 \MT@toks=\toks22
-\MT@count=\count289
 \MT@tempbox=\box53
-LaTeX Info: Redefining \leftprotrusion on input line 1010.
-LaTeX Info: Redefining \rightprotrusion on input line 1018.
-LaTeX Info: Redefining \textls on input line 1173.
+\MT@count=\count289
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1027.
+LaTeX Info: Redefining \leftprotrusion on input line 1028.
+LaTeX Info: Redefining \rightprotrusion on input line 1036.
+LaTeX Info: Redefining \textls on input line 1200.
 \MT@outer@kern=\dimen151
-LaTeX Info: Redefining \textmicrotypecontext on input line 1759.
+LaTeX Info: Redefining \textmicrotypecontext on input line 1786.
 \MT@listname@count=\count290
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype-xetex.def
-File: microtype-xetex.def 2021/12/10 v3.0b Definitions specific to xetex (RS)
+File: microtype-xetex.def 2022/02/22 v3.0c Definitions specific to xetex (RS)
 LaTeX Info: Redefining \lsstyle on input line 234.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2021/12/10 v3.0b microtype main configuration file (RS)
+File: microtype.cfg 2022/02/22 v3.0c microtype main configuration file (RS)
 )) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -301,7 +302,7 @@ File: x11nam.def 2021/10/31 v2.13 Predefined colors according to Unix/X11 (UK)
 )) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
@@ -331,9 +332,7 @@ Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 \Hy@linkcounter=\count291
 \Hy@pagecounter=\count292
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
-) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
-File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel languages
+File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
@@ -341,22 +340,22 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count293
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4073.
-Package hyperref Info: Hyper figures OFF on input line 4192.
-Package hyperref Info: Link nesting OFF on input line 4197.
-Package hyperref Info: Hyper index ON on input line 4200.
-Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Option `unicode' set `true' on input line 4018.
+Package hyperref Info: Hyper figures OFF on input line 4137.
+Package hyperref Info: Link nesting OFF on input line 4142.
+Package hyperref Info: Hyper index ON on input line 4145.
+Package hyperref Info: Plain pages OFF on input line 4152.
+Package hyperref Info: Backreferencing OFF on input line 4157.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4445.
+Package hyperref Info: Bookmarks ON on input line 4390.
 \c@Hy@tempcnt=\count294
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4804.
+LaTeX Info: Redefining \url on input line 4749.
 \XeTeXLinkMargin=\dimen153
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -366,15 +365,15 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 \Fld@menulength=\count295
 \Field@Width=\dimen154
 \Fld@charsize=\dimen155
-Package hyperref Info: Hyper figures OFF on input line 6076.
-Package hyperref Info: Link nesting OFF on input line 6081.
-Package hyperref Info: Hyper index ON on input line 6084.
-Package hyperref Info: backreferencing OFF on input line 6091.
-Package hyperref Info: Link coloring OFF on input line 6096.
-Package hyperref Info: Link coloring with OCG OFF on input line 6101.
-Package hyperref Info: PDF/A mode OFF on input line 6106.
-LaTeX Info: Redefining \ref on input line 6146.
-LaTeX Info: Redefining \pageref on input line 6150.
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+LaTeX Info: Redefining \ref on input line 6097.
+LaTeX Info: Redefining \pageref on input line 6101.
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
@@ -385,7 +384,7 @@ package with kernel methods
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2021-06-07 v7.00m Hyperref driver for XeTeX
+File: hxetex.def 2022-02-21 v7.00n Hyperref driver for XeTeX
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
@@ -507,16 +506,17 @@ Package graphics Info: Driver file: xetex.def on input line 107.
 \csllabelwidth=\skip63
 \cslentryspacingunit=\skip64
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+Package: caption 2022/02/20 v3.6 Customizing captions (AR)
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen185
-\captionmargin@=\dimen186
-\captionwidth=\dimen187
-\caption@tempdima=\dimen188
-\caption@indent=\dimen189
-\caption@parindent=\dimen190
-\caption@hangindent=\dimen191
+Package: caption3 2022/01/07 v2.3 caption3 kernel (AR)
+\caption@tempdima=\dimen185
+\captionmargin=\dimen186
+\caption@leftmargin=\dimen187
+\caption@rightmargin=\dimen188
+\caption@width=\dimen189
+\caption@indent=\dimen190
+\caption@parindent=\dimen191
+\caption@hangindent=\dimen192
 Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count319
@@ -524,23 +524,23 @@ Package caption Info: Standard document class detected.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
 \linenopenalty=\count321
 \output=\toks26
 \linenoprevgraf=\count322
-\linenumbersep=\dimen192
-\linenumberwidth=\dimen193
+\linenumbersep=\dimen193
+\linenumberwidth=\dimen194
 \c@linenumber=\count323
 \c@pagewiselinenumber=\count324
 \c@LN@truepage=\count325
 \c@internallinenumber=\count326
 \c@internallinenumbers=\count327
-\quotelinenumbersep=\dimen194
-\bframerule=\dimen195
-\bframesep=\dimen196
+\quotelinenumbersep=\dimen195
+\bframerule=\dimen196
+\bframesep=\dimen197
 \bframebox=\box63
 LaTeX Info: Redefining \\ on input line 3056.
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/draftwatermark/draftwatermark.sty
@@ -555,29 +555,29 @@ Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack-
 )
 \c@DefaultLines=\count329
 \c@DefaultDepth=\count330
-\DefaultFindent=\dimen197
-\DefaultNindent=\dimen198
-\DefaultSlope=\dimen199
-\DiscardVskip=\dimen256
+\DefaultFindent=\dimen198
+\DefaultNindent=\dimen199
+\DefaultSlope=\dimen256
+\DiscardVskip=\dimen257
 \L@lbox=\box64
 \L@tbox=\box65
 \c@L@lines=\count331
 \c@L@depth=\count332
-\L@Pindent=\dimen257
-\L@Findent=\dimen258
-\L@Nindent=\dimen259
-\L@lraise=\dimen260
-\L@first=\dimen261
-\L@next=\dimen262
-\L@slope=\dimen263
-\L@height=\dimen264
-\L@novskip=\dimen265
-\L@target@ht=\dimen266
-\L@target@dp=\dimen267
-\L@target@tht=\dimen268
-\LettrineWidth=\dimen269
-\LettrineHeight=\dimen270
-\LettrineDepth=\dimen271
+\L@Pindent=\dimen258
+\L@Findent=\dimen259
+\L@Nindent=\dimen260
+\L@lraise=\dimen261
+\L@first=\dimen262
+\L@next=\dimen263
+\L@slope=\dimen264
+\L@height=\dimen265
+\L@novskip=\dimen266
+\L@target@ht=\dimen267
+\L@target@dp=\dimen268
+\L@target@tht=\dimen269
+\LettrineWidth=\dimen270
+\LettrineHeight=\dimen271
+\LettrineDepth=\dimen272
 \Llist@everypar=\toks27
 Loading lettrine.cfg
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/lettrine/lettrine.cfg)) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/sectsty/sectsty.sty
@@ -595,10 +595,10 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip65
 \multirow@cntb=\count333
 \multirow@dima=\skip66
-\bigstrutjot=\dimen272
+\bigstrutjot=\dimen273
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen273
-\WF@size=\dimen274
+\wrapoverhang=\dimen274
+\WF@size=\dimen275
 \c@WF@wrappedlines=\count334
 \WF@box=\box66
 \WF@everypar=\toks28
@@ -626,8 +626,8 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box69
 \sift@deathcycles=\count336
-\@vwid@loff=\dimen275
-\@vwid@roff=\dimen276
+\@vwid@loff=\dimen276
+\@vwid@roff=\dimen277
 )
 \c@taburow=\count337
 \tabu@nbcols=\count338
@@ -635,15 +635,15 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@Xcol=\count340
 \tabu@alloc=\count341
 \tabu@nested=\count342
-\tabu@target=\dimen277
-\tabu@spreadtarget=\dimen278
-\tabu@naturalX=\dimen279
-\tabucolX=\dimen280
-\tabu@Xsum=\dimen281
-\extrarowdepth=\dimen282
-\abovetabulinesep=\dimen283
-\belowtabulinesep=\dimen284
-\tabustrutrule=\dimen285
+\tabu@target=\dimen278
+\tabu@spreadtarget=\dimen279
+\tabu@naturalX=\dimen280
+\tabucolX=\dimen281
+\tabu@Xsum=\dimen282
+\extrarowdepth=\dimen283
+\abovetabulinesep=\dimen284
+\belowtabulinesep=\dimen285
+\tabustrutrule=\dimen286
 \tabu@thebody=\toks32
 \tabu@footnotes=\toks33
 \tabu@box=\box70
@@ -667,15 +667,15 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \UL@hyphenbox=\box76
 \UL@skip=\skip70
 \UL@hook=\toks34
-\UL@height=\dimen286
+\UL@height=\dimen287
 \UL@pe=\count343
-\UL@pixel=\dimen287
+\UL@pixel=\dimen288
 \ULC@box=\box77
 Package: ulem 2019/11/18
-\ULdepth=\dimen288
+\ULdepth=\dimen289
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen289
+\rotheadsize=\dimen290
 \c@nlinenum=\count344
 \TeXr@lab=\toks35
 ) (./report.aux)
@@ -1004,39 +1004,39 @@ Package caption Info: float package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-File: images/uoy_logo.png Graphic file (type bmp)
-<images/uoy_logo.png>
+File: ../images/uoy_logo.png Graphic file (type bmp)
+<../images/uoy_logo.png>
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 145.
+(Font)              scaled to size 17.28pt on input line 144.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 145.
+(Font)              scaled to size 17.28pt on input line 144.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 153.57375pt on input line 160.
+(Font)              scaled to size 153.57375pt on input line 159.
 [1
 
 ] (./report.toc
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.14903pt on input line 3.
+(Font)              scaled to size 9.14903pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.53503pt on input line 3.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3.
+(Font)              scaled to size 6.53503pt on input line 2.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2.
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 13.07135pt on input line 3.
+(Font)              scaled to size 13.07135pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.14993pt on input line 3.
+(Font)              scaled to size 9.14993pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.53568pt on input line 3.
+(Font)              scaled to size 6.53568pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 13.0686pt on input line 3.
+(Font)              scaled to size 13.0686pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.14801pt on input line 3.
+(Font)              scaled to size 9.14801pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.5343pt on input line 3.
+(Font)              scaled to size 6.5343pt on input line 2.
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1056,69 +1056,57 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 [2]
 
 LaTeX Font Warning: Font shape `TU/Palatino(0)/m/sc' undefined
-(Font)              using `TU/Palatino(0)/m/n' instead on input line 170.
+(Font)              using `TU/Palatino(0)/m/n' instead on input line 169.
 
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 24.18509pt on input line 170.
+(Font)              scaled to size 24.18509pt on input line 169.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 34.80739pt on input line 170.
+(Font)              scaled to size 34.80739pt on input line 169.
 Package lettrine.sty Info: Targeted height = 20.1543pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 24.38896pt (W) loversize=0.2;
-(lettrine.sty)             reported on input line 170.
+(lettrine.sty)             reported on input line 169.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 170.
+(Font)              scaled to size 12.0pt on input line 169.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 169.
 
 Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
-LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 170.
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
-
- []
-
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/it' will be
-(Font)              scaled to size 12.0pt on input line 173.
+(Font)              scaled to size 12.0pt on input line 172.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 188.
+(Font)              scaled to size 14.4pt on input line 184.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/n/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 188.
-[1]
-LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 8.4pt on input line 197.
+(Font)              scaled to size 14.4pt on input line 184.
+[1] [2]
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 249.
-
-Overfull \hbox (2.0pt too wide) in paragraph at lines 247--250
-[] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--250
-
- []
-
-[2] (./report.aux)
+(Font)              scaled to size 12.0pt on input line 284.
+[3] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22947 strings out of 478181
- 422478 string characters out of 5853032
- 902806 words of memory out of 5000000
- 43212 multiletter control sequences out of 15000+600000
- 473020 words of font info for 76 fonts, out of 8000000 for 9000
+ 22974 strings out of 478179
+ 422870 string characters out of 5852975
+ 901722 words of memory out of 5000000
+ 43245 multiletter control sequences out of 15000+600000
+ 473012 words of font info for 75 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,16n,122p,1790b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,16n,122p,1790b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (4 pages).
+Output written on report.pdf (5 pages).

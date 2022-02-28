@@ -13,11 +13,12 @@ geometry: "left=3cm,right=3cm,top=2cm,bottom=2cm"
 linespacing: 1.5
 fontsize: 12pt
 mainfont: Palatino
-bibliography: refs.bib
-csl: nature-cell-biology.csl
+bibliography: ../refs.bib
+csl: ../university-of-york-harvard.csl
 link-citations: true
 citecolor: teal
 linkcolor: teal
+urlcolor: teal
 header-includes:
 - \usepackage[labelsep=period]{caption}
 - \usepackage[labelfont=bf]{caption}
@@ -44,6 +45,26 @@ library(wordcountaddin) # Load wordcountaddin. Counts words and characters in te
 
 # Introduction
 
+## Flow
+
+## Flow During Development
+
+## Developmental Proteins / mechanosensors
+
+## Endothelial
+
+## Atherosclerosis
+
+WSS
+
+## Pathway
+
+Does Axin, Angp2, Thrombosin-2 change if Wnt is inhibited?
+
+## Hypothesis
+
+XAV-939 Wnt/Beta Catenin inhibitor, acts by inhibiting tankyrase
+
 ```{=plain}
 <!-- 
 Description of the background to the investigation 
@@ -69,7 +90,7 @@ HUVECs were cultured in flasks until \~80% confluent. Cells were then washed wit
 
 ## mRNA Isolation and qPCR
 
-Media was removed from the plates and cells were washed with cold PBS. Cells were isolated from the periphery and centre of the plates using 350μl of PBS, before centrifuging for 5 minutes at 400g and removing the supernatant. Total mRNA was isolated using the RNEasy Mini Kit (Qiagen) and concentration was determined using a spectrophotometer. mRNA was reverse transcribed to cDNA using the Verso cDNA Synthesis Kit (Thermo Scientific). The oligonucleotide qPCR primers were obtained from Ensembl[@howe2020] (Table \@ref(tab:primers)).
+Media was removed from the plates and cells were washed with cold PBS. Cells were isolated from the periphery and centre of the plates using 350μl of PBS, before centrifuging for 5 minutes at 400g and removing the supernatant. Total mRNA was isolated using the RNEasy Mini Kit (Qiagen) and concentration was determined using a spectrophotometer. mRNA was reverse transcribed to cDNA using the Verso cDNA Synthesis Kit (Thermo Scientific). The oligonucleotide qPCR primers were obtained from Ensembl [@howe2020] (Table \@ref(tab:primers)).
 
 ```{r primers}
 knitr::kable(
@@ -81,19 +102,15 @@ knitr::kable(
             "AXIN",
             "HPRT1",
             "HPRT1",
-            "KLF2",
-            "KLF2",
             "THSB1",
             "THSB1"
         ),
-        Direction = c("L", "R", "L", "R", "L", "R", "L", "R", "L", "R"),
+        Direction = c("L", "R", "L", "R", "L", "R", "L", "R"),
         Sequence = c(
             "CGGCTGTGATGATAGAAATAGGGA",
             "GTTCCAAGAGCTGAAGTTCAAGTC",
             "TGTCACTTACTTTTTCTGTGGGGA",
             "TGTCACTTACTTTTTCTGTGGGGA",
-            NA,
-            NA,
             NA,
             NA,
             "AAAGATGGAGAATGCTGAGTTGGA",
@@ -105,10 +122,14 @@ knitr::kable(
 ) %>%
     collapse_rows(columns = 1, latex_hline = "none") %>%
     kable_styling(full_width = T, latex_options = "hold_position", position = "left") %>% 
-    column_spec(3, width = "8cm")
+    column_spec(column = 3, width = "8cm")
 ```
 
 # Results
+
+```{r pcr results}
+
+```
 
 ```{=html}
 <!-- 
@@ -126,6 +147,20 @@ Make sure statistics are reported in the correct format
 Few references -->
 ```
 # Discussion
+
+## Atheroprotective gene expression
+
+Limitations of orbital shaker = imporve method
+
+## Future
+
+epigenetics
+
+look at proliferation, apoptosis, senescence, inflammation = PERP, p53
+
+look at vascular repair = wound scratch assay?
+
+look at emt = slug/snail?
 
 ```{=html}
 <!-- Do not simply recapitulate the results

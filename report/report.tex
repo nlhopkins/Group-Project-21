@@ -46,7 +46,7 @@
   linkcolor={teal},
   filecolor={Maroon},
   citecolor={teal},
-  urlcolor={Blue},
+  urlcolor={teal},
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
 \usepackage[left=3cm,right=3cm,top=2cm,bottom=2cm]{geometry}
@@ -130,7 +130,6 @@
 \begin{document}
 
 \captionsetup{justification=raggedright,singlelinecheck=false}
-
 \SetWatermarkText{DRAFT}
 \pagenumbering{gobble}
 
@@ -138,7 +137,7 @@
 \begin{center}
 \begin{figure}[h!]
 \centering
-  \includegraphics[width=10cm]{images/uoy_logo.png}
+  \includegraphics[width=10cm]{../images/uoy_logo.png}
   \label{}
 \end{figure}
 \vspace*{2\baselineskip}
@@ -181,6 +180,33 @@ Dr. Richard Maguire\\
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
+\hypertarget{flow}{%
+\subsection{Flow}\label{flow}}
+
+\hypertarget{flow-during-development}{%
+\subsection{Flow During Development}\label{flow-during-development}}
+
+\hypertarget{developmental-proteins-mechanosensors}{%
+\subsection{Developmental Proteins / mechanosensors}\label{developmental-proteins-mechanosensors}}
+
+\hypertarget{endothelial}{%
+\subsection{Endothelial}\label{endothelial}}
+
+\hypertarget{atherosclerosis}{%
+\subsection{Atherosclerosis}\label{atherosclerosis}}
+
+WSS
+
+\hypertarget{pathway}{%
+\subsection{Pathway}\label{pathway}}
+
+Does Axin, Angp2, Thrombosin-2 change if Wnt is inhibited?
+
+\hypertarget{hypothesis}{%
+\subsection{Hypothesis}\label{hypothesis}}
+
+XAV-939 Wnt/Beta Catenin inhibitor, acts by inhibiting tankyrase
+
 \hypertarget{methods}{%
 \section{Methods}\label{methods}}
 
@@ -192,9 +218,7 @@ HUVECs were cultured in flasks until \textasciitilde80\% confluent. Cells were t
 \hypertarget{mrna-isolation-and-qpcr}{%
 \subsection{mRNA Isolation and qPCR}\label{mrna-isolation-and-qpcr}}
 
-Media was removed from the plates and cells were washed with cold PBS. Cells were isolated from the periphery and centre of the plates using 350μl of PBS, before centrifuging for 5 minutes at 400g and removing the supernatant. Total mRNA was isolated using the RNEasy Mini Kit (Qiagen) and concentration was determined using a spectrophotometer. mRNA was reverse transcribed to cDNA using the Verso cDNA Synthesis Kit (Thermo Scientific).
-
-The oligonucleotide qPCR primers were obtained from Ensembl\textsuperscript{\protect\hyperlink{ref-howe2020}{1}} (Table \ref{tab:primers}).
+Media was removed from the plates and cells were washed with cold PBS. Cells were isolated from the periphery and centre of the plates using 350μl of PBS, before centrifuging for 5 minutes at 400g and removing the supernatant. Total mRNA was isolated using the RNEasy Mini Kit (Qiagen) and concentration was determined using a spectrophotometer. mRNA was reverse transcribed to cDNA using the Verso cDNA Synthesis Kit (Thermo Scientific). The oligonucleotide qPCR primers were obtained from Ensembl (\protect\hyperlink{ref-howe2020}{Howe et al., 2020}) (Table \ref{tab:primers}).
 
 \begin{table}[!h]
 
@@ -215,10 +239,6 @@ Gene & Direction & Sequence\\
 
 \multirow{-2}{*}{\raggedright\arraybackslash HPRT1} & R & NA\\
 
- & L & NA\\
-
-\multirow{-2}{*}{\raggedright\arraybackslash KLF2} & R & NA\\
-
  & L & AAAGATGGAGAATGCTGAGTTGGA\\
 
 \multirow{-2}{*}{\raggedright\arraybackslash THSB1} & R & GGTTCCAAAGACAAACCTCACATT\\
@@ -232,11 +252,27 @@ Gene & Direction & Sequence\\
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
 
+\hypertarget{atheroprotective-gene-expression}{%
+\subsection{Atheroprotective gene expression}\label{atheroprotective-gene-expression}}
+
+Limitations of orbital shaker = imporve method
+
+\hypertarget{future}{%
+\subsection{Future}\label{future}}
+
+epigenetics
+
+look at proliferation, apoptosis, senescence, inflammation = PERP, p53
+
+look at vascular repair = wound scratch assay?
+
+look at emt = slug/snail?
+
 \hypertarget{acknowledgements}{%
 \section{Acknowledgements}\label{acknowledgements}}
 
 \begin{flushright}
-(211 Words) remove headers !!!
+(276 Words) remove headers !!!
 \end{flushright}
 
 \hypertarget{references}{%
@@ -245,8 +281,7 @@ Gene & Direction & Sequence\\
 \hypertarget{refs}{}
 \begin{CSLReferences}{0}{0}
 \leavevmode\vadjust pre{\hypertarget{ref-howe2020}{}}%
-\CSLLeftMargin{1. }
-\CSLRightInline{Howe, K. L. \emph{et al.} Ensembl 2021. \emph{Nucleic Acids Research} \textbf{49}, D884--D891 (2020).}
+Howe, K. L. {et al.} (2020). {Ensembl 2021}. \emph{Nucleic Acids Research}, 49 (D1), pp.D884--D891. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1093/nar/gkaa942}{10.1093/nar/gkaa942}.
 
 \end{CSLReferences}
 
