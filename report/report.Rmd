@@ -23,12 +23,15 @@ header-includes:
 - \usepackage[labelsep=period]{caption}
 - \usepackage[labelfont=bf]{caption}
 - \usepackage[switch]{lineno}
-- \usepackage{draftwatermark}
-- \SetWatermarkLightness{0.9}
 - \usepackage{type1cm} % scalable fonts
 - \usepackage{lettrine}
 - \usepackage{booktabs}
 - \usepackage{sectsty} \sectionfont{\centering}
+- \usepackage{caption}
+- \captionsetup[figure]{font=footnotesize}
+- \captionsetup[table]{font=footnotesize}
+- \captionsetup[table]{justification=centerlast}
+- \captionsetup[figure]{justification=centerlast}
 ---
 
 ```{r setup, include=FALSE}
@@ -41,6 +44,10 @@ library(tidyverse) # Load the tidyverse. Functions are used for tidying data and
 library(kableExtra) # Load kableExtra. Table generation.
 
 library(wordcountaddin) # Load wordcountaddin. Counts words and characters in text in an R markdown document.
+```
+
+```{r source}
+source("../analysis.R", local = knitr::knit_global()) 
 ```
 
 # Introduction
@@ -127,8 +134,8 @@ knitr::kable(
 
 # Results
 
-```{r pcr results}
-
+```{r results, fig.width = 10, fig.height = 4, fig.cap = "Relative to HPRT control."}
+plot
 ```
 
 ```{=html}

@@ -103,12 +103,15 @@
 \usepackage[labelsep=period]{caption}
 \usepackage[labelfont=bf]{caption}
 \usepackage[switch]{lineno}
-\usepackage{draftwatermark}
-\SetWatermarkLightness{0.9}
 \usepackage{type1cm} % scalable fonts
 \usepackage{lettrine}
 \usepackage{booktabs}
 \usepackage{sectsty} \sectionfont{\centering}
+\usepackage{caption}
+\captionsetup[figure]{font=footnotesize}
+\captionsetup[table]{font=footnotesize}
+\captionsetup[table]{justification=centerlast}
+\captionsetup[figure]{justification=centerlast}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -130,7 +133,6 @@
 \begin{document}
 
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\SetWatermarkText{DRAFT}
 \pagenumbering{gobble}
 
 %\begin{titlepage}
@@ -248,6 +250,12 @@ Gene & Direction & Sequence\\
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
+
+\begin{figure}
+\centering
+\includegraphics{report_files/figure-latex/results-1.pdf}
+\caption{\label{fig:results}Relative to HPRT control.}
+\end{figure}
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.2.28)  28 FEB 2022 21:39
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.2.28)  2 MAR 2022 22:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -506,9 +506,9 @@ Package graphics Info: Driver file: xetex.def on input line 107.
 \csllabelwidth=\skip63
 \cslentryspacingunit=\skip64
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2022/02/20 v3.6 Customizing captions (AR)
+Package: caption 2022/02/28 v3.6a Customizing captions (AR)
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2022/01/07 v2.3 caption3 kernel (AR)
+Package: caption3 2022/02/28 v2.3a caption3 kernel (AR)
 \caption@tempdima=\dimen185
 \captionmargin=\dimen186
 \caption@leftmargin=\dimen187
@@ -543,8 +543,6 @@ Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
 \bframesep=\dimen197
 \bframebox=\box63
 LaTeX Info: Redefining \\ on input line 3056.
-) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/draftwatermark/draftwatermark.sty
-Package: draftwatermark 2020/12/08 3.0 Put a gray textual watermark on document pages
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/type1cm/type1cm.sty
 Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, patched RF)
 ) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/lettrine/lettrine.sty
@@ -681,34 +679,34 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 130.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 130.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 130.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 130.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 133.
 
 Package fontspec Info: latinmodern-math scale = 1.08916575454414.
 
@@ -734,7 +732,7 @@ Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 13.07007pt on input line 130.
+(Font)              scaled to size 13.07007pt on input line 133.
 
 Package fontspec Info: latinmodern-math scale = 1.08916575454414.
 
@@ -766,15 +764,15 @@ Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 13.07007pt on input line 130.
+(Font)              scaled to size 13.07007pt on input line 133.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 130.
+(Font)              `operators' in the math version `normal' on input line 133.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 130.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 133.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 130.
+(Font)              `operators' in the math version `bold' on input line 133.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 130.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 133.
 
 Package fontspec Info: latinmodern-math scale = 1.08916575454414.
 
@@ -853,13 +851,13 @@ Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
 (fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 130.
+(Font)              `symbols' in the math version `normal' on input line 133.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 130.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 133.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 130.
+(Font)              `symbols' in the math version `bold' on input line 133.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 130.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 133.
 
 Package fontspec Info: latinmodern-math scale = 1.08916575454414.
 
@@ -920,18 +918,18 @@ Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
 (fontspec)             =7.84204pt\relax \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 130.
+(Font)              `largesymbols' in the math version `normal' on input line 133.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 130.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 133.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 130.
+(Font)              `largesymbols' in the math version `bold' on input line 133.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 130.
-LaTeX Info: Redefining \microtypecontext on input line 130.
-Package microtype Info: Applying patch `item' on input line 130.
-Package microtype Info: Applying patch `toc' on input line 130.
-Package microtype Info: Applying patch `eqnum' on input line 130.
-Package microtype Info: Applying patch `footnote' on input line 130.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 133.
+LaTeX Info: Redefining \microtypecontext on input line 133.
+Package microtype Info: Applying patch `item' on input line 133.
+Package microtype Info: Applying patch `toc' on input line 133.
+Package microtype Info: Applying patch `eqnum' on input line 133.
+Package microtype Info: Applying patch `footnote' on input line 133.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: No adjustment of tracking.
@@ -952,7 +950,7 @@ Package microtype Info: Character `ớ' is missing
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
-Package hyperref Info: Link coloring ON on input line 130.
+Package hyperref Info: Link coloring ON on input line 133.
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -962,9 +960,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count345
 )
-LaTeX Info: Redefining \ref on input line 130.
-LaTeX Info: Redefining \pageref on input line 130.
-LaTeX Info: Redefining \nameref on input line 130.
+LaTeX Info: Redefining \ref on input line 133.
+LaTeX Info: Redefining \pageref on input line 133.
+LaTeX Info: Redefining \nameref on input line 133.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1007,11 +1005,9 @@ Package caption Info: End \AtBeginDocument code.
 File: ../images/uoy_logo.png Graphic file (type bmp)
 <../images/uoy_logo.png>
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 144.
+(Font)              scaled to size 17.28pt on input line 146.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 144.
-LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 153.57375pt on input line 159.
+(Font)              scaled to size 17.28pt on input line 146.
 [1
 
 ] (./report.toc
@@ -1056,57 +1052,67 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 [2]
 
 LaTeX Font Warning: Font shape `TU/Palatino(0)/m/sc' undefined
-(Font)              using `TU/Palatino(0)/m/n' instead on input line 169.
+(Font)              using `TU/Palatino(0)/m/n' instead on input line 171.
 
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 24.18509pt on input line 169.
+(Font)              scaled to size 24.18509pt on input line 171.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 34.80739pt on input line 169.
+(Font)              scaled to size 34.80739pt on input line 171.
 Package lettrine.sty Info: Targeted height = 20.1543pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 24.38896pt (W) loversize=0.2;
-(lettrine.sty)             reported on input line 169.
+(lettrine.sty)             reported on input line 171.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 169.
+(Font)              scaled to size 12.0pt on input line 171.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 169.
+(Font)              scaled to size 6.0pt on input line 171.
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/it' will be
-(Font)              scaled to size 12.0pt on input line 172.
+(Font)              scaled to size 12.0pt on input line 174.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 184.
+(Font)              scaled to size 14.4pt on input line 186.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/n/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 184.
+(Font)              scaled to size 14.4pt on input line 186.
 [1] [2]
+LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 227.
+Package microtype Info: Character `\textservicemark ' is missing
+(microtype)             in font `\TU/Palatino(0)/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
+(Font)              scaled to size 10.0pt on input line 227.
+File: report_files/figure-latex/results-1.pdf Graphic file (type pdf)
+<use report_files/figure-latex/results-1.pdf>
+[3]
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 284.
-[3] (./report.aux)
+(Font)              scaled to size 12.0pt on input line 292.
+[4] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22974 strings out of 478179
- 422870 string characters out of 5852975
- 901722 words of memory out of 5000000
- 43245 multiletter control sequences out of 15000+600000
- 473012 words of font info for 75 fonts, out of 8000000 for 9000
+ 22898 strings out of 478179
+ 420796 string characters out of 5852975
+ 899651 words of memory out of 5000000
+ 43170 multiletter control sequences out of 15000+600000
+ 473020 words of font info for 76 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,16n,122p,1790b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,16n,122p,1790b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (5 pages).
+Output written on report.pdf (6 pages).
