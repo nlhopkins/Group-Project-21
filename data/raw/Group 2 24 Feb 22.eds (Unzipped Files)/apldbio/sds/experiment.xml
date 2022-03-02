@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Experiment>
+    <Name>Untitled 1</Name>
+    <RunState>COMPLETE</RunState>
+    <FinalAnalysisCompleted>true</FinalAnalysisCompleted>
+    <ModifiedTime>1645798094135</ModifiedTime>
+    <RunStartTime>1645699128205</RunStartTime>
+    <RunEndTime>1645706765857</RunEndTime>
+    <PreReadState>RUNNING</PreReadState>
+    <FileName>C:\Applied Biosystems\StepOne Software v2.3\experiments\Maguire Group\Group 2 24 Feb 22.eds</FileName>
+    <Type>
+        <Id>rq</Id>
+        <Name>Quantitation - Comparative Cт (ΔΔCт) </Name>
+        <Description>Use a reference sample and an endogenous control to determine the relative quantity of target nucleic acid sequence in samples.</Description>
+        <ResultPersisterName>ddctAnalysisResultPersister</ResultPersisterName>
+        <ContributedResultPersisterNames>mcAnalysisResultPersister</ContributedResultPersisterNames>
+        <Chemistry>
+            <Name>TaqMan® Reagents</Name>
+            <Description>The PCR reactions contain primers designed to amplify the target sequence and a TaqMan® probe designed to detect amplification of the target sequence.</Description>
+            <ID>TAQMAN</ID>
+        </Chemistry>
+        <Chemistry>
+            <Name>SYBR® Green Reagents</Name>
+            <Description>The PCR reactions contain primers designed to amplify the target sequence and SYBR® Green I dye to detect double-stranded DNA.</Description>
+            <ID>SYBR_GREEN</ID>
+        </Chemistry>
+        <Chemistry>
+            <Name>Other</Name>
+            <Description>The PCR reactions contain primers to designed to amplify the target sequence and other reagents to detect amplification. The Reaction Setup screen is not available for &quot;Other&quot; reagents.</Description>
+            <ID>OTHER</ID>
+        </Chemistry>
+    </Type>
+    <Samples>
+        <Name>H2O control</Name>
+        <Color>-8076815</Color>
+        <Concentration>100.0</Concentration>
+    </Samples>
+    <Samples>
+        <Name>Static Control</Name>
+        <Color>-5701666</Color>
+        <Concentration>100.0</Concentration>
+    </Samples>
+    <Samples>
+        <Name>Static Drug</Name>
+        <Color>-2105970</Color>
+        <Concentration>100.0</Concentration>
+    </Samples>
+    <Samples>
+        <Name>Orbital Control</Name>
+        <Color>-524376</Color>
+        <Concentration>100.0</Concentration>
+    </Samples>
+    <Samples>
+        <Name>Orbital Drug</Name>
+        <Color>-4915456</Color>
+        <Concentration>100.0</Concentration>
+    </Samples>
+    <Detectors>
+        <Name>HPRT</Name>
+        <Reporter>SYBR</Reporter>
+        <Quencher>None</Quencher>
+        <Color>-7619079</Color>
+        <ProbePrimerMixFactor>20.0</ProbePrimerMixFactor>
+        <UMMFactor>2.0</UMMFactor>
+        <ReverseMixFactor>125.0</ReverseMixFactor>
+        <TaqmanProbeInitialConcentration>20.0</TaqmanProbeInitialConcentration>
+        <TaqmanProbeFinalQuantity>900.0</TaqmanProbeFinalQuantity>
+        <TaqmanProbeInitialConcentrationUnits>pmol/µL</TaqmanProbeInitialConcentrationUnits>
+        <ForwardPrimerFinalQuantity>200.0</ForwardPrimerFinalQuantity>
+        <ForwardPrimerInitialConcentration>20.0</ForwardPrimerInitialConcentration>
+        <ForwardPrimerInitialConcentrationUnits>pmol/µL</ForwardPrimerInitialConcentrationUnits>
+        <ReversePrimerFinalQuantity>200.0</ReversePrimerFinalQuantity>
+        <ReversePrimerInitialConcentration>20.0</ReversePrimerInitialConcentration>
+        <ReversePrimerInitialConcentrationUnits>pmol/µL</ReversePrimerInitialConcentrationUnits>
+    </Detectors>
+    <Detectors>
+        <Name>AXIN</Name>
+        <Reporter>SYBR</Reporter>
+        <Quencher>None</Quencher>
+        <Color>-3083422</Color>
+        <ProbePrimerMixFactor>20.0</ProbePrimerMixFactor>
+        <UMMFactor>2.0</UMMFactor>
+        <ReverseMixFactor>125.0</ReverseMixFactor>
+        <TaqmanProbeInitialConcentration>20.0</TaqmanProbeInitialConcentration>
+        <TaqmanProbeFinalQuantity>900.0</TaqmanProbeFinalQuantity>
+        <TaqmanProbeInitialConcentrationUnits>pmol/µL</TaqmanProbeInitialConcentrationUnits>
+        <ForwardPrimerFinalQuantity>900.0</ForwardPrimerFinalQuantity>
+        <ForwardPrimerInitialConcentration>20.0</ForwardPrimerInitialConcentration>
+        <ForwardPrimerInitialConcentrationUnits>pmol/µL</ForwardPrimerInitialConcentrationUnits>
+        <ReversePrimerFinalQuantity>900.0</ReversePrimerFinalQuantity>
+        <ReversePrimerInitialConcentration>20.0</ReversePrimerInitialConcentration>
+        <ReversePrimerInitialConcentrationUnits>pmol/µL</ReversePrimerInitialConcentrationUnits>
+    </Detectors>
+    <Detectors>
+        <Name>THSB1</Name>
+        <Reporter>SYBR</Reporter>
+        <Quencher>None</Quencher>
+        <Color>-743962</Color>
+        <ProbePrimerMixFactor>20.0</ProbePrimerMixFactor>
+        <UMMFactor>2.0</UMMFactor>
+        <ReverseMixFactor>125.0</ReverseMixFactor>
+        <TaqmanProbeInitialConcentration>20.0</TaqmanProbeInitialConcentration>
+        <TaqmanProbeFinalQuantity>900.0</TaqmanProbeFinalQuantity>
+        <TaqmanProbeInitialConcentrationUnits>pmol/µL</TaqmanProbeInitialConcentrationUnits>
+        <ForwardPrimerFinalQuantity>900.0</ForwardPrimerFinalQuantity>
+        <ForwardPrimerInitialConcentration>20.0</ForwardPrimerInitialConcentration>
+        <ForwardPrimerInitialConcentrationUnits>pmol/µL</ForwardPrimerInitialConcentrationUnits>
+        <ReversePrimerFinalQuantity>900.0</ReversePrimerFinalQuantity>
+        <ReversePrimerInitialConcentration>20.0</ReversePrimerInitialConcentration>
+        <ReversePrimerInitialConcentrationUnits>pmol/µL</ReversePrimerInitialConcentrationUnits>
+    </Detectors>
+    <Detectors>
+        <Name>ANGP2</Name>
+        <Reporter>SYBR</Reporter>
+        <Quencher>None</Quencher>
+        <Color>-16472</Color>
+        <ProbePrimerMixFactor>20.0</ProbePrimerMixFactor>
+        <UMMFactor>2.0</UMMFactor>
+        <ReverseMixFactor>125.0</ReverseMixFactor>
+        <TaqmanProbeInitialConcentration>20.0</TaqmanProbeInitialConcentration>
+        <TaqmanProbeFinalQuantity>900.0</TaqmanProbeFinalQuantity>
+        <TaqmanProbeInitialConcentrationUnits>pmol/µL</TaqmanProbeInitialConcentrationUnits>
+        <ForwardPrimerFinalQuantity>900.0</ForwardPrimerFinalQuantity>
+        <ForwardPrimerInitialConcentration>20.0</ForwardPrimerInitialConcentration>
+        <ForwardPrimerInitialConcentrationUnits>pmol/µL</ForwardPrimerInitialConcentrationUnits>
+        <ReversePrimerFinalQuantity>900.0</ReversePrimerFinalQuantity>
+        <ReversePrimerInitialConcentration>20.0</ReversePrimerInitialConcentration>
+        <ReversePrimerInitialConcentrationUnits>pmol/µL</ReversePrimerInitialConcentrationUnits>
+    </Detectors>
+    <StockEntries>
+        <Key>HPRT</Key>
+        <Value>
+            <Concentration>100.0</Concentration>
+            <ConcentrationUnitsPerMicroLiter>ng</ConcentrationUnitsPerMicroLiter>
+        </Value>
+    </StockEntries>
+    <StockEntries>
+        <Key>ANGP2</Key>
+        <Value>
+            <Concentration>100.0</Concentration>
+            <ConcentrationUnitsPerMicroLiter>ng</ConcentrationUnitsPerMicroLiter>
+        </Value>
+    </StockEntries>
+    <StockEntries>
+        <Key>AXIN</Key>
+        <Value>
+            <Concentration>100.0</Concentration>
+            <ConcentrationUnitsPerMicroLiter>ng</ConcentrationUnitsPerMicroLiter>
+        </Value>
+    </StockEntries>
+    <StockEntries>
+        <Key>THSB1</Key>
+        <Value>
+            <Concentration>100.0</Concentration>
+            <ConcentrationUnitsPerMicroLiter>ng</ConcentrationUnitsPerMicroLiter>
+        </Value>
+    </StockEntries>
+    <CocktailWastePercentage>10</CocktailWastePercentage>
+    <ChemistryType>SYBR_GREEN</ChemistryType>
+    <UMMFactor>2.0</UMMFactor>
+    <CommonSampleConcentration>50.0</CommonSampleConcentration>
+    <CommonSampleConcentrationUnits>ng/μL</CommonSampleConcentrationUnits>
+    <PlotProperties>
+        <xShowMajorTickLines>true</xShowMajorTickLines>
+        <xShowMajorTicks>true</xShowMajorTicks>
+        <yShowMajorTickLines>true</yShowMajorTickLines>
+        <yShowMajorTicks>true</yShowMajorTicks>
+        <xLabel>Cycle</xLabel>
+        <yLabel>ΔRn</yLabel>
+        <showTitle>true</showTitle>
+        <title>Amplification Plot</title>
+        <titleFont>
+            <name>Arial</name>
+            <style>0</style>
+            <size>11</size>
+        </titleFont>
+        <xAutoAdjust>true</xAutoAdjust>
+        <yAutoAdjust>true</yAutoAdjust>
+        <xMax>1.7976931348623157E308</xMax>
+        <xMin>4.9E-324</xMin>
+        <yMax>1.7976931348623157E308</yMax>
+        <yMin>1.0E-6</yMin>
+        <xShowMinorTickLines>true</xShowMinorTickLines>
+        <xShowMinorTicks>true</xShowMinorTicks>
+        <yShowMinorTickLines>true</yShowMinorTickLines>
+        <yShowMinorTicks>true</yShowMinorTicks>
+        <xMinorTickLinesEnabled>true</xMinorTickLinesEnabled>
+        <xMinorTicksEnabled>true</xMinorTicksEnabled>
+        <yMinorTickLinesEnabled>true</yMinorTickLinesEnabled>
+        <yMinorTicksEnabled>true</yMinorTicksEnabled>
+        <name>ExperimentAmpPlotDataSource.DELTA_RN_VS_CYCLE_PLOT</name>
+    </PlotProperties>
+    <TCProtocolMode>Standard</TCProtocolMode>
+    <DNATemplateType>WET_DNA</DNATemplateType>
+    <InstrumentTypeId>steponeplus</InstrumentTypeId>
+</Experiment>
