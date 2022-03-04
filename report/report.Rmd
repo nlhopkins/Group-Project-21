@@ -93,11 +93,11 @@ Data figures and analysis should not be included in this section.-->
 ```
 ## Orbital Shaker
 
-HUVECs were cultured in flasks until \~80% confluent. Cells were then washed with warmed PBS and incubated with 1ml of trypsin until cells thoroughly detached. M199 media was added to the cells, before being transferred to a falcon tube and spun for 5 minutes at 400g. The supernatant was discarded, and cells were re-suspended in M199 media and transferred to 10mm radius 6 well plates. Once confluent, 3ml of 1% DMSO in M199 was added to one half of the plates, and 3ml of 1% Wnt inhibitor in M199 to the other half. Cells were subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static control.
+HUVECs were cultured in M199 complete growth medium until ~80% confluent. Cells were then washed with warmed PBS and incubated with 1ml of trypsin until cells thoroughly detached. Cells were transferred to a falcon tube with M199 and spun for 5 minutes at 400g. The supernatant was discarded, and cells were re-suspended in M199 media and transferred to 10mm radius 6 well plates. Once confluent, 3ml of 1% DMSO in M199 was added to one half of the plates, and 3ml of 1% XAV939 Wnt inhibitor in M199 to the other half. Cells were subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static controls.
 
 ## mRNA Isolation and qPCR
 
-Media was removed from the plates and cells were washed with cold PBS. Cells were isolated from the periphery and centre of the plates using 350μl of PBS, before centrifuging for 5 minutes at 400g and removing the supernatant. Total mRNA was isolated using the RNEasy Mini Kit (Qiagen) and concentration was determined using a spectrophotometer. mRNA was reverse transcribed to cDNA using the Verso cDNA Synthesis Kit (Thermo Scientific). The oligonucleotide qPCR primers were obtained from Ensembl [@howe2020] (Table \@ref(tab:primers)).
+Media was removed from the plates and cells were washed with cold PBS. Cells were isolated from the periphery and centre of the plates with PBS and centrifuged for 5 minutes at 400g to remove the supernatant. Total mRNA was extracted using the RNEasy Mini Kit (Qiagen). The amount of isolated mRNA was determined spectrophotometrically. cDNA synthesis was performed using the Verso cDNA Synthesis Kit (Thermo Scientific) with 5.5μl of 0.64% of mRNA. ANGPT2, AXIN2, THSB1, and HPRT1 mRNA was quantified using StepOne qPCR (Thermo Scientific) using oligonucleotide qPCR primers from Ensembl [@howe2020] (Table \@ref(tab:primers)).
 
 ```{r primers}
 knitr::kable(
@@ -105,8 +105,8 @@ knitr::kable(
         Gene = c(
             "ANGPT2",
             "ANGPT2",
-            "AXIN",
-            "AXIN",
+            "AXIN1",
+            "AXIN1",
             "HPRT1",
             "HPRT1",
             "THSB1",
@@ -118,8 +118,8 @@ knitr::kable(
             "GTTCCAAGAGCTGAAGTTCAAGTC",
             "TGTCACTTACTTTTTCTGTGGGGA",
             "TGTCACTTACTTTTTCTGTGGGGA",
-            NA,
-            NA,
+            "TTGGTCAGGCAGTATAATCC",
+            "GGGCATATCCTACAACAAC",
             "AAAGATGGAGAATGCTGAGTTGGA",
             "GGTTCCAAAGACAAACCTCACATT"
         )
@@ -134,7 +134,7 @@ knitr::kable(
 
 # Results
 
-```{r results, fig.width = 10, fig.height = 4, fig.cap = "Relative to HPRT control."}
+```{r results, fig.width = 10, fig.height = 4, fig.cap = "Relative mRNA expression of angiopoeitin-2, axin-2, and thrombospondin-1 from HUVECs exposed to high and low oscillatory shear stress (OSS). Normalised to the HPRT control and relative to the static control."}
 plot
 ```
 

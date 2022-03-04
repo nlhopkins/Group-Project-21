@@ -215,12 +215,12 @@ XAV-939 Wnt/Beta Catenin inhibitor, acts by inhibiting tankyrase
 \hypertarget{orbital-shaker}{%
 \subsection{Orbital Shaker}\label{orbital-shaker}}
 
-HUVECs were cultured in flasks until \textasciitilde80\% confluent. Cells were then washed with warmed PBS and incubated with 1ml of trypsin until cells thoroughly detached. M199 media was added to the cells, before being transferred to a falcon tube and spun for 5 minutes at 400g. The supernatant was discarded, and cells were re-suspended in M199 media and transferred to 10mm radius 6 well plates. Once confluent, 3ml of 1\% DMSO in M199 was added to one half of the plates, and 3ml of 1\% Wnt inhibitor in M199 to the other half. Cells were subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static control.
+HUVECs were cultured in M199 complete growth medium until \textasciitilde80\% confluent. Cells were then washed with warmed PBS and incubated with 1ml of trypsin until cells thoroughly detached. Cells were transferred to a falcon tube with M199 and spun for 5 minutes at 400g. The supernatant was discarded, and cells were re-suspended in M199 media and transferred to 10mm radius 6 well plates. Once confluent, 3ml of 1\% DMSO in M199 was added to one half of the plates, and 3ml of 1\% XAV939 Wnt inhibitor in M199 to the other half. Cells were subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static controls.
 
 \hypertarget{mrna-isolation-and-qpcr}{%
 \subsection{mRNA Isolation and qPCR}\label{mrna-isolation-and-qpcr}}
 
-Media was removed from the plates and cells were washed with cold PBS. Cells were isolated from the periphery and centre of the plates using 350μl of PBS, before centrifuging for 5 minutes at 400g and removing the supernatant. Total mRNA was isolated using the RNEasy Mini Kit (Qiagen) and concentration was determined using a spectrophotometer. mRNA was reverse transcribed to cDNA using the Verso cDNA Synthesis Kit (Thermo Scientific). The oligonucleotide qPCR primers were obtained from Ensembl (\protect\hyperlink{ref-howe2020}{Howe et al., 2020}) (Table \ref{tab:primers}).
+Media was removed from the plates and cells were washed with cold PBS. Cells were isolated from the periphery and centre of the plates with PBS and centrifuged for 5 minutes at 400g to remove the supernatant. Total mRNA was extracted using the RNEasy Mini Kit (Qiagen). The amount of isolated mRNA was determined spectrophotometrically. cDNA synthesis was performed using the Verso cDNA Synthesis Kit (Thermo Scientific) with 5.5μl of 0.64\% of mRNA. ANGPT2, AXIN2, THSB1, and HPRT1 mRNA was quantified using StepOne qPCR (Thermo Scientific) using oligonucleotide qPCR primers from Ensembl (\protect\hyperlink{ref-howe2020}{Howe et al., 2020}) (Table \ref{tab:primers}).
 
 \begin{table}[!h]
 
@@ -235,11 +235,11 @@ Gene & Direction & Sequence\\
 
  & L & TGTCACTTACTTTTTCTGTGGGGA\\
 
-\multirow{-2}{*}{\raggedright\arraybackslash AXIN} & R & TGTCACTTACTTTTTCTGTGGGGA\\
+\multirow{-2}{*}{\raggedright\arraybackslash AXIN1} & R & TGTCACTTACTTTTTCTGTGGGGA\\
 
- & L & NA\\
+ & L & TTGGTCAGGCAGTATAATCC\\
 
-\multirow{-2}{*}{\raggedright\arraybackslash HPRT1} & R & NA\\
+\multirow{-2}{*}{\raggedright\arraybackslash HPRT1} & R & GGGCATATCCTACAACAAC\\
 
  & L & AAAGATGGAGAATGCTGAGTTGGA\\
 
@@ -254,7 +254,7 @@ Gene & Direction & Sequence\\
 \begin{figure}
 \centering
 \includegraphics{report_files/figure-latex/results-1.pdf}
-\caption{\label{fig:results}Relative to HPRT control.}
+\caption{\label{fig:results}Relative mRNA expression of angiopoeitin-2, axin-2, and thrombospondin-1 from HUVECs exposed to high and low oscillatory shear stress (OSS). Normalised to the HPRT control and relative to the static control.}
 \end{figure}
 
 \hypertarget{discussion}{%
@@ -280,7 +280,7 @@ look at emt = slug/snail?
 \section{Acknowledgements}\label{acknowledgements}}
 
 \begin{flushright}
-(276 Words) remove headers !!!
+(291 Words) remove headers !!!
 \end{flushright}
 
 \hypertarget{references}{%
