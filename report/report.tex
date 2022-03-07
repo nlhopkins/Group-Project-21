@@ -182,6 +182,9 @@ Dr. Richard Maguire\\
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
+\hypertarget{atherosclerosis}{%
+\subsection{Atherosclerosis}\label{atherosclerosis}}
+
 \hypertarget{flow}{%
 \subsection{Flow}\label{flow}}
 
@@ -193,11 +196,6 @@ Dr. Richard Maguire\\
 
 \hypertarget{endothelial}{%
 \subsection{Endothelial}\label{endothelial}}
-
-\hypertarget{atherosclerosis}{%
-\subsection{Atherosclerosis}\label{atherosclerosis}}
-
-WSS
 
 \hypertarget{pathway}{%
 \subsection{Pathway}\label{pathway}}
@@ -215,12 +213,12 @@ XAV-939 Wnt/Beta Catenin inhibitor, acts by inhibiting tankyrase
 \hypertarget{orbital-shaker}{%
 \subsection{Orbital Shaker}\label{orbital-shaker}}
 
-HUVECs were cultured in M199 complete growth medium until \textasciitilde80\% confluent. Cells were then washed with warmed PBS and incubated with 1ml of trypsin until cells thoroughly detached. Cells were transferred to a falcon tube with M199 and spun for 5 minutes at 400g. The supernatant was discarded, and cells were re-suspended in M199 media and transferred to 10mm radius 6 well plates. Once confluent, 3ml of 1\% DMSO in M199 was added to one half of the plates, and 3ml of 1\% XAV939 Wnt inhibitor in M199 to the other half. Cells were subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static controls.
+Twice-passaged HUVECs were cultured in M199 complete growth medium until \textasciitilde80\% confluent. Cells were then washed with warmed PBS and incubated with 1ml of trypsin until cells thoroughly detached. Cells were transferred to a falcon tube with M199 and spun for 5 minutes at 400g. The supernatant was discarded, and cells were re-suspended in M199 media and transferred to 10mm radius 6 well plates. Once confluent, 3ml of 1\% DMSO in M199 was added to one half of the plates, and 3ml of 1\% XAV939 Wnt inhibitor in M199 to the other half. Cells were subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static controls.
 
 \hypertarget{mrna-isolation-and-qpcr}{%
 \subsection{mRNA Isolation and qPCR}\label{mrna-isolation-and-qpcr}}
 
-Media was removed from the plates and cells were washed with cold PBS. Cells were isolated from the periphery and centre of the plates with PBS and centrifuged for 5 minutes at 400g to remove the supernatant. Total mRNA was extracted using the RNEasy Mini Kit (Qiagen). The amount of isolated mRNA was determined spectrophotometrically. cDNA synthesis was performed using the Verso cDNA Synthesis Kit (Thermo Scientific) with 5.5μl of 0.64\% of mRNA. ANGPT2, AXIN2, THSB1, and HPRT1 mRNA was quantified using StepOne qPCR (Thermo Scientific) using oligonucleotide qPCR primers from Ensembl (\protect\hyperlink{ref-howe2020}{Howe et al., 2020}) (Table \ref{tab:primers}).
+Media was removed from the plates and cells were washed with cold PBS. Cells were isolated from the periphery and centre of the plates with PBS and centrifuged for 5 minutes at 400g to remove the supernatant. Total mRNA was extracted using the RNEasy Mini Kit (Qiagen) and the amount isolated was determined spectrophotometrically. cDNA synthesis was performed using the Verso cDNA Synthesis Kit (Thermo Scientific) with 5.5μl of 0.64\% mRNA. \emph{ANGPT2}, \emph{AXIN2}, \emph{THSB1}, and \emph{HPRT1} mRNA was quantified using StepOne qPCR (Thermo Scientific) using oligonucleotide qPCR primers from Ensembl (\protect\hyperlink{ref-howe2020}{Howe et al., 2020}) (Table \ref{tab:primers}).
 
 \begin{table}[!h]
 
@@ -248,13 +246,20 @@ Gene & Direction & Sequence\\
 \end{tabu}
 \end{table}
 
+\hypertarget{statistical-analysis}{%
+\subsection{Statistical Analysis}\label{statistical-analysis}}
+
+Relative expression is expressed as ΔΔCt fold change ± SEM, relative to the static control. Normality was determined with Kolmogorov-Smirnov Tests. Multiple-comparison analysis was performed using Kruskal-Wallis Test followed by post-hoc Dunn's Test. Comparisons to the static control were performed using one-way ANOVA followed by post-hoc Tukey's HSD test. Statistical analyses were performed in R (\protect\hyperlink{ref-R}{R Core Team, 2018}).
+
 \hypertarget{results}{%
 \section{Results}\label{results}}
 
+HUVECs were treated with XAV939 and exposed to low (centre) and high (periphery) shear stress for 72 hours using an orbital shaker. Expression of \emph{ANGPT2}, \emph{AXIN2}, and \emph{THSB1} were then quantified with qPCR. For each gene, expression was lower than the static control in all conditions. (\emph{P} \textless{} 0.0001). \emph{ANGPT2} expression is higher in cells exposed to high flow compared with low flow (\emph{P} \textless{} 0.05). XAV393 upregulated \emph{ANGPT2} in cells exposed to low stress (\emph{P} \textless{} 0.05 versus control), however, downregulated \emph{ANGPT2} in cells exposed to high stress (\emph{P} \textless{} 0.05 versus control) (Fig. \ref{fig:plots}A). Whereas in \emph{AXIN2} and \emph{THSB1}, expression did not significantly differ between the control cells exposed to low or high stress, and XAV393 downregulated cells exposed to both low and high stress (\emph{P} \textless{} 0.05 versus control) (Fig. \ref{fig:plots}BC).
+
 \begin{figure}
 \centering
-\includegraphics{report_files/figure-latex/results-1.pdf}
-\caption{\label{fig:results}Relative mRNA expression of angiopoeitin-2, axin-2, and thrombospondin-1 from HUVECs exposed to high and low oscillatory shear stress (OSS). Normalised to the HPRT control and relative to the static control.}
+\includegraphics{report_files/figure-latex/plots-1.pdf}
+\caption{\label{fig:plots}Relative mRNA expression of (\textbf{A}) angiopoeitin-2 , (\textbf{B}) axin-2, and (\textbf{C}) thrombospondin-1 in HUVECs exposed to high and low shear stress. Quantified by qPCR, normalised to the HPRT control and relative to the static control. Data is shown as fold change ± SEM. \(^{**}\)P \textless{} 0.01, and \(^*\)P \textless{} 0.05.}
 \end{figure}
 
 \hypertarget{discussion}{%
@@ -280,7 +285,7 @@ look at emt = slug/snail?
 \section{Acknowledgements}\label{acknowledgements}}
 
 \begin{flushright}
-(291 Words) remove headers !!!
+(489 Words) remove headers !!!
 \end{flushright}
 
 \hypertarget{references}{%
@@ -290,6 +295,9 @@ look at emt = slug/snail?
 \begin{CSLReferences}{0}{0}
 \leavevmode\vadjust pre{\hypertarget{ref-howe2020}{}}%
 Howe, K. L. {et al.} (2020). {Ensembl 2021}. \emph{Nucleic Acids Research}, 49 (D1), pp.D884--D891. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1093/nar/gkaa942}{10.1093/nar/gkaa942}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-R}{}}%
+R Core Team. (2018). {\emph{R: A language and environment for statistical computing}}. Vienna, Austria: R Foundation for Statistical Computing. {[}Online{]}. Available at: \url{https://www.R-project.org/}.
 
 \end{CSLReferences}
 
