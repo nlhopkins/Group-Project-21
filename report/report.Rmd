@@ -47,7 +47,8 @@ library(wordcountaddin) # Load wordcountaddin. Counts words and characters in te
 ```
 
 ```{r source}
-source("../analysis.R", local = knitr::knit_global()) 
+source("../02-analysis.R", local = knitr::knit_global()) 
+source("../03-analysis.R", local = knitr::knit_global()) 
 ```
 
 # Introduction
@@ -74,11 +75,11 @@ XAV-939 Wnt/Beta Catenin inhibitor, acts by inhibiting tankyrase
 
 ## Orbital Shaker
 
-Twice-passaged HUVECs were cultured in M199 complete growth medium until \~80% confluent. Cells were then washed with warmed PBS and incubated with 1ml of trypsin until cells thoroughly detached. Cells were transferred to a falcon tube with M199 and spun for 5 minutes at 400g. The supernatant was discarded, and cells were re-suspended in M199 media and transferred to 10mm radius 6 well plates. Once confluent, 3ml of 1% DMSO in M199 was added to one half of the plates, and 3ml of 1% XAV939 Wnt inhibitor in M199 to the other half. Cells were subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static controls.
+HUVECs were cultured in complete growth medium containing M199, sodium bicarbonate, pen-strep, amphotericin B, Hi-FBS, endothelial cell growth supplement (ECGS), and herparin. When \~80% confluent, cells were incubated with 1ml of trypsin until cells thoroughly detached, and neutralised with 9ml of M199. Cells were spun for 5 minutes at 400g to discard the supernatent, then re-suspended in M199 media before tranfering to 10mm radius 6 well plates. Once confluent, 3ml [@Warboys2019] of 0.1% DMSO in M199 or 0.1% XAV939 in M199 were each added to half of the plates [@Zhu2017]. Cells were then subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static controls.
 
 ## mRNA Isolation and qPCR
 
-Media was removed from the plates and cells were washed with cold PBS. Cells were isolated from the periphery and centre of the plates with PBS and centrifuged for 5 minutes at 400g to remove the supernatant. Total mRNA was extracted using the RNEasy Mini Kit (Qiagen) and the amount isolated was determined spectrophotometrically. cDNA synthesis was performed using the Verso cDNA Synthesis Kit (Thermo Scientific) with 5.5μl of 0.64% mRNA. *ANGPT2*, *AXIN2*, *THSB1*, and *HPRT1* mRNA was quantified using StepOne qPCR (Thermo Scientific) using oligonucleotide qPCR primers from Ensembl [@howe2020] (Table \@ref(tab:primers)).
+Cells were isolated from the periphery and centre of the plates with cold PBS and centrifuged for 5 minutes at 400g to remove the supernatant. Total mRNA was extracted using the RNEasy Mini Kit (Qiagen) and the concentration was determined spectrophotometrically. cDNA synthesis was performed using the Verso cDNA Synthesis Kit (Thermo Scientific) with 5.5μl of 0.01067% mRNA. *ANGPT2*, *AXIN2*, *THSB1*, and *HPRT1* mRNA was quantified using StepOne qPCR (Thermo Scientific) with SYBR Green, using oligonucleotide qPCR primers from Ensembl [@howe2020] (Table \@ref(tab:primers)).
 
 ```{r primers}
 knitr::kable(
@@ -115,14 +116,20 @@ knitr::kable(
 
 ## Statistical Analysis
 
-Relative expression is expressed as ΔΔCt fold change ± SEM, relative to the static control. Normality was determined with Kolmogorov-Smirnov Tests. Multiple-comparison analysis was performed using Kruskal-Wallis Test followed by post-hoc Dunn's Test. Comparisons to the static control were performed using one-way ANOVA followed by post-hoc Tukey's HSD test. Statistical analyses were performed in R [@R].
+Relative expression is expressed as 2^ΔΔCt^ fold change ± SEM. Normality was determined with Kolmogorov-Smirnov Tests. Multiple-comparison analysis was performed using Kruskal-Wallis Test followed by post-hoc Dunn's Test. Comparisons to the static control were performed using one-way ANOVA followed by post-hoc Tukey's HSD test. Statistical analyses were performed in R [@R].
 
 # Results
 
-HUVECs were treated with XAV939 and exposed to low (centre) and high (periphery) shear stress for 72 hours using an orbital shaker. Expression of *ANGPT2*, *AXIN2*, and *THSB1* were then quantified with qPCR. For each gene, expression was lower than the static control in all conditions. (*P* \< 0.0001). *ANGPT2* expression is higher in cells exposed to high flow compared with low flow (*P* \< 0.05). XAV393 upregulated *ANGPT2* in cells exposed to low stress (*P* \< 0.05 versus control), however, downregulated *ANGPT2* in cells exposed to high stress (*P* \< 0.05 versus control) (Fig. \@ref(fig:plots)A). Whereas in *AXIN2* and *THSB1*, expression did not significantly differ between the control cells exposed to low or high stress, and XAV393 downregulated cells exposed to both low and high stress (*P* \< 0.05 versus control) (Fig. \@ref(fig:plots)BC).
+HUVECs were treated with XAV939 and exposed to low (centre) and high (periphery) shear stress for 72 hours using an orbital shaker. Expression of *ANGPT2*, *AXIN2*, and *THSB1* were then quantified with qPCR.
 
-```{r plots, fig.width = 10, fig.height = 4, fig.cap = "Relative mRNA expression of (**A**) angiopoeitin-2 , (**B**) axin-2, and (**C**) thrombospondin-1 in HUVECs exposed to high and low shear stress. Quantified by qPCR, normalised to the HPRT control and relative to the static control. Data is shown as fold change ± SEM. $^{**}$P < 0.01, and $^*$P < 0.05."}
-plot
+For each gene, expression was significantly lower than the static control in all conditions. (*P* \< 0.0001).
+
+*ANGPT2* expression is higher in cells exposed to high flow compared with low flow (*P* \< 0.05). XAV393 upregulated *ANGPT2* in cells exposed to low stress (*P* \< 0.05 versus control), however, downregulated *ANGPT2* in cells exposed to high stress (*P* \< 0.05 versus control) (Fig. \@ref(fig:plots)A).
+
+Whereas in *AXIN2* and *THSB1*, expression did not significantly differ between the control cells exposed to low or high stress, and XAV393 downregulated cells exposed to both low and high stress (*P* \< 0.05 versus control) (Fig. \@ref(fig:plots)BC).
+
+```{r plots, fig.width = 10, fig.height = 8, fig.cap = "(**ABC**) Cells were  treated with DMSO(-) or XAV939(+) and exposured to low or high shear stress. Levels of angiopoeitin-2 , axin-2, and thrombospondin-1 mRNA quantified by qPCR. Data is shown as fold change ± SEM, normalised to the HPRT control and relative to the static control. $^{**}$*P* < 0.01, and $^*$*P* < 0.05. (**DEF**) Under the same conditions, gene expression of cells exposed to low stress are compared to cells exposed to high stress. Data is shown as fold change ± SEM, normalised to the HPRT control and relative to the periphery control. $^{**}$*P* < 0.01, and $^*$*P* < 0.05."}
+ggarrange(plot2, plot3, nrow = 2)
 ```
 
 ```{=html}

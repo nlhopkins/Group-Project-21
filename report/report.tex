@@ -160,8 +160,6 @@ Dr. Richard Maguire\\
 \hypersetup{linkcolor = black}
 \newpage
 \tableofcontents
-\listoffigures 
-\listoftables
 \hypersetup{linkcolor = teal}
 
 \newpage
@@ -213,12 +211,12 @@ XAV-939 Wnt/Beta Catenin inhibitor, acts by inhibiting tankyrase
 \hypertarget{orbital-shaker}{%
 \subsection{Orbital Shaker}\label{orbital-shaker}}
 
-Twice-passaged HUVECs were cultured in M199 complete growth medium until \textasciitilde80\% confluent. Cells were then washed with warmed PBS and incubated with 1ml of trypsin until cells thoroughly detached. Cells were transferred to a falcon tube with M199 and spun for 5 minutes at 400g. The supernatant was discarded, and cells were re-suspended in M199 media and transferred to 10mm radius 6 well plates. Once confluent, 3ml of 1\% DMSO in M199 was added to one half of the plates, and 3ml of 1\% XAV939 Wnt inhibitor in M199 to the other half. Cells were subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static controls.
+HUVECs were cultured in complete growth medium containing M199, sodium bicarbonate, pen-strep, amphotericin B, Hi-FBS, endothelial cell growth supplement (ECGS), and herparin. When \textasciitilde80\% confluent, cells were incubated with 1ml of trypsin until cells thoroughly detached, and neutralised with 9ml of M199. Cells were spun for 5 minutes at 400g to discard the supernatent, then re-suspended in M199 media before tranfering to 10mm radius 6 well plates. Once confluent, 3ml (\protect\hyperlink{ref-Warboys2019}{Warboys et al., 2019}) of 0.1\% DMSO in M199 or 0.1\% XAV939 in M199 were each added to half of the plates (\protect\hyperlink{ref-Zhu2017}{Zhu et al., 2017}). Cells were then subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static controls.
 
 \hypertarget{mrna-isolation-and-qpcr}{%
 \subsection{mRNA Isolation and qPCR}\label{mrna-isolation-and-qpcr}}
 
-Media was removed from the plates and cells were washed with cold PBS. Cells were isolated from the periphery and centre of the plates with PBS and centrifuged for 5 minutes at 400g to remove the supernatant. Total mRNA was extracted using the RNEasy Mini Kit (Qiagen) and the amount isolated was determined spectrophotometrically. cDNA synthesis was performed using the Verso cDNA Synthesis Kit (Thermo Scientific) with 5.5μl of 0.64\% mRNA. \emph{ANGPT2}, \emph{AXIN2}, \emph{THSB1}, and \emph{HPRT1} mRNA was quantified using StepOne qPCR (Thermo Scientific) using oligonucleotide qPCR primers from Ensembl (\protect\hyperlink{ref-howe2020}{Howe et al., 2020}) (Table \ref{tab:primers}).
+Cells were isolated from the periphery and centre of the plates with cold PBS and centrifuged for 5 minutes at 400g to remove the supernatant. Total mRNA was extracted using the RNEasy Mini Kit (Qiagen) and the concentration was determined spectrophotometrically. cDNA synthesis was performed using the Verso cDNA Synthesis Kit (Thermo Scientific) with 5.5μl of 0.01067\% mRNA. \emph{ANGPT2}, \emph{AXIN2}, \emph{THSB1}, and \emph{HPRT1} mRNA was quantified using StepOne qPCR (Thermo Scientific) with SYBR Green, using oligonucleotide qPCR primers from Ensembl (\protect\hyperlink{ref-howe2020}{Howe et al., 2020}) (Table \ref{tab:primers}).
 
 \begin{table}[!h]
 
@@ -249,17 +247,23 @@ Gene & Direction & Sequence\\
 \hypertarget{statistical-analysis}{%
 \subsection{Statistical Analysis}\label{statistical-analysis}}
 
-Relative expression is expressed as ΔΔCt fold change ± SEM, relative to the static control. Normality was determined with Kolmogorov-Smirnov Tests. Multiple-comparison analysis was performed using Kruskal-Wallis Test followed by post-hoc Dunn's Test. Comparisons to the static control were performed using one-way ANOVA followed by post-hoc Tukey's HSD test. Statistical analyses were performed in R (\protect\hyperlink{ref-R}{R Core Team, 2018}).
+Relative expression is expressed as 2\textsuperscript{ΔΔCt} fold change ± SEM. Normality was determined with Kolmogorov-Smirnov Tests. Multiple-comparison analysis was performed using Kruskal-Wallis Test followed by post-hoc Dunn's Test. Comparisons to the static control were performed using one-way ANOVA followed by post-hoc Tukey's HSD test. Statistical analyses were performed in R (\protect\hyperlink{ref-R}{R Core Team, 2018}).
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
 
-HUVECs were treated with XAV939 and exposed to low (centre) and high (periphery) shear stress for 72 hours using an orbital shaker. Expression of \emph{ANGPT2}, \emph{AXIN2}, and \emph{THSB1} were then quantified with qPCR. For each gene, expression was lower than the static control in all conditions. (\emph{P} \textless{} 0.0001). \emph{ANGPT2} expression is higher in cells exposed to high flow compared with low flow (\emph{P} \textless{} 0.05). XAV393 upregulated \emph{ANGPT2} in cells exposed to low stress (\emph{P} \textless{} 0.05 versus control), however, downregulated \emph{ANGPT2} in cells exposed to high stress (\emph{P} \textless{} 0.05 versus control) (Fig. \ref{fig:plots}A). Whereas in \emph{AXIN2} and \emph{THSB1}, expression did not significantly differ between the control cells exposed to low or high stress, and XAV393 downregulated cells exposed to both low and high stress (\emph{P} \textless{} 0.05 versus control) (Fig. \ref{fig:plots}BC).
+HUVECs were treated with XAV939 and exposed to low (centre) and high (periphery) shear stress for 72 hours using an orbital shaker. Expression of \emph{ANGPT2}, \emph{AXIN2}, and \emph{THSB1} were then quantified with qPCR.
+
+For each gene, expression was significantly lower than the static control in all conditions. (\emph{P} \textless{} 0.0001).
+
+\emph{ANGPT2} expression is higher in cells exposed to high flow compared with low flow (\emph{P} \textless{} 0.05). XAV393 upregulated \emph{ANGPT2} in cells exposed to low stress (\emph{P} \textless{} 0.05 versus control), however, downregulated \emph{ANGPT2} in cells exposed to high stress (\emph{P} \textless{} 0.05 versus control) (Fig. \ref{fig:plots}A).
+
+Whereas in \emph{AXIN2} and \emph{THSB1}, expression did not significantly differ between the control cells exposed to low or high stress, and XAV393 downregulated cells exposed to both low and high stress (\emph{P} \textless{} 0.05 versus control) (Fig. \ref{fig:plots}BC).
 
 \begin{figure}
 \centering
 \includegraphics{report_files/figure-latex/plots-1.pdf}
-\caption{\label{fig:plots}Relative mRNA expression of (\textbf{A}) angiopoeitin-2 , (\textbf{B}) axin-2, and (\textbf{C}) thrombospondin-1 in HUVECs exposed to high and low shear stress. Quantified by qPCR, normalised to the HPRT control and relative to the static control. Data is shown as fold change ± SEM. \(^{**}\)P \textless{} 0.01, and \(^*\)P \textless{} 0.05.}
+\caption{\label{fig:plots}(\textbf{ABC}) Cells were treated with DMSO(-) or XAV939(+) and exposured to low or high shear stress. Levels of angiopoeitin-2 , axin-2, and thrombospondin-1 mRNA quantified by qPCR. Data is shown as fold change ± SEM, normalised to the HPRT control and relative to the static control. \(^{**}\)\emph{P} \textless{} 0.01, and \(^*\)\emph{P} \textless{} 0.05. (\textbf{DEF}) Under the same conditions, gene expression of cells exposed to low stress are compared to cells exposed to high stress. Data is shown as fold change ± SEM, normalised to the HPRT control and relative to the periphery control. \(^{**}\)\emph{P} \textless{} 0.01, and \(^*\)\emph{P} \textless{} 0.05.}
 \end{figure}
 
 \hypertarget{discussion}{%
@@ -273,6 +277,8 @@ Limitations of orbital shaker = imporve method
 \hypertarget{future}{%
 \subsection{Future}\label{future}}
 
+primer specificity test
+
 epigenetics
 
 look at proliferation, apoptosis, senescence, inflammation = PERP, p53
@@ -285,7 +291,7 @@ look at emt = slug/snail?
 \section{Acknowledgements}\label{acknowledgements}}
 
 \begin{flushright}
-(489 Words) remove headers !!!
+(481 Words) remove headers !!!
 \end{flushright}
 
 \hypertarget{references}{%
@@ -298,6 +304,12 @@ Howe, K. L. {et al.} (2020). {Ensembl 2021}. \emph{Nucleic Acids Research}, 49 (
 
 \leavevmode\vadjust pre{\hypertarget{ref-R}{}}%
 R Core Team. (2018). {\emph{R: A language and environment for statistical computing}}. Vienna, Austria: R Foundation for Statistical Computing. {[}Online{]}. Available at: \url{https://www.R-project.org/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Warboys2019}{}}%
+Warboys, C. M., Ghim, M. and Weinberg, P. D. (2019). {Understanding mechanobiology in cultured endothelium: A review of the orbital shaker method}. \emph{Atherosclerosis}, 285, pp.170--177. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1016/j.atherosclerosis.2019.04.210}{10.1016/j.atherosclerosis.2019.04.210}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Zhu2017}{}}%
+Zhu, J. {et al.} (2017). {Regulation of angiogenic behaviors by oxytocin receptor through Gli1-indcued transcription of HIF-1? in human umbilical vein endothelial cells}. \emph{Biomedicine \& Pharmacotherapy}, 90, pp.928--934. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1016/j.biopha.2017.04.021}{10.1016/j.biopha.2017.04.021}.
 
 \end{CSLReferences}
 

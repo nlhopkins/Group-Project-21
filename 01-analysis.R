@@ -5,15 +5,10 @@ library(rstatix)
 
 ## ----✷----✷---- Results ----✷----✷----✷----✷----✷----✷----✷----✷----
 results <-
-    read.csv("../data/raw/results.csv",
+    read.csv("../data/raw/static.csv",
              header = TRUE) %>%
     janitor::clean_names() %>%
-    mutate(fold_sem = ((2 ^ -(dd_ct - sem_dd_ct)) - fold_change) - (fold_change - (2 ^ -(dd_ct + sem_dd_ct)))) %>%
     mutate(name = paste(location, condition, sep = "_"))
-
-
-
-
 
 
 ## ----✷----✷---- Tidy Results  ----✷----✷----✷----✷----✷----✷----
@@ -53,7 +48,7 @@ thsb1 %>% kruskal_test(fold_change ~ name)
 
 
 ang_test <-
-    ang %>% dunn_test(fold_change ~ name, p.adjust.method = "none") %>%
+    ang %>% dunn_test(dd_ct ~ name, p.adjust.method = "none") %>%
     add_xy_position(x = "name") %>%
     filter(group1 != "Centre_Control" |
                group2 != "Periphery_Drug") %>%
@@ -74,7 +69,7 @@ ang2_test <-
 
 
 axin_test <-
-    axin %>% dunn_test(fold_change ~ name, p.adjust.method = "none") %>%
+    axin %>% dunn_test(dd_ct ~ name, p.adjust.method = "none") %>%
     add_xy_position(x = "name") %>%
     filter(group1 != "Centre_Control" |
                group2 != "Periphery_Drug") %>%
@@ -95,7 +90,7 @@ axin2_test <-
 
 
 thsb1_test <-
-    thsb1 %>% dunn_test(fold_change ~ name, p.adjust.method = "none") %>%
+    thsb1 %>% dunn_test(dd_ct ~ name, p.adjust.method = "none") %>%
     add_xy_position(x = "name") %>%
     filter(group1 != "Centre_Control" |
                group2 != "Periphery_Drug") %>%
