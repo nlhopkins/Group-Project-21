@@ -4,12 +4,12 @@ library(rstatix)
 
 ymax <-
     function(x) {
-        (x$fold_change  - 1 + (x$fold_change - 1 > 0) * x$fold_sem)
+        (x$fold_change - 1 + (x$fold_change - 1 > 0) * x$fold_sem)
     }
 
 ymin <-
     function(x) {
-        (x$fold_change  - 1 - (x$fold_change - 1 < 0) * x$fold_sem)
+        (x$fold_change - 1 - (x$fold_change - 1 < 0) * x$fold_sem)
     }
 
 

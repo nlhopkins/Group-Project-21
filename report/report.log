@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.2.28)  8 MAR 2022 22:24
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.2.28)  9 MAR 2022 17:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1093,11 +1093,6 @@ LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
 (Font)              scaled to size 10.0pt on input line 223.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
 (Font)              scaled to size 8.4pt on input line 250.
-
-Underfull \hbox (badness 1584) in paragraph at lines 250--251
-\TU/Palatino(0)/m/sc/12 Relative expression is expressed as 2$[]$ fold change ± SEM. Normality was
- []
-
 File: report_files/figure-latex/plots-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/plots-1.pdf>
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be

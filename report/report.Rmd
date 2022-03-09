@@ -116,7 +116,7 @@ knitr::kable(
 
 ## Statistical Analysis
 
-Relative expression is expressed as 2^ΔΔCt^ fold change ± SEM. Normality was determined with Kolmogorov-Smirnov Tests. Multiple-comparison analysis was performed using Kruskal-Wallis Test followed by post-hoc Dunn's Test. Comparisons to the static control were performed using one-way ANOVA followed by post-hoc Tukey's HSD test. Statistical analyses were performed in R [@R].
+Relative expression is expressed as log2 2^ΔΔCt^ fold change ± SEM. Normality was determined with Kolmogorov-Smirnov Tests. Multiple-comparison analysis was performed using Kruskal-Wallis Test followed by post-hoc Dunn's Test. Comparisons to the static control were performed using one-way ANOVA followed by post-hoc Tukey's HSD test. Statistical analyses were performed in R [@R].
 
 # Results
 
@@ -129,7 +129,10 @@ For each gene, expression was significantly lower than the static control in all
 Whereas in *AXIN2* and *THSB1*, expression did not significantly differ between the control cells exposed to low or high stress, and XAV393 downregulated cells exposed to both low and high stress (*P* \< 0.05 versus control) (Fig. \@ref(fig:plots)BC).
 
 ```{r plots, fig.width = 10, fig.height = 8, fig.cap = "(**ABC**) Cells were  treated with DMSO(-) or XAV939(+) and exposured to low or high shear stress. Levels of angiopoeitin-2 , axin-2, and thrombospondin-1 mRNA quantified by qPCR. Data is shown as fold change ± SEM, normalised to the HPRT control and relative to the static control. $^{**}$*P* < 0.01, and $^*$*P* < 0.05. (**DEF**) Under the same conditions, gene expression of cells exposed to low stress are compared to cells exposed to high stress. Data is shown as fold change ± SEM, normalised to the HPRT control and relative to the periphery control. $^{**}$*P* < 0.01, and $^*$*P* < 0.05."}
-ggarrange(plot2, plot3, nrow = 2)
+
+plots <- ggarrange(plot2, plot3, nrow = 2)
+ggsave("plots.png", plots, width = 10, height = 8)
+plots
 ```
 
 ```{=html}

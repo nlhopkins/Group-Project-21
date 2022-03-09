@@ -5,12 +5,12 @@ library(rstatix)
 
 ymax <-
     function(x) {
-        (x$fold_change  - 1 + (x$fold_change - 1 > 0) * x$fold_sem)
+        (x$fold_change + (x$fold_change > 0) * x$fold_sem)
     }
 
 ymin <-
     function(x) {
-        (x$fold_change  - 1 - (x$fold_change - 1 < 0) * x$fold_sem)
+        (x$fold_change - (x$fold_change < 0) * x$fold_sem)
     }
 
 ## ----✷----✷---- results2 ----✷----✷----✷----✷----✷----✷----✷----✷----
@@ -130,7 +130,7 @@ thsb12_test <-
 
 ## ----✷----✷---- ANGPT2 plot ----✷----✷----✷----✷----✷----✷----
 ang_plot_3 <- ang %>%
-    ggplot(aes(y = fold_change - 1, x = name)) +
+    ggplot(aes(y = fold_change, x = name)) +
     geom_bar(
         aes(fill = condition),
         show.legend = FALSE,
@@ -195,7 +195,7 @@ ang_plot_3
 
 ## ----✷----✷---- Axin Plot ----✷----✷----✷----✷----✷----✷----
 axin_plot_3 <- axin %>%
-    ggplot(aes(y = fold_change - 1, x = name)) +
+    ggplot(aes(y = fold_change, x = name)) +
     geom_bar(
         aes(fill = condition),
         show.legend = FALSE,
@@ -256,7 +256,7 @@ axin_plot_3
 
 ## ----✷----✷---- THSB1 Plot ----✷----✷----✷----✷----✷----✷----
 thsb1_plot_3 <- thsb1 %>%
-    ggplot(aes(y = fold_change - 1, x = name)) +
+    ggplot(aes(y = fold_change, x = name)) +
     geom_bar(
         aes(fill = condition),
         show.legend = FALSE,
