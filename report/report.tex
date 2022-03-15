@@ -211,7 +211,7 @@ XAV-939 Wnt/Beta Catenin inhibitor, acts by inhibiting tankyrase
 \hypertarget{orbital-shaker}{%
 \subsection{Orbital Shaker}\label{orbital-shaker}}
 
-HUVECs were cultured in complete growth medium containing M199, sodium bicarbonate, pen-strep, amphotericin B, Hi-FBS, endothelial cell growth supplement (ECGS), and herparin. When \textasciitilde80\% confluent, cells were incubated with 1ml of trypsin until cells thoroughly detached, and neutralised with 9ml of M199. Cells were spun for 5 minutes at 400g to discard the supernatent, then re-suspended in M199 media before tranfering to 10mm radius 6 well plates. Once confluent, 3ml (\protect\hyperlink{ref-Warboys2019}{Warboys et al., 2019}) of 0.1\% DMSO in M199 or 0.1\% XAV939 in M199 were each added to half of the plates (\protect\hyperlink{ref-Zhu2017}{Zhu et al., 2017}). Cells were then subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static controls.
+HUVECs were cultured in complete growth medium containing M199, sodium bicarbonate, pen-strep, amphotericin B, Hi-FBS, endothelial cell growth supplement (ECGS), and herparin. When \textasciitilde80\% confluent, cells were incubated with 1ml of trypsin until cells thoroughly detached, and neutralised with 9ml of M199. Cells were spun for 5 minutes at 400g to discard the supernatent, then re-suspended in M199 media before tranfering to 10mm radius 6 well plates. Once confluent, 3ml (\protect\hyperlink{ref-Warboys2019}{Warboys, Ghim and Weinberg, 2019}) of 0.1\% DMSO in M199 or 0.1\% XAV939 in M199 were each added to half of the plates (\protect\hyperlink{ref-Zhu2017}{Zhu et al., 2017}). Cells were then subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static controls.
 
 \hypertarget{mrna-isolation-and-qpcr}{%
 \subsection{mRNA Isolation and qPCR}\label{mrna-isolation-and-qpcr}}
@@ -247,18 +247,14 @@ Gene & Direction & Sequence\\
 \hypertarget{statistical-analysis}{%
 \subsection{Statistical Analysis}\label{statistical-analysis}}
 
-Relative expression is expressed as log2 2\textsuperscript{ΔΔCt} fold change ± SEM. Normality was determined with Kolmogorov-Smirnov Tests. Multiple-comparison analysis was performed using Kruskal-Wallis Test followed by post-hoc Dunn's Test. Comparisons to the static control were performed using one-way ANOVA followed by post-hoc Tukey's HSD test. Statistical analyses were performed in R (\protect\hyperlink{ref-R}{R Core Team, 2018}).
+Relative expression is expressed as 2\textsuperscript{ΔΔCt} fold change ± SEM. Normality was determined with Kolmogorov-Smirnov Tests. Multiple-comparison analysis was performed using Kruskal-Wallis Test followed by post-hoc Dunn's Test. All analyses were performed in R (\protect\hyperlink{ref-R}{R Core Team, 2018}).
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
 
-HUVECs were treated with XAV939 and exposed to low (centre) and high (periphery) shear stress for 72 hours using an orbital shaker. Expression of \emph{ANGPT2}, \emph{AXIN2}, and \emph{THSB1} were then quantified with qPCR.
+In the orbital shaker system, low shear stress downregulated the expression of AXIN2, ANGPT2, and THBS1 in human umbilical vein endothelial cells. \emph{AXIN2}, a known Wnt target, decreased by 0.28-fold in low shear stress. Similarly, ANGPT2 was decreased by \textasciitilde0.15-fold, and THBS1 was decreased 0.12-fold.
 
-For each gene, expression was significantly lower than the static control in all conditions. (\emph{P} \textless{} 0.0001).
-
-\emph{ANGPT2} expression is higher in cells exposed to high flow compared with low flow (\emph{P} \textless{} 0.05). XAV393 upregulated \emph{ANGPT2} in cells exposed to low stress (\emph{P} \textless{} 0.05 versus control), however, downregulated \emph{ANGPT2} in cells exposed to high stress (\emph{P} \textless{} 0.05 versus control) (Fig. \ref{fig:plots}A).
-
-Whereas in \emph{AXIN2} and \emph{THSB1}, expression did not significantly differ between the control cells exposed to low or high stress, and XAV393 downregulated cells exposed to both low and high stress (\emph{P} \textless{} 0.05 versus control) (Fig. \ref{fig:plots}BC).
+Exposure to LSS with the addition of a Wnt inhibitor (XAV939) intensified the expression of \emph{AXIN2} by 18.8-fold, ANGPT by 33.4-fold, and THBS1 by 35.6-fold. Conversely, XAV929 decreased expression in high shear stress. AXIN2 decreased 7.6-fold, ANGPT2 by 5.2-fold, and THBS1 by 16.4-fold.
 
 \begin{figure}
 \centering
@@ -291,7 +287,7 @@ look at emt = slug/snail?
 \section{Acknowledgements}\label{acknowledgements}}
 
 \begin{flushright}
-(482 Words) remove headers !!!
+(421 Words) remove headers !!!
 \end{flushright}
 
 \hypertarget{references}{%
@@ -300,16 +296,20 @@ look at emt = slug/snail?
 \hypertarget{refs}{}
 \begin{CSLReferences}{0}{0}
 \leavevmode\vadjust pre{\hypertarget{ref-howe2020}{}}%
-Howe, K. L. {et al.} (2020). {Ensembl 2021}. \emph{Nucleic Acids Research}, 49 (D1), pp.D884--D891. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1093/nar/gkaa942}{10.1093/nar/gkaa942}.
+\CSLLeftMargin{1. }
+\CSLRightInline{Howe, K. L. {et al.} (2020). {Ensembl 2021}. \emph{Nucleic Acids Research}, 49 (D1), pp.D884--D891. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1093/nar/gkaa942}{10.1093/nar/gkaa942}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-R}{}}%
-R Core Team. (2018). {\emph{R: A language and environment for statistical computing}}. Vienna, Austria: R Foundation for Statistical Computing. {[}Online{]}. Available at: \url{https://www.R-project.org/}.
+\CSLLeftMargin{2. }
+\CSLRightInline{R Core Team. (2018). {\emph{R: A language and environment for statistical computing}}. Vienna, Austria: R Foundation for Statistical Computing. {[}Online{]}. Available at: \url{https://www.R-project.org/}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Warboys2019}{}}%
-Warboys, C. M., Ghim, M. and Weinberg, P. D. (2019). {Understanding mechanobiology in cultured endothelium: A review of the orbital shaker method}. \emph{Atherosclerosis}, 285, pp.170--177. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1016/j.atherosclerosis.2019.04.210}{10.1016/j.atherosclerosis.2019.04.210}.
+\CSLLeftMargin{3. }
+\CSLRightInline{Warboys, C. M., Ghim, M. and Weinberg, P. D. (2019). {Understanding mechanobiology in cultured endothelium: A review of the orbital shaker method}. \emph{Atherosclerosis}, 285, pp.170--177. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1016/j.atherosclerosis.2019.04.210}{10.1016/j.atherosclerosis.2019.04.210}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Zhu2017}{}}%
-Zhu, J. {et al.} (2017). {Regulation of angiogenic behaviors by oxytocin receptor through Gli1-indcued transcription of HIF-1? in human umbilical vein endothelial cells}. \emph{Biomedicine \& Pharmacotherapy}, 90, pp.928--934. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1016/j.biopha.2017.04.021}{10.1016/j.biopha.2017.04.021}.
+\CSLLeftMargin{4. }
+\CSLRightInline{Zhu, J. {et al.} (2017). {Regulation of angiogenic behaviors by oxytocin receptor through Gli1-indcued transcription of HIF-1? in human umbilical vein endothelial cells}. \emph{Biomedicine \& Pharmacotherapy}, 90, pp.928--934. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1016/j.biopha.2017.04.021}{10.1016/j.biopha.2017.04.021}.}
 
 \end{CSLReferences}
 
