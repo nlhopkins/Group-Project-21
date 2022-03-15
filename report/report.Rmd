@@ -14,7 +14,7 @@ linespacing: 1.5
 fontsize: 12pt
 mainfont: Palatino
 bibliography: ../refs.bib
-csl: ../university-of-york-harvard.csl
+csl: ../csl/university-of-york-harvard.csl
 link-citations: true
 citecolor: teal
 linkcolor: teal
@@ -47,8 +47,8 @@ library(wordcountaddin) # Load wordcountaddin. Counts words and characters in te
 ```
 
 ```{r source}
-source("../02-analysis.R", local = knitr::knit_global()) 
-source("../03-analysis.R", local = knitr::knit_global()) 
+source("../R/02-static_dmso.R", local = knitr::knit_global()) 
+source("../R/03-periphery.R", local = knitr::knit_global()) 
 ```
 
 # Introduction
@@ -116,17 +116,13 @@ knitr::kable(
 
 ## Statistical Analysis
 
-Relative expression is expressed as log2 2^ΔΔCt^ fold change ± SEM. Normality was determined with Kolmogorov-Smirnov Tests. Multiple-comparison analysis was performed using Kruskal-Wallis Test followed by post-hoc Dunn's Test. Comparisons to the static control were performed using one-way ANOVA followed by post-hoc Tukey's HSD test. Statistical analyses were performed in R [@R].
+Relative expression is expressed as 2^ΔΔCt^ fold change ± SEM. Normality was determined with Kolmogorov-Smirnov Tests. Multiple-comparison analysis was performed using Kruskal-Wallis Test followed by post-hoc Dunn's Test. All analyses were performed in R [@R].
 
 # Results
 
-HUVECs were treated with XAV939 and exposed to low (centre) and high (periphery) shear stress for 72 hours using an orbital shaker. Expression of *ANGPT2*, *AXIN2*, and *THSB1* were then quantified with qPCR.
+In the orbital shaker system, low shear stress downregulated the expression of AXIN2, ANGPT2, and THBS1 in human umbilical vein endothelial cells. *AXIN2*, a known Wnt target, decreased by 0.28-fold in low shear stress. Similarly, ANGPT2 was decreased by \~0.15-fold, and THBS1 was decreased 0.12-fold.
 
-For each gene, expression was significantly lower than the static control in all conditions. (*P* \< 0.0001).
-
-*ANGPT2* expression is higher in cells exposed to high flow compared with low flow (*P* \< 0.05). XAV393 upregulated *ANGPT2* in cells exposed to low stress (*P* \< 0.05 versus control), however, downregulated *ANGPT2* in cells exposed to high stress (*P* \< 0.05 versus control) (Fig. \@ref(fig:plots)A).
-
-Whereas in *AXIN2* and *THSB1*, expression did not significantly differ between the control cells exposed to low or high stress, and XAV393 downregulated cells exposed to both low and high stress (*P* \< 0.05 versus control) (Fig. \@ref(fig:plots)BC).
+Exposure to LSS with the addition of a Wnt inhibitor (XAV939) intensified the expression of *AXIN2* by 18.8-fold, ANGPT by 33.4-fold, and THBS1 by 35.6-fold. Conversely, XAV929 decreased expression in high shear stress. AXIN2 decreased 7.6-fold, ANGPT2 by 5.2-fold, and THBS1 by 16.4-fold.
 
 ```{r plots, fig.width = 10, fig.height = 8, fig.cap = "(**ABC**) Cells were  treated with DMSO(-) or XAV939(+) and exposured to low or high shear stress. Levels of angiopoeitin-2 , axin-2, and thrombospondin-1 mRNA quantified by qPCR. Data is shown as fold change ± SEM, normalised to the HPRT control and relative to the static control. $^{**}$*P* < 0.01, and $^*$*P* < 0.05. (**DEF**) Under the same conditions, gene expression of cells exposed to low stress are compared to cells exposed to high stress. Data is shown as fold change ± SEM, normalised to the HPRT control and relative to the periphery control. $^{**}$*P* < 0.01, and $^*$*P* < 0.05."}
 
