@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Content-Type: rq
+Implementation-Title: StepOne Software
+Implementation-Version: StepOne™ Software v2.3
+Specification-Vendor: Applied Biosystems
+Specification-Title: Experiment Document Specification
+Specification-Version: 1.1.1
+
