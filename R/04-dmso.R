@@ -2,44 +2,49 @@ library(tidyverse)
 library(ggpubr)
 library(rstatix)
 
+
 ymax <-
     function(x) {
-        (x$fold_change - 1 + (x$fold_change - 1 > 0) * x$fold_sem)
+        (x$fold_change + (x$fold_change > 0) * x$fold_sem)
     }
 
 ymin <-
     function(x) {
-        (x$fold_change - 1 - (x$fold_change - 1 < 0) * x$fold_sem)
+        (x$fold_change - (x$fold_change < 0) * x$fold_sem)
     }
 
 
-## ----✷----✷---- results2 ----✷----✷----✷----✷----✷----✷----✷----✷----
-results2 <-
-    read.csv("../data/raw/static_control.csv",
+
+## ----✷----✷---- results4 ----✷----✷----✷----✷----✷----✷----✷----✷----
+results4 <-
+    read.csv("../data/raw/dmso.csv",
              header = TRUE) %>%
     janitor::clean_names() %>%
     mutate(name = paste(location, condition, sep = "_"))
 
 
 
-## ----✷----✷---- Tidy results2  ----✷----✷----✷----✷----✷----✷----
-ang <- results2 %>%
-    filter(primer == "ANGPT2" & !str_detect(name, "Static"))
+## ----✷----✷---- Tidy results4  ----✷----✷----✷----✷----✷----✷----
+ang <- results4 %>%
+    filter(primer == "ANGPT2" &
+               condition == "Drug", location != "Static")
 
-ang2 <- results2 %>%
+ang2 <- results4 %>%
     filter(primer == "ANGPT2")
 
 
-axin <- results2 %>%
-    filter(primer == "AXIN2" & !str_detect(name, "Static"))
-axin2 <- results2 %>%
+axin <- results4 %>%
+    filter(primer == "AXIN2" &
+               condition == "Drug", location != "Static")
+axin2 <- results4 %>%
     filter(primer == "AXIN2")
 
 
-thsb1 <- results2 %>%
-    filter(primer == "THSB1" & !str_detect(name, "Static"))
-thsb12 <- results2 %>%
-    filter(primer == "THSB1")
+THBS1 <- results4 %>%
+    filter(primer == "THBS1" &
+               condition == "Drug", location != "Static")
+THBS12 <- results4 %>%
+    filter(primer == "THBS1")
 
 
 ## ----✷----✷---- Statistical Tests ----✷----✷----
@@ -49,13 +54,13 @@ ks.test(ks_ang, "pnorm")
 ks_axin <- axin$dd_ct[!duplicated(axin$fold_change)]
 ks.test(ks_axin, "pnorm")
 
-ks_thsb1 <- thsb1$dd_ct[!duplicated(thsb1$fold_change)]
-ks.test(ks_thsb1, "pnorm")
+ks_THBS1 <- THBS1$dd_ct[!duplicated(THBS1$fold_change)]
+ks.test(ks_THBS1, "pnorm")
 
 
 ang %>% kruskal_test(fold_change ~ name)
 axin %>% kruskal_test(fold_change ~ name)
-thsb1 %>% kruskal_test(fold_change ~ name)
+THBS1 %>% kruskal_test(fold_change ~ name)
 
 ang_test <-
     ang %>% dunn_test(dd_ct ~ name, p.adjust.method = "none") %>%
@@ -68,13 +73,9 @@ ang2_test <-
     ang2 %>% tukey_hsd(dd_ct ~ name) %>%
     add_xy_position(x = "name") %>%
     filter(
-        group1 == "Centre_Drug" & group2 == "Static_Control" |
-            group1 == "Periphery_Drug" &
-            group2 == "Static_Control" |
-            group1 == "Centre_Control" &
-            group2 == "Static_Control" |
-            group1 == "Periphery_Control" &
-            group2 == "Static_Control"
+        group1 == "Centre_Control" & group2 == "Periphery_Control" |
+            group1 == "Centre_Drug" &
+            group2 == "Periphery_Drug"
     )
 
 
@@ -90,41 +91,33 @@ axin2_test <-
     axin2 %>% tukey_hsd(dd_ct ~ name) %>%
     add_xy_position(x = "name") %>%
     filter(
-        group1 == "Centre_Drug" & group2 == "Static_Control" |
-            group1 == "Periphery_Drug" &
-            group2 == "Static_Control" |
-            group1 == "Centre_Control" &
-            group2 == "Static_Control" |
-            group1 == "Periphery_Control" &
-            group2 == "Static_Control"
+        group1 == "Centre_Control" & group2 == "Periphery_Control" |
+            group1 == "Centre_Drug" &
+            group2 == "Periphery_Drug"
     )
 
 
 
-thsb1_test <-
-    thsb1 %>% dunn_test(dd_ct ~ name, p.adjust.method = "none") %>%
+THBS1_test <-
+    THBS1 %>% dunn_test(dd_ct ~ name, p.adjust.method = "none") %>%
     add_xy_position(x = "name") %>%
     filter(group1 != "Centre_Control" |
                group2 != "Periphery_Drug") %>%
     filter(group1 != "Centre_Drug" | group2 != "Periphery_Control")
 
-thsb12_test <-
-    thsb12 %>% tukey_hsd(dd_ct ~ name) %>%
+THBS12_test <-
+    THBS12 %>% tukey_hsd(dd_ct ~ name) %>%
     add_xy_position(x = "name") %>%
     filter(
-        group1 == "Centre_Drug" & group2 == "Static_Control" |
-            group1 == "Periphery_Drug" &
-            group2 == "Static_Control" |
-            group1 == "Centre_Control" &
-            group2 == "Static_Control" |
-            group1 == "Periphery_Control" &
-            group2 == "Static_Control"
+        group1 == "Centre_Control" & group2 == "Periphery_Control" |
+            group1 == "Centre_Drug" &
+            group2 == "Periphery_Drug"
     )
 
 
 ## ----✷----✷---- ANGPT2 plot ----✷----✷----✷----✷----✷----✷----
-ang_plot_2 <- ang %>%
-    ggplot(aes(y = fold_change - 1, x = name)) +
+ang_plot_3 <- ang %>%
+    ggplot(aes(y = fold_change, x = name)) +
     geom_bar(
         aes(fill = condition),
         show.legend = FALSE,
@@ -139,7 +132,7 @@ ang_plot_2 <- ang %>%
         size = 0.4,
         width = 0.3
     ) +
-    scale_x_discrete(labels = c("-", "+", "-", "+")) +
+    scale_x_discrete(labels = c("Centre", "Periphery")) +
     labs(title = "ANGPT2",
          x = "",
          y = "Relative mRNA Expression",
@@ -148,33 +141,20 @@ ang_plot_2 <- ang %>%
     theme(
         plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
         text = element_text(size = 14),
-        axis.text.x = element_text(size = 16, hjust = -0.5),
+        axis.text.x = element_text(face = "bold"),
         axis.title.y = element_text(face = "bold"),
-        axis.ticks = element_blank(),
-        strip.placement = "outside",
-        strip.background = element_rect(colour = "white", fill = "white"),
-        strip.text.x = element_text(size = 12, face = "bold"),
-        panel.spacing = unit(0, "lines")
+        axis.ticks = element_blank()
     ) +
-    scale_fill_grey(
-        start = 1,
-        end = 0
-    ) +
+    scale_fill_grey(start = 1,
+                    end = 0) +
     scale_y_continuous(
         expand = c(0, 0),
-        breaks = seq(-1, 1, 0.5),
-        limits = c(-1.2, 1.2)
+        breaks = seq(0, 50, 5),
+        limits = c(0, 50)
     ) +
-    geom_hline(yintercept = 0) +
-    facet_grid(
-        ~ location,
-        scales = "free_x",
-        space = "free_x",
-        switch = "x",
-        labeller = labeller(location = c("Centre" = "Low", "Periphery" = "High"))
-    )
+    geom_hline(yintercept = 1, linetype = 3)
 
-ang_plot_2
+ang_plot_3
 
 # + stat_pvalue_manual(
 #         ang_test,
@@ -199,9 +179,10 @@ ang_plot_2
 #     )
 
 
+
 ## ----✷----✷---- Axin Plot ----✷----✷----✷----✷----✷----✷----
-axin_plot_2 <- axin %>%
-    ggplot(aes(y = fold_change - 1, x = name)) +
+axin_plot_3 <- axin %>%
+    ggplot(aes(y = fold_change, x = name)) +
     geom_bar(
         aes(fill = condition),
         show.legend = FALSE,
@@ -216,7 +197,7 @@ axin_plot_2 <- axin %>%
         size = 0.4,
         width = 0.3
     ) +
-    scale_x_discrete(labels = c("-", "+", "-", "+")) +
+    scale_x_discrete(labels = c("Centre", "Periphery")) +
     labs(title = "AXIN2",
          x = "",
          y = "Relative mRNA Expression",
@@ -225,35 +206,18 @@ axin_plot_2 <- axin %>%
     theme(
         plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
         text = element_text(size = 14),
-        axis.text.x = element_text(size = 16, hjust = -0.5),
+        axis.text.x = element_text(face = "bold"),
         axis.title.y = element_text(face = "bold"),
-        axis.ticks = element_blank(),
-        strip.placement = "outside",
-        strip.background = element_rect(colour = "white", fill = "white"),
-        strip.text.x = element_text(size = 12, face = "bold"),
-        panel.spacing = unit(0, "lines")
+        axis.ticks = element_blank()
     ) +
-    scale_fill_grey(
-        start = 1,
-        end = 0,
-        labels = c("Control", "XAV939")
-    ) +
+    scale_fill_grey(start = 1,
+                    end = 0) +
     scale_y_continuous(
         expand = c(0, 0),
-        breaks = seq(-1, 1, 0.5),
-        limits = c(-1.2, 1.2)
+        breaks = seq(0, 50, 10),
+        limits = c(0, 50)
     ) +
-    geom_hline(yintercept = 0) +
-    facet_grid(
-        ~ location,
-        scales = "free_x",
-        space = "free_x",
-        switch = "x",
-        labeller = labeller(location = c("Centre" = "Low", "Periphery" = "High"))
-    )
-
-axin_plot_2
-
+    geom_hline(yintercept = 1, linetype = 3)
 
 # + stat_pvalue_manual(
 #         axin_test,
@@ -275,11 +239,11 @@ axin_plot_2
 #         size = 6
 #     )
 
-axin_plot_2
+axin_plot_3
 
 ## ----✷----✷---- THSB1 Plot ----✷----✷----✷----✷----✷----✷----
-thsb1_plot_2 <- thsb1 %>%
-    ggplot(aes(y = fold_change - 1, x = name)) +
+THBS1_plot_3 <- THBS1 %>%
+    ggplot(aes(y = fold_change, x = name)) +
     geom_bar(
         aes(fill = condition),
         show.legend = FALSE,
@@ -288,14 +252,14 @@ thsb1_plot_2 <- thsb1 %>%
         colour = "black"
     ) +
     geom_errorbar(
-        aes(ymin = ymin(thsb1),
-            ymax = ymax(thsb1)),
+        aes(ymin = ymin(THBS1),
+            ymax = ymax(THBS1)),
         position = position_dodge(1),
         size = 0.4,
-        width = 0.4
+        width = 0.3
     ) +
-    scale_x_discrete(labels = c("-", "+", "-", "+")) +
-    labs(title = "THSB1",
+    scale_x_discrete(labels = c("Centre", "Periphery")) +
+    labs(title = "THBS1",
          x = "",
          y = "Relative mRNA Expression",
          fill = "") +
@@ -303,13 +267,9 @@ thsb1_plot_2 <- thsb1 %>%
     theme(
         plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
         text = element_text(size = 14),
-        axis.text.x = element_text(size = 16, hjust = -0.5),
+        axis.text.x = element_text(face = "bold"),
         axis.title.y = element_text(face = "bold"),
-        axis.ticks = element_blank(),
-        strip.placement = "outside",
-        strip.background = element_rect(colour = "white", fill = "white"),
-        strip.text.x = element_text(size = 12, face = "bold"),
-        panel.spacing = unit(0, "lines")
+        axis.ticks = element_blank()
     ) +
     scale_fill_grey(
         start = 1,
@@ -318,23 +278,14 @@ thsb1_plot_2 <- thsb1 %>%
     ) +
     scale_y_continuous(
         expand = c(0, 0),
-        breaks = seq(-1, 1.5, 0.5),
-        limits = c(-1.2, 1.7)
+        breaks = seq(0, 50, 10),
+        limits = c(0, 50)
     ) +
-    geom_hline(yintercept = 0) +
-    facet_grid(
-        ~ location,
-        scales = "free_x",
-        space = "free_x",
-        switch = "x",
-        labeller = labeller(location = c("Centre" = "Low", "Periphery" = "High"))
-    )
-
-
+    geom_hline(yintercept = 1, linetype = 3)
 
 # +
 #     stat_pvalue_manual(
-#         thsb1_test,
+#         THBS1_test,
 #         label = "p.adj.signif",
 #         tip.length = 0,
 #         hide.ns = TRUE,
@@ -342,7 +293,7 @@ thsb1_plot_2 <- thsb1 %>%
 #         size = 6
 #     )
 # + stat_pvalue_manual(
-#         thsb12_test,
+#         THBS12_test,
 #         y.position = c((0.1246 + 0.015852085 + 0.005), (0.0263 + 0.009946131 + 0.005)),
 #         label = "p.adj.signif",
 #         remove.bracket = TRUE,
@@ -352,20 +303,19 @@ thsb1_plot_2 <- thsb1 %>%
 #         size = 6
 #     )
 
-thsb1_plot_2
+THBS1_plot_3
 
 ## ----✷----✷---- Plot ----✷----✷----✷----✷----✷----✷----
 
-plot2 <- ggarrange(
-    ang_plot_2,
-    axin_plot_2,
-    thsb1_plot_2,
-    labels = c("A", "B", "C"),
+plot4 <- ggarrange(
+    ang_plot_3,
+    axin_plot_3,
+    THBS1_plot_3,
+    labels = c("D", "E", "F"),
     font.label = list(face = "bold", size = 20),
     label.x = -0.03,
     label.y = 1.01,
     ncol = 3,
-    nrow = 1,
-    common.legend = FALSE
+    nrow = 1
 )
-plot2
+plot4
