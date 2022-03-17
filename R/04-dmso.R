@@ -149,7 +149,7 @@ ang_plot_3 <- ang %>%
                     end = 0) +
     scale_y_continuous(
         expand = c(0, 0),
-        breaks = seq(0, 50, 5),
+        breaks = seq(0, 50, 10),
         limits = c(0, 50)
     ) +
     geom_hline(yintercept = 1, linetype = 3)

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.2.28)  15 MAR 2022 22:35
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.2.28)  17 MAR 2022 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -251,7 +251,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/lmr/bx/n --> TU/Palatino(1)/b/n on input line 24.
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2022/02/22 v3.0c Micro-typographical refinements (RS)
+Package: microtype 2022/03/14 v3.0d Micro-typographical refinements (RS)
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
@@ -265,17 +265,17 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1027.
 LaTeX Info: Redefining \leftprotrusion on input line 1028.
 LaTeX Info: Redefining \rightprotrusion on input line 1036.
-LaTeX Info: Redefining \textls on input line 1200.
+LaTeX Info: Redefining \textls on input line 1195.
 \MT@outer@kern=\dimen151
-LaTeX Info: Redefining \textmicrotypecontext on input line 1786.
+LaTeX Info: Redefining \textmicrotypecontext on input line 1781.
 \MT@listname@count=\count290
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype-xetex.def
-File: microtype-xetex.def 2022/02/22 v3.0c Definitions specific to xetex (RS)
-LaTeX Info: Redefining \lsstyle on input line 234.
+File: microtype-xetex.def 2022/03/14 v3.0d Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 236.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2022/02/22 v3.0c microtype main configuration file (RS)
+File: microtype.cfg 2022/03/14 v3.0d microtype main configuration file (RS)
 )) (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -1074,114 +1074,149 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--170
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/it' will be
 (Font)              scaled to size 12.0pt on input line 172.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 184.
+(Font)              scaled to size 14.4pt on input line 188.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/n/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 184.
+(Font)              scaled to size 14.4pt on input line 188.
 [1]
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 219.
+(Font)              scaled to size 12.0pt on input line 222.
 [2]
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 223.
+(Font)              scaled to size 10.0pt on input line 226.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 223.
+(Font)              scaled to size 10.0pt on input line 226.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 8.4pt on input line 250.
-
-Underfull \hbox (badness 1584) in paragraph at lines 250--251
-\TU/Palatino(0)/m/sc/12 Relative expression is expressed as 2$[]$ fold change ± SEM. Normality was
- []
-
+(Font)              scaled to size 8.4pt on input line 253.
 File: report_files/figure-latex/plots-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/plots-1.pdf>
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.89172pt on input line 262.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.6242pt on input line 262.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.44586pt on input line 262.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.89279pt on input line 262.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.62495pt on input line 262.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.4464pt on input line 262.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.8905pt on input line 262.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.62335pt on input line 262.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.44525pt on input line 262.
-LaTeX Font Info:    Font shape `TU/Palatino(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 262.
 [3] [4]
-Overfull \hbox (2.0pt too wide) in paragraph at lines 298--301
+Overfull \hbox (2.0pt too wide) in paragraph at lines 304--307
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--301
+Underfull \hbox (badness 10000) in paragraph at lines 304--307
 
  []
 
 
-Overfull \hbox (2.0pt too wide) in paragraph at lines 302--305
+Overfull \hbox (2.0pt too wide) in paragraph at lines 308--311
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--305
+Underfull \hbox (badness 10000) in paragraph at lines 308--311
 
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 308--308
+Overfull \hbox (2.0pt too wide) in paragraph at lines 312--315
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--315
+
+ []
+
+
+Overfull \hbox (2.0pt too wide) in paragraph at lines 316--319
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--319
+
+ []
+
+
+Overfull \hbox (2.0pt too wide) in paragraph at lines 320--323
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--323
+
+ []
+
+
+Overfull \hbox (2.0pt too wide) in paragraph at lines 324--327
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--327
+
+ []
+
+
+Overfull \hbox (2.0pt too wide) in paragraph at lines 328--331
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--331
+
+ []
+
+[5]
+Overfull \hbox (2.0pt too wide) in paragraph at lines 332--335
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--335
+
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 338--338
 []\TU/Palatino(0)/m/sc/12 Warboys, C. M., Ghim, M. and Weinberg, P. D. (2019). Understand-
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 308--308
+Underfull \hbox (badness 1939) in paragraph at lines 338--338
 \TU/Palatino(0)/m/sc/12 ing mechanobiology in cultured endothelium: A review of the orbital
  []
 
 
-Overfull \hbox (2.0pt too wide) in paragraph at lines 306--309
+Overfull \hbox (2.0pt too wide) in paragraph at lines 336--339
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--309
+Underfull \hbox (badness 10000) in paragraph at lines 336--339
 
  []
 
 
-Overfull \hbox (2.0pt too wide) in paragraph at lines 310--313
+Overfull \hbox (2.0pt too wide) in paragraph at lines 340--343
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--313
+Underfull \hbox (badness 10000) in paragraph at lines 340--343
 
  []
 
-[5] (./report.aux)
+[6] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22943 strings out of 478179
- 422390 string characters out of 5852975
- 904273 words of memory out of 5000000
- 43207 multiletter control sequences out of 15000+600000
- 475938 words of font info for 96 fonts, out of 8000000 for 9000
+ 22891 strings out of 478179
+ 420744 string characters out of 5852975
+ 903948 words of memory out of 5000000
+ 43168 multiletter control sequences out of 15000+600000
+ 473028 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,16n,122p,1790b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (7 pages).
+Output written on report.pdf (8 pages).

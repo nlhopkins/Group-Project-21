@@ -47,29 +47,32 @@ library(wordcountaddin) # Load wordcountaddin. Counts words and characters in te
 ```
 
 ```{r source}
-source("../R/02-static_dmso.R", local = knitr::knit_global()) 
-source("../R/03-periphery.R", local = knitr::knit_global()) 
+source("../R/final.R", local = knitr::knit_global())
 ```
 
 # Introduction
 
-## Atherosclerosis
+Atherosclerosis is an chronic inflammatory disease characterised by the formation of arterial plaques. Haemodynamic shear stress has been identified as a modulator of site specificity in atherosclerosis, which occurs preferentially in regions exposed to low, oscillatory shear stress. Whereas areas of high, laminar shear stress is atheroprotective [@timmins2017]. Shear stress is an important factor in regulating gene expression in vascular endothelial cells [@Ni2010], which is though to contribute to the susceptibility of plaque formation in atheroprone sites.
 
-## Flow
+Multiple omics studies have implicated variations in flow with the regulation of developmental signalling pathways in atherosclerosis, including the Wnt Pathway [@Souilhol2020; @Gelfand2011]. Wnt is an evolutionarily conserved pathway, with a crucial role in axis patterning during embryonic development.
 
-## Flow During Development
+## Wnt Pathway
 
-## Developmental Proteins / mechanosensors
+Multiple studies have demonstrated that the Wnt signalling pathway is mechanosensitive [@Cha2016; @Franco2016].
 
-## Endothelial
+## ANGPT2 & THBS1
 
-## Pathway
+Angiopoietin-2 (ANGPT2) is a well established growth factor involved in angiogenesis.
 
-Does Axin, Angp2, Thrombosin-2 change if Wnt is inhibited?
+Thrombospondin-1 (THBS1) is an anti-angiogeneic.
+
+-   What are they?
+
+-   Previous studies
 
 ## Hypothesis
 
-XAV-939 Wnt/Beta Catenin inhibitor, acts by inhibiting tankyrase
+A study is yet to distinguish expression of ANGPT2 and THBS1 in low and high shear stress in human umbilical vein endothelial cells (HUVECs), and whether these genes are mediated by Wnt signalling. We addressed this using an orbital shaker model, along with canonical Wnt inhibitor, XAV939.
 
 # Methods
 
@@ -103,30 +106,36 @@ knitr::kable(
             "TTGGTCAGGCAGTATAATCC",
             "GGGCATATCCTACAACAAC",
             "AAAGATGGAGAATGCTGAGTTGGA",
-            "GGTTCCAAAGACAAACCTCACATT"
-        )
-    ),
-    booktabs = T,
-    caption = "Oligonucleotide qPCR primers from Ensembl."
+      "GGTTCCAAAGACAAACCTCACATT"
+    )
+  ),
+  booktabs = T,
+  caption = "Oligonucleotide qPCR primers from Ensembl."
 ) %>%
-    collapse_rows(columns = 1, latex_hline = "none") %>%
-    kable_styling(full_width = T, latex_options = "hold_position", position = "left") %>% 
-    column_spec(column = 3, width = "8cm")
+  collapse_rows(columns = 1, latex_hline = "none") %>%
+  kable_styling(full_width = T,
+                latex_options = "hold_position",
+                position = "left") %>%
+  column_spec(column = 3, width = "8cm")
 ```
 
 ## Statistical Analysis
 
-Relative expression is expressed as 2^ΔΔCt^ fold change ± SEM. Normality was determined with Kolmogorov-Smirnov Tests. Multiple-comparison analysis was performed using Kruskal-Wallis Test followed by post-hoc Dunn's Test. All analyses were performed in R [@R].
+Relative expression is expressed as 2^ΔΔCt^ fold change ± SEM normalised to the HPRT control. Normality was determined with Kolmogorov-Smirnov Tests. Comparison analysis was performed using the Student's *t*-test. All analyses were performed in R [@R].
 
 # Results
 
-In the orbital shaker system, low shear stress downregulated the expression of AXIN2, ANGPT2, and THBS1 in human umbilical vein endothelial cells. *AXIN2*, a known Wnt target, decreased by 0.28-fold in low shear stress. Similarly, ANGPT2 was decreased by \~0.15-fold, and THBS1 was decreased 0.12-fold.
+In the orbital shaker system, low shear stress downregulated the expression of AXIN2, ANGPT2, and THBS1 in human umbilical vein endothelial cells. Expression of *AXIN2*, a known Wnt target, decreased by 0.28-fold in low shear stress. Similarly, ANGPT2 was decreased by \~0.15-fold, and THBS1 was decreased 0.12-fold.
 
-Exposure to LSS with the addition of a Wnt inhibitor (XAV939) intensified the expression of *AXIN2* by 18.8-fold, ANGPT by 33.4-fold, and THBS1 by 35.6-fold. Conversely, XAV929 decreased expression in high shear stress. AXIN2 decreased 7.6-fold, ANGPT2 by 5.2-fold, and THBS1 by 16.4-fold.
+Exposure to LSS with the addition of a Wnt inhibitor (XAV939) intensified the expression of *AXIN2* by 18.8-fold, ANGPT by 33.4-fold, and THBS1 by 35.6-fold. Conversely, XAV929 decreased expression in high shear stress. AXIN2 decreased 0.68-fold, ANGPT2 by 0.42-fold, and THBS1 by 0.87-fold.
 
-```{r plots, fig.width = 10, fig.height = 8, fig.cap = "(**ABC**) Cells were  treated with DMSO(-) or XAV939(+) and exposured to low or high shear stress. Levels of angiopoeitin-2 , axin-2, and thrombospondin-1 mRNA quantified by qPCR. Data is shown as fold change ± SEM, normalised to the HPRT control and relative to the static control. $^{**}$*P* < 0.01, and $^*$*P* < 0.05. (**DEF**) Under the same conditions, gene expression of cells exposed to low stress are compared to cells exposed to high stress. Data is shown as fold change ± SEM, normalised to the HPRT control and relative to the periphery control. $^{**}$*P* < 0.01, and $^*$*P* < 0.05."}
+```{r plots, fig.width = 8, fig.height = 10, fig.cap = "Cells were  treated with DMSO(-) or XAV939(+) and exposed to low or high shear stress. Levels of angiopoeitin-2 , axin-2, and thrombospondin-1 mRNA quantified by qPCR. (**A**) Data is shown as fold change ± SEM of low shear stress relative to high shear stress. (**B**) Data is shown as fold change ± SEM of XAV939 relative to DMSO."}
 
-plots <- ggarrange(plot2, plot3, nrow = 2)
+plots <- ggarrange(periphery_plot, dmso_plot, nrow = 2,
+    labels = c("A", "B", "C"),
+    font.label = list(face = "bold", size = 20),
+    label.x = -0.01,
+    label.y = 1.02)
 ggsave("plots.png", plots, width = 10, height = 8)
 plots
 ```
@@ -148,21 +157,17 @@ Few references -->
 ```
 # Discussion
 
-## Atheroprotective gene expression
+## Summarise Method & Results
 
-Limitations of orbital shaker = imporve method
+## Inhibitors & Axin
 
-## Future
+## Unreliable Data
 
-primer specificity test
+## Refine Methods
 
-epigenetics
+-   Methods used in other studies
 
-look at proliferation, apoptosis, senescence, inflammation = PERP, p53
-
-look at vascular repair = wound scratch assay?
-
-look at emt = slug/snail?
+## Future Plans
 
 ```{=html}
 <!-- Do not simply recapitulate the results
