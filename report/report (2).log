@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.22)  22 MAR 2022 15:22
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.22)  22 MAR 2022 15:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1080,32 +1080,49 @@ LaTeX Font Info:    Font shape `TU/Palatino(0)/b/it' will be
 (Font)              scaled to size 10.95pt on input line 172.
 [1]
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 193.
+(Font)              scaled to size 12.0pt on input line 200.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 193.
+(Font)              scaled to size 12.0pt on input line 200.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 216.
+(Font)              scaled to size 10.95pt on input line 215.
+[2]
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 220.
+(Font)              scaled to size 9.0pt on input line 219.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 220.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+(Font)              scaled to size 9.0pt on input line 219.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 7.665pt on input line 247.
-[2]
+(Font)              scaled to size 7.665pt on input line 246.
 File: report_files/figure-latex/plots-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/plots-1.pdf>
+[3] [4]
+Overfull \hbox (1.82501pt too wide) in paragraph at lines 297--300
+[] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--300
+
+ []
+
+
+Overfull \hbox (1.82501pt too wide) in paragraph at lines 301--304
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--304
+
+ []
+
 
 Overfull \hbox (1.82501pt too wide) in paragraph at lines 305--308
-[] []
+[][] []
  []
 
 
@@ -1113,7 +1130,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--308
 
  []
 
-[3] [4]
+
 Overfull \hbox (1.82501pt too wide) in paragraph at lines 309--312
 [][] []
  []
@@ -1143,96 +1160,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--320
 
  []
 
-
-Overfull \hbox (1.82501pt too wide) in paragraph at lines 321--324
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--324
-
- []
-
-
-Overfull \hbox (1.82501pt too wide) in paragraph at lines 325--328
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 325--328
-
- []
-
-
-Overfull \hbox (1.82501pt too wide) in paragraph at lines 329--332
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--332
-
- []
-
-
-Overfull \hbox (1.82501pt too wide) in paragraph at lines 333--336
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 333--336
-
- []
-
-
-Overfull \hbox (1.82501pt too wide) in paragraph at lines 337--340
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 337--340
-
- []
-
-
-Overfull \hbox (1.82501pt too wide) in paragraph at lines 341--344
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--344
-
- []
-
-
-Overfull \hbox (1.82501pt too wide) in paragraph at lines 345--348
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--348
-
- []
-
-
-Overfull \hbox (1.82501pt too wide) in paragraph at lines 349--352
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--352
-
- []
-
-
-Overfull \hbox (1.82501pt too wide) in paragraph at lines 353--356
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 353--356
-
- []
-
 [5] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1241,10 +1168,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  22884 strings out of 478179
  420793 string characters out of 5852975
- 906877 words of memory out of 5000000
+ 904877 words of memory out of 5000000
  43161 multiletter control sequences out of 15000+600000
  473028 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,16n,122p,1797b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,16n,122p,1790b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on report.pdf (7 pages).

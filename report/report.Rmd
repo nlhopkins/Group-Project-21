@@ -11,10 +11,10 @@ output:
         - header.sty
 geometry: "left=3cm,right=3cm,top=2cm,bottom=2cm"
 linespacing: 1.5
-fontsize: 12pt
+fontsize: 11pt
 mainfont: Palatino
-bibliography: ../refs.bib
-csl: ../csl/university-of-york-harvard.csl
+bibliography: ../refs/refs.bib
+citation-style: ../csl/university-of-york-harvard.csl
 link-citations: true
 citecolor: teal
 linkcolor: teal
@@ -44,6 +44,7 @@ library(tidyverse) # Load the tidyverse. Functions are used for tidying data and
 library(kableExtra) # Load kableExtra. Table generation.
 
 library(wordcountaddin) # Load wordcountaddin. Counts words and characters in text in an R markdown document.
+library(knitr)
 ```
 
 ```{r source}
@@ -52,37 +53,36 @@ source("../R/final.R", local = knitr::knit_global())
 
 # Introduction
 
-Atherosclerosis is an chronic inflammatory disease characterised by the formation of arterial plaques. Haemodynamic shear stress has been identified as a modulator of site specificity in atherosclerosis, which occurs preferentially in regions exposed to low, oscillatory shear stress. Whereas areas of high, laminar shear stress is atheroprotective [@timmins2017]. Shear stress is an important factor in regulating gene expression in vascular endothelial cells [@Ni2010], which is though to contribute to the susceptibility of plaque formation in atheroprone sites.
+Atherosclerosis is an chronic inflammatory disease characterised by the formation of arterial plaques.
+Haemodynamic shear stress has been identified as a modulator of site specificity in atherosclerosis, which occurs preferentially in regions exposed to low, oscillatory shear stress [@stone2007\]. Whereas areas of high, laminar shear stress is atheroprotective \[@timmins2017\]. Shear stress is an important factor in regulating gene expression in vascular endothelial cells \[@Ni2010\], which is though to contribute to the susceptibility of plaque formation in atheroprone sites. Multiple omics studies have implicated variations in flow with the regulation of developmental signalling pathways in atherosclerosis, including the Wnt Pathway \[@Souilhol2020; @Gelfand2011\]. Wnt is an evolutionarily conserved pathway with a crucial role in axis patterning during embryonic development. In the absence of Wnt, axin forms a destruction complex with glycogen synthase kinase 3β (GSK-3) and adenomatous polyposis coli (APC), which phosphorylates β-catenin and targets it for degradation. However, in the active canonical Wnt pathway, Wnt ligands interact with Frizzled and LRP receptors. This leads to the translocation of axin, inhibiting the formation of the destruction complex, allowing β-catenin to accumulate and translocate to the nucleus, where it will activate the transcription of Wnt target genes \[@gordon2006\]. Of these includes axin, which acts as a negative regulator of Wnt signalling \[@Jho2002; @Lustig2002].
 
-Multiple omics studies have implicated variations in flow with the regulation of developmental signalling pathways in atherosclerosis, including the Wnt Pathway [@Souilhol2020; @Gelfand2011]. Wnt is an evolutionarily conserved pathway, with a crucial role in axis patterning during embryonic development.
-
-## Wnt Pathway
-
-Multiple studies have demonstrated that the Wnt signalling pathway is mechanosensitive [@Cha2016; @Franco2016].
-
-## ANGPT2 & THBS1
+Link Wnt to genes:
 
 Angiopoietin-2 (ANGPT2) is a well established growth factor involved in angiogenesis.
 
-Thrombospondin-1 (THBS1) is an anti-angiogeneic.
-
--   What are they?
-
--   Previous studies
+Thrombospondin-1 (THBS1) is a glycoprotein involved in cell-cell matrix interactions, which has been correlated with reduced angiogenesis in colonic tumours [@Jo2005].
 
 ## Hypothesis
 
-A study is yet to distinguish expression of ANGPT2 and THBS1 in low and high shear stress in human umbilical vein endothelial cells (HUVECs), and whether these genes are mediated by Wnt signalling. We addressed this using an orbital shaker model, along with canonical Wnt inhibitor, XAV939.
+A study is yet to distinguish expression of ANGPT2 and THBS1 in low and high shear stress in human umbilical vein endothelial cells (HUVECs), and whether these genes are mediated by canonical Wnt signalling.
+We addressed this using an orbital shaker model, along with canonical Wnt inhibitor, XAV939.
 
 # Methods
 
 ## Orbital Shaker
 
-HUVECs were cultured in complete growth medium containing M199, sodium bicarbonate, pen-strep, amphotericin B, Hi-FBS, endothelial cell growth supplement (ECGS), and herparin. When \~80% confluent, cells were incubated with 1ml of trypsin until cells thoroughly detached, and neutralised with 9ml of M199. Cells were spun for 5 minutes at 400g to discard the supernatent, then re-suspended in M199 media before tranfering to 10mm radius 6 well plates. Once confluent, 3ml [@Warboys2019] of 0.1% DMSO in M199 or 0.1% XAV939 in M199 were each added to half of the plates [@Zhu2017]. Cells were then subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static controls.
+HUVECs were cultured in complete growth medium containing M199, sodium bicarbonate, pen-strep, amphotericin B, Hi-FBS, endothelial cell growth supplement (ECGS), and heparin.
+When \~80% confluent, cells were incubated with 1ml of trypsin until cells thoroughly detached, and neutralised with 9ml of M199.
+Cells were spun for 5 minutes at 400g to discard the supernatant, then re-suspended in M199 media before transferring to 10mm radius 6 well plates.
+Once confluent, 3ml [@Warboys2019] of 0.1% DMSO in M199 or 0.1% XAV939 in M199 were each added to half of the plates [@Zhu2017].
+Cells were then subjected to flow using a orbital shaker at 210 rpm for 72 hours, with the exception of a static controls.
 
 ## mRNA Isolation and qPCR
 
-Cells were isolated from the periphery and centre of the plates with cold PBS and centrifuged for 5 minutes at 400g to remove the supernatant. Total mRNA was extracted using the RNEasy Mini Kit (Qiagen) and the concentration was determined spectrophotometrically. cDNA synthesis was performed using the Verso cDNA Synthesis Kit (Thermo Scientific) with 5.5μl of 0.01067% mRNA. *ANGPT2*, *AXIN2*, *THSB1*, and *HPRT1* mRNA was quantified using StepOne qPCR (Thermo Scientific) with SYBR Green, using oligonucleotide qPCR primers from Ensembl [@howe2020] (Table \@ref(tab:primers)).
+Cells were isolated from the periphery and centre of the plates with cold PBS and centrifuged for 5 minutes at 400g to remove the supernatant.
+Total mRNA was extracted using the RNEasy Mini Kit (Qiagen) and the concentration was determined spectrophotometrically.
+cDNA synthesis was performed using the Verso cDNA Synthesis Kit (Thermo Scientific) with 5.5μl of 0.01067% mRNA.
+*ANGPT2*, *AXIN2*, *THSB1*, and *HPRT1* mRNA was quantified using StepOne qPCR (Thermo Scientific) with SYBR Green, using oligonucleotide qPCR primers from Ensembl [@howe2020] (Table \@ref(tab:primers)).
 
 ```{r primers}
 knitr::kable(
@@ -121,13 +121,20 @@ knitr::kable(
 
 ## Statistical Analysis
 
-Relative expression is expressed as 2^ΔΔCt^ fold change ± SEM normalised to the HPRT control. Normality was determined with Kolmogorov-Smirnov Tests. Comparison analysis was performed using the Student's *t*-test. All analyses were performed in R [@R].
+Relative expression is expressed as 2^ΔΔCt^ fold change ± SEM normalised to the HPRT control.
+Normality was determined with Kolmogorov-Smirnov Tests.
+Comparison analysis was performed using the Student's *t*-test.
+All analyses were performed in R [@R].
 
 # Results
 
-In the orbital shaker system, low shear stress downregulated the expression of AXIN2, ANGPT2, and THBS1 in human umbilical vein endothelial cells. Expression of *AXIN2*, a known Wnt target, decreased by 0.28-fold in low shear stress. Similarly, ANGPT2 was decreased by \~0.15-fold, and THBS1 was decreased 0.12-fold.
+In the orbital shaker system, low shear stress downregulated the expression of AXIN2, ANGPT2, and THBS1 in human umbilical vein endothelial cells.
+Expression of *AXIN2*, a known Wnt target, decreased by 0.28-fold in low shear stress.
+Similarly, ANGPT2 was decreased by \~0.15-fold, and THBS1 was decreased 0.12-fold.
 
-Exposure to LSS with the addition of a Wnt inhibitor (XAV939) intensified the expression of *AXIN2* by 18.8-fold, ANGPT by 33.4-fold, and THBS1 by 35.6-fold. Conversely, XAV929 decreased expression in high shear stress. AXIN2 decreased 0.68-fold, ANGPT2 by 0.42-fold, and THBS1 by 0.87-fold.
+Exposure to LSS with the addition of a Wnt inhibitor (XAV939) intensified the expression of *AXIN2* by 18.8-fold, ANGPT by 33.4-fold, and THBS1 by 35.6-fold.
+Conversely, XAV929 decreased expression in high shear stress.
+AXIN2 decreased 0.68-fold, ANGPT2 by 0.42-fold, and THBS1 by 0.87-fold.
 
 ```{r plots, fig.width = 8, fig.height = 10, fig.cap = "Cells were  treated with DMSO(-) or XAV939(+) and exposed to low or high shear stress. Levels of angiopoeitin-2 , axin-2, and thrombospondin-1 mRNA quantified by qPCR. (**A**) Data is shown as fold change ± SEM of low shear stress relative to high shear stress. (**B**) Data is shown as fold change ± SEM of XAV939 relative to DMSO."}
 
