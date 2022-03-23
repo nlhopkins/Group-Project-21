@@ -13,7 +13,7 @@ geometry: "left=3cm,right=3cm,top=2cm,bottom=2cm"
 linespacing: 1.5
 fontsize: 11pt
 mainfont: Palatino
-bibliography: ../refs/refs.bib
+bibliography: refs.bib
 citation-style: ../csl/university-of-york-harvard.csl
 link-citations: true
 citecolor: teal
@@ -32,6 +32,9 @@ header-includes:
 - \captionsetup[table]{font=footnotesize}
 - \captionsetup[table]{justification=centerlast}
 - \captionsetup[figure]{justification=centerlast}
+editor_options: 
+    markdown:
+      canonical: true 
 ---
 
 ```{r setup, include=FALSE}
@@ -44,7 +47,6 @@ library(tidyverse) # Load the tidyverse. Functions are used for tidying data and
 library(kableExtra) # Load kableExtra. Table generation.
 
 library(wordcountaddin) # Load wordcountaddin. Counts words and characters in text in an R markdown document.
-library(knitr)
 ```
 
 ```{r source}
@@ -54,17 +56,21 @@ source("../R/final.R", local = knitr::knit_global())
 # Introduction
 
 Atherosclerosis is an chronic inflammatory disease characterised by the formation of arterial plaques.
-Haemodynamic shear stress has been identified as a modulator of site specificity in atherosclerosis, which occurs preferentially in regions exposed to low, oscillatory shear stress [@stone2007\]. Whereas areas of high, laminar shear stress is atheroprotective \[@timmins2017\]. Shear stress is an important factor in regulating gene expression in vascular endothelial cells \[@Ni2010\], which is though to contribute to the susceptibility of plaque formation in atheroprone sites. Multiple omics studies have implicated variations in flow with the regulation of developmental signalling pathways in atherosclerosis, including the Wnt Pathway \[@Souilhol2020; @Gelfand2011\]. Wnt is an evolutionarily conserved pathway with a crucial role in axis patterning during embryonic development. In the absence of Wnt, axin forms a destruction complex with glycogen synthase kinase 3β (GSK-3) and adenomatous polyposis coli (APC), which phosphorylates β-catenin and targets it for degradation. However, in the active canonical Wnt pathway, Wnt ligands interact with Frizzled and LRP receptors. This leads to the translocation of axin, inhibiting the formation of the destruction complex, allowing β-catenin to accumulate and translocate to the nucleus, where it will activate the transcription of Wnt target genes \[@gordon2006\]. Of these includes axin, which acts as a negative regulator of Wnt signalling \[@Jho2002; @Lustig2002].
+Haemodynamic shear stress has been identified as a modulator of site specificity in atherosclerosis, which occurs preferentially in regions exposed to low, oscillatory shear stress [@stone2007]. Whereas areas of high, laminar shear stress is atheroprotective [@timmins2017]. Shear stress is an important factor in regulating gene expression in vascular endothelial cells [@Ni2010], which is though to contribute to the susceptibility of plaque formation in atheroprone sites. Multiple omics studies have implicated variations in flow with the regulation of developmental signalling pathways in atherosclerosis, including the Wnt Pathway [@Souilhol2020; @Gelfand2011].
 
-Link Wnt to genes:
+Wnt is an evolutionarily conserved pathway with a critical role in axis patterning during embryonic development. In the absence of Wnt, axin forms a destruction complex with glycogen synthase kinase 3β (GSK-3) and adenomatous polyposis coli (APC), which phosphorylates β-catenin and targets it for degradation. However, in the active canonical Wnt pathway, Wnt ligands interact with Frizzled and LRP receptors. This leads to the translocation of axin, inhibiting the formation of the destruction complex, allowing β-catenin to accumulate and translocate to the nucleus, where it will activate the transcription of Wnt target genes [@gordon2006]. Of these includes axin, which acts as a negative regulator of Wnt signalling [@Jho2002; @Lustig2002].
 
-Angiopoietin-2 (ANGPT2) is a well established growth factor involved in angiogenesis.
+Targets of Wnt alter endothelial responses to shear stress, for instance, by activating angiogenesis.
+One target, angiopoietin-2 (ANGPT2), is an established growth factor involved in angiogenesis.
+Studies in both zebrafish and mice have shown that the ANGPT2 contributes to the development of atherosclerosis [@Li2014-mx; @farhat2013].
 
-Thrombospondin-1 (THBS1) is a glycoprotein involved in cell-cell matrix interactions, which has been correlated with reduced angiogenesis in colonic tumours [@Jo2005].
+Thrombospondin-1 (THBS1) is a glycoprotein involved in endothelial cell interactions, and a possible target of Wnt.
+High levels of THBS1 has been correlated with the inhibition of tumour angiogenesis [@naumov2006], possibly by selective induction of apoptosis in cells undergoing angiogenesis [@guo1997].
+@jo2005 demonstrated that activation of the Wnt pathway downregulates THBS1 in colon cancer.
 
 ## Hypothesis
 
-A study is yet to distinguish expression of ANGPT2 and THBS1 in low and high shear stress in human umbilical vein endothelial cells (HUVECs), and whether these genes are mediated by canonical Wnt signalling.
+This study was conducted to investigate the expression ANGPT2 and THBS1 in low and high shear stress in human umbilical vein endothelial cells (HUVECs), and whether these genes are mediated by canonical Wnt signalling.
 We addressed this using an orbital shaker model, along with canonical Wnt inhibitor, XAV939.
 
 # Methods

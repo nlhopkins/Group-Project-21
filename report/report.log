@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.22)  22 MAR 2022 15:22
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.22)  22 MAR 2022 23:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -208,7 +208,7 @@ Package fontspec Info: Font family 'Palatino(0)' created for font 'Palatino'
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 24.
+(Font)              scaled to size 10.95pt on input line 21.
 
 Package fontspec Info: Palatino scale = 0.9999970315310768.
 
@@ -245,11 +245,11 @@ Package fontspec Info: Font family 'Palatino(1)' created for font 'Palatino'
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/Palatino(1)/m/n on input line 24.
+(Font)                  OT1/lmr/m/n --> TU/Palatino(1)/m/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/Palatino(1)/m/it on input line 24.
+(Font)                  OT1/lmr/m/it --> TU/Palatino(1)/m/it on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/Palatino(1)/b/n on input line 24.
+(Font)                  OT1/lmr/bx/n --> TU/Palatino(1)/b/n on input line 21.
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2022/03/14 v3.0d Micro-typographical refinements (RS)
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
@@ -408,7 +408,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
 \BKM@id=\count303
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 50.
+Package hyperref Info: Option `colorlinks' set `true' on input line 47.
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 (/Users/natashahopkins/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
@@ -1080,42 +1080,42 @@ LaTeX Font Info:    Font shape `TU/Palatino(0)/b/it' will be
 (Font)              scaled to size 10.95pt on input line 172.
 [1]
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 193.
+(Font)              scaled to size 12.0pt on input line 197.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 193.
+(Font)              scaled to size 12.0pt on input line 197.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 216.
+(Font)              scaled to size 10.95pt on input line 220.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 220.
+(Font)              scaled to size 9.0pt on input line 224.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 220.
+(Font)              scaled to size 9.0pt on input line 224.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 7.665pt on input line 247.
+(Font)              scaled to size 7.665pt on input line 251.
 [2]
 File: report_files/figure-latex/plots-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/plots-1.pdf>
-
-Overfull \hbox (1.82501pt too wide) in paragraph at lines 305--308
-[] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--308
-
- []
-
 [3] [4]
+Underfull \hbox (badness 5077) in paragraph at lines 311--311
+[]\TU/Palatino(0)/m/sc/10.95 Farhat, N. et al. (2013). Angiopoietin-Like 2 Promotes Atherogenesis in
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 311--311
+\TU/Palatino(0)/m/sc/10.95 Mice. \TU/Palatino(0)/m/it/10.95 Journal of the American Heart Association\TU/Palatino(0)/m/sc/10.95 , 2 (3). [Online]. Available at:
+ []
+
+
 Overfull \hbox (1.82501pt too wide) in paragraph at lines 309--312
-[][] []
+[] []
  []
 
 
@@ -1233,18 +1233,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 353--356
 
  []
 
-[5] (./report.aux)
+
+Overfull \hbox (1.82501pt too wide) in paragraph at lines 357--360
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--360
+
+ []
+
+[5]
+Overfull \hbox (1.82501pt too wide) in paragraph at lines 361--364
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--364
+
+ []
+
+
+Overfull \hbox (1.82501pt too wide) in paragraph at lines 365--368
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--368
+
+ []
+
+
+Overfull \hbox (1.82501pt too wide) in paragraph at lines 369--372
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--372
+
+ []
+
+
+Overfull \hbox (1.82501pt too wide) in paragraph at lines 373--376
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--376
+
+ []
+
+[6] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22884 strings out of 478179
- 420793 string characters out of 5852975
- 906877 words of memory out of 5000000
- 43161 multiletter control sequences out of 15000+600000
+ 22886 strings out of 478179
+ 420806 string characters out of 5852975
+ 906910 words of memory out of 5000000
+ 43163 multiletter control sequences out of 15000+600000
  473028 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,16n,122p,1797b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,16n,122p,1790b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (7 pages).
+Output written on report.pdf (8 pages).
