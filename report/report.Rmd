@@ -75,11 +75,19 @@ Thrombospondin-1 (THBS1) is a glycoprotein involved in endothelial cell interact
 High levels of THBS1 has been correlated with the inhibition of tumour angiogenesis [@naumov2006], possibly by induction of apoptosis via the TGF-β pathway [@Miao2001; @yee2004], or by inhibition of the VEGF pathway [@gupta1999; @kaur2010].
 @jo2005 demonstrated that activation of the Wnt pathway downregulates THBS1 in colon cancer.
 Thus, Wnt may mediate the expression of THBS1 in response to flow.
-Since atherosclerosis occurs in regions of increased angiogenesis, we would expect THSB1 to be downregulated in low shear stress.
+Since atherosclerosis occurs in regions of increased angiogenesis, we would expect *THSB1* to be downregulated in low shear stress.
 This has been confirmed in a study by @Moura2008.
 
 This study was conducted to investigate the RNA expression of ANGPT2 and THBS1 in HUVECs exposed to atheroprone low shear stress (LSS), compared to atheroprotective high shear stress (HSS), and whether these genes are mediated by canonical Wnt signalling.
 We addressed this using an orbital shaker model, along with canonical Wnt inhibitor, XAV939.
+
+\color{red}
+
+-   introduce orbital shaker model
+
+-   explicitly explain aims
+
+\color{black}
 
 # Materials and Methods
 
@@ -97,7 +105,7 @@ They were placed on an orbital shaker at 210 rpm for 72 hours, and exposed to lo
 Cells were isolated from the periphery and centre of the plates with cold PBS and centrifuged for 5 minutes at 400g.
 Total mRNA was extracted using the RNEasy Mini Kit (Qiagen) and the concentration was determined spectrophotometrically.
 cDNA synthesis was performed using the Verso cDNA Synthesis Kit (Thermo Scientific) as per the manufacturers instructions.
-ANGPT2, AXIN2, THSB1, and HPRT1 (reference gene) mRNA was quantified using StepOne qPCR (Thermo Scientific) with SYBR Green, using oligonucleotide qPCR primers from Ensembl [@howe2020] (Table \@ref(tab:primers)).
+*ANGPT2*, *AXIN2*, *THSB1*, and *HPRT1* (reference gene) mRNA was quantified using StepOne qPCR (Thermo Scientific) with SYBR Green, using oligonucleotide qPCR primers from Ensembl [@howe2020] (Table \@ref(tab:primers)).
 The amplification included 30 cycles at 95°C for 30s, 5°C for 30s, and 72°C for 45s, followed by 72 °C 10 min.
 
 ```{r primers}
@@ -145,19 +153,19 @@ All plots and analyses were performed in R [@R].
 # Results
 
 To asses the effect of low and high shear stress on gene express, HUVECs were exposed to flow using an orbital shaker system.
-Gene expression of ANGPT2, THSB1, and Wnt reporter AXIN2 was quantified by qPCR.
+Gene expression of *ANGPT2*, *THSB1*, and Wnt reporter *AXIN2* was quantified by qPCR.
 Gene expression in HUVECs exposed LSS was compared to those exposed to HSS (Figure \@ref(fig:plots)A).
-Low shear stress downregulated the expression of AXIN2, ANGPT2, and THBS1.
-AXIN2, a known Wnt target, decreased by 0.28-fold in low shear stress.
-Similarly, ANGPT2 was decreased by 0.15-fold, and THBS1 was decreased 0.12-fold.
+Low shear stress downregulated the expression of *AXIN2*, *ANGPT2*, and *THBS1*.
+*AXIN2*, a known Wnt target, decreased by 0.28-fold in low shear stress.
+Similarly, *ANGPT2* was decreased by 0.15-fold, and THBS1 was decreased 0.12-fold.
 Using the same method, HUVECs were also treated with either DMSO or canonical Wnt inhibitor XAV929, to assess for regulation by Wnt signalling.
 Expression in the presence of XAV939 was then compared to DMSO (Figure \@ref(fig:plots)B).
-Exposure to LSS with the addition XAV939 intensified the expression of AXIN2 by 18.82-fold, ANGPT by 33.35-fold, and THBS1 by 35.59-fold.
+Exposure to LSS with the addition XAV939 intensified the expression of *AXIN2* by 18.82-fold, *ANGPT* by 33.35-fold, and *THBS1* by 35.59-fold.
 Whereas XAV929 decreased expression in HSS.
-AXIN2 decreased 0.68-fold, ANGPT2 by 0.42-fold, and THBS1 by 0.87-fold.
+*AXIN2* decreased 0.68-fold, *ANGPT2* by 0.42-fold, and *THBS1* by 0.87-fold.
 Results were analysed using the Students *t* test, which regarded them insignificant due to the sample size.
 
-```{r plots, fig.width = 8, fig.height = 4, fig.cap = "**Low shear stress downregulates gene expression in the presence Wnt, and upregulates gene expression in the absence of Wnt.**. Cells were treated with DMSO(-) or XAV939(+) and exposed to low or high shear stress. Levels of angiopoietin-2, axin-2, and thrombospondin-1 mRNA were quantified by qPCR. (**A**) Low shear stress upregulated the expression of all genes. AXIN: 0.28±0.12, ANGPT2: 0.15±0.09, THBS1: 0.12±0.15. Data is shown as fold change ± SEM of low shear stress relative to high shear stress. (**B**) XAV939 upregulated expression of all genes in low shear stress and downregulated expression of all genes in high shear stress. AXIN: 18.82±2.66 & 0.68±0.50, ANGPT2: 33.36±15.80 & 0.42±0.14, THBS1: 35.59±4.55 & 0.87±0.33. Data is shown as fold change ± SEM of XAV939 relative to DMSO."}
+```{r plots, fig.width = 8, fig.height = 4, fig.cap = "**Low shear stress downregulates gene expression in the presence Wnt, and upregulates gene expression in the absence of Wnt.**. Cells were treated with DMSO(-) or XAV939(+) and exposed to low or high shear stress. Levels of angiopoietin-2, axin-2, and thrombospondin-1 mRNA were quantified by qPCR. (**A**) Low shear stress upregulated the expression of all genes. *AXIN*: 0.28±0.12, *ANGPT2*: 0.15±0.09, *THBS1*: 0.12±0.15. Data is shown as fold change ± SEM of low shear stress relative to high shear stress. (**B**) XAV939 upregulated expression of all genes in low shear stress and downregulated expression of all genes in high shear stress. *AXIN*: 18.82±2.66 & 0.68±0.50, *ANGPT2*: 33.36±15.80 & 0.42±0.14, *THBS1*: 35.59±4.55 & 0.87±0.33. Data is shown as fold change ± SEM of XAV939 relative to DMSO."}
 
 plots <- ggarrange(location_plot, drug_plot, nrow = 1,
     labels = c("A", "B", "C"),
@@ -185,19 +193,19 @@ Few references -->
 ```
 # Discussion
 
-In our study, we compare the effects of low shear stress and high shear stress on the expression of two regulators of angiogenesis, ANGPT2 and THBS1, and whether their expression is controlled by Wnt. This was achieved using an orbital shaker model, first described by @Warboys2014. Direct Wnt target, AXIN2, was also measured to quantify Wnt expression [@Jho2002].
+In our study, we compare the effects of low shear stress and high shear stress on the expression of two regulators of angiogenesis, *ANGPT2* and *THBS1*, and whether their expression is controlled by Wnt. This was achieved using an orbital shaker model, first described by @Warboys2014. Direct Wnt target, *AXIN2*, was also measured to quantify Wnt expression [@Jho2002].
 Finally, we compared gene expression in LSS to HSS, and XAV939 to DMSO.
 
-Our findings indicate that AXIN2, ANGPT, and THBS1 is downregulated in HUVECs exposed to LSS (Figure \@ref(fig:plots)A).
-The downregulation of ANGPT and AXIN2 in LSS differs from our expectations.
-Previous studies demonstrate that canonical Wnt is activated by low shear stress [@Gelfand2011], as is its direct target, AXIN2 [@Jho2002].
-ANGPT2, a positive regulator of angiogenesis, has also been identified as a positive target of Wnt in zebrafish [@Li2014-mx].
-Thus, ANGPT2 was also expected to be upregulated in LSS.
-However, the results imply that Wnt is downregulated by LSS compared to HSS, and in doing so, downregulates both ANGPT2 and AXIN2.
+Our findings indicate that *AXIN2*, *ANGPT*, and *THBS1* is downregulated in HUVECs exposed to LSS (Figure \@ref(fig:plots)A).
+The downregulation of *ANGPT* and *AXIN2* in LSS differs from our expectations.
+Previous studies demonstrate that canonical Wnt is activated by low shear stress [@Gelfand2011], as is its direct target, *AXIN2* [@Jho2002].
+*ANGPT2*, a positive regulator of angiogenesis, has also been identified as a positive target of Wnt in zebrafish [@Li2014-mx].
+Thus, *ANGPT2* was also expected to be upregulated in LSS.
+However, the results imply that Wnt is downregulated by LSS compared to HSS, and in doing so, downregulates both *ANGPT2* and *AXIN2*.
 
-On the other hand, the lower expression of THSB1 in low shear stress was anticipated [@Moura2008].
-Wnt has been shown to inhibit THBS1, a negative regulator of angiogenesis, in colonic tumours [@jo2005].
-Therefore, its expression should increase with the downregulation of AXIN2.
+On the other hand, the lower expression of *THSB1* in low shear stress was anticipated [@Moura2008].
+Wnt has been shown to inhibit *THBS1*, a negative regulator of angiogenesis, in colonic tumours [@jo2005].
+Therefore, its expression should increase with the downregulation of *AXIN2*.
 This was not the case, suggesting that it is not repressed by the Wnt pathway as previously reported.
 
 \color{red}
@@ -208,9 +216,9 @@ This was not the case, suggesting that it is not repressed by the Wnt pathway as
 \color{black}
 
 In the presence of XAV939, all genes were upregulated in both low and high shear stress (Figure \@ref(fig:plots)B).
-Initially, this would imply that Wnt is an inhibitor of ANGPT2 and THSB1.
+Initially, this would imply that Wnt is an inhibitor of *ANGPT2* and *THSB1*.
 
-However, since AXIN2 is a direct inhibitor of Wnt, this suggests that the inhibitor in fact failed to inhibit Wnt.
+However, since *AXIN2* is a direct inhibitor of Wnt, this suggests that the inhibitor in fact failed to inhibit Wnt.
 ?
 
 \color{red}
@@ -242,11 +250,11 @@ There are many discrepancies between our results and prior studies, likely due t
 
 -   Direct interaction with Wnt or via VEGF?
 
-    -   THSB1 inhibits VEGF by competing for heparin (which is used in our medium) [@gupta1999; @dias2012; @tolsma1993]
+    -   *THSB1* inhibits VEGF by competing for heparin (which is used in our medium) [@gupta1999; @dias2012; @tolsma1993]
 
 -   Methods used in other studies
 
--   animal studies, zebrafish, mice, pigs [@serbanovic-canic2017; @Li2014-mx; @farhat2013a; @Moura2008; @moonen2015]
+-   animal studies, zebrafish, mice, pigs [@serbanovic-canic2017; @Li2014-mx; @farhat2013a; @Moura2008; @moonen2015
 
 -   non-canonical wnt [@franco2016]
 
