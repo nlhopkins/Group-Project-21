@@ -38,7 +38,7 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, fig.align= "center")
 ```
 
 ```{r load-pkgs}
@@ -56,38 +56,33 @@ library(wordcountaddin) # Load wordcountaddin. Counts words and characters in te
 # Introduction
 
 Atherosclerosis is a chronic inflammatory disease characterised by the formation of arterial plaques.
-Haemodynamic shear stress has been identified as a modulator of site-specificity in atherosclerosis, which occurs preferentially in regions exposed to low, oscillatory shear stress [@stone2007].
-Whereas areas of high, laminar shear stress are atheroprotective [@timmins2017].
-Shear stress is an important factor in regulating gene expression in vascular endothelial cells [@Ni2010], which is thought to contribute to the susceptibility of plaque formation in atheroprone sites.
-Multiple omics studies have implicated variations in flow with the regulation of developmental signalling pathways in atherosclerosis, including the Wnt Pathway [@Souilhol2020; @Gelfand2011].
+Haemodynamic shear stress has been identified as a modulator of site-specificity in atherosclerosis, which occurs preferentially in regions exposed to low, oscillatory shear stress [@stone2007]. Whereas areas of high, laminar shear stress are atheroprotective [@timmins2017]. Shear stress is an important factor in regulating gene expression in vascular endothelial cells [@Ni2010], which is thought to contribute to the susceptibility of plaque formation in atheroprone sites. Multiple omics studies have implicated variations in flow with the regulation of developmental signalling pathways in atherosclerosis, including the Wnt Pathway [@Souilhol2020; @Gelfand2011].
 
 Wnt is an evolutionarily conserved pathway with a critical role in axis patterning during embryonic development.
 In the absence of Wnt, axin forms a destruction complex with glycogen synthase kinase 3β (GSK-3) and adenomatous polyposis coli (APC), which phosphorylates β-catenin and targets it for degradation.
 However, in the active canonical Wnt pathway, Wnt ligands interact with Frizzled and LRP receptors.
-This leads to the translocation of axin, inhibiting the formation of the destruction complex, allowing β-catenin to accumulate and translocate to the nucleus, where it will activate the transcription of Wnt target genes [@gordon2006].
-Of these includes axin, which acts as a negative regulator of Wnt signalling [@Jho2002; @Lustig2002].
+This leads to the translocation of axin, inhibiting the formation of the destruction complex, allowing β-catenin to accumulate and translocate to the nucleus, where it will activate the transcription of Wnt target genes [@gordon2006]. Of these includes axin, which acts as a negative regulator of Wnt signalling [@Jho2002; @Lustig2002].
 
-Shear stress-mediated Wnt orchestrates a range of endothelial responses, including angiogenesis, which is increased in regions of low shear stress compared to high shear stress [@du2018].
-One target of Wnt, angiopoietin-2 (ANGPT2), is an established growth factor involved in angiogenesis.
-Studies in both zebrafish and mice have shown that the increase in ANGPT2 contributes to the development of atherosclerosis [@Li2014-mx; @farhat2013].
+Shear stress-mediated Wnt orchestrates a range of endothelial responses, including angiogenesis, which is increased in regions of low shear stress compared to high shear stress [@du2018]. One target of Wnt, angiopoietin-2 (ANGPT2), is an established growth factor involved in angiogenesis. Studies in both zebrafish and mice have shown that the increase in ANGPT2 contributes to the development of atherosclerosis [@Li2014-mx; @farhat2013].
 
 Thrombospondin-1 (THBS1) is a glycoprotein involved in endothelial cell interactions and is a potential target of Wnt.
 High levels of THBS1 has been correlated with the inhibition of tumour angiogenesis [@naumov2006], possibly by induction of apoptosis via the TGF-β pathway [@Miao2001; @yee2004], or by inhibition of the VEGF pathway [@gupta1999; @kaur2010].
 @jo2005 demonstrated that activation of the Wnt pathway downregulates THBS1 in colon cancer.
-Thus, Wnt may mediate the expression of THBS1 in response to flow.
+
+Thus, we were curious as to whether Wnt mediates the expression of THBS1 in response to flow.
 Since atherosclerosis occurs in regions of increased angiogenesis, we would expect *THSB1* to be downregulated in low shear stress.
 This has been confirmed in a study by @Moura2008.
+\*\*\*\*\*
 
-This study was conducted to investigate the RNA expression of ANGPT2 and THBS1 in HUVECs exposed to atheroprone low shear stress (LSS), compared to atheroprotective high shear stress (HSS), and whether these genes are mediated by canonical Wnt signalling.
-We addressed this using an orbital shaker model, along with canonical Wnt inhibitor, XAV939.
+```{r orbital, out.width = "80%", fig.cap = "The orbital shaker model replicates the shear stress exterted in atheroprone and atheroprotective regions. Image created with BioRender."}
+knitr::include_graphics("../images/orbital.png")
+```
 
-\color{red}
-
--   introduce orbital shaker model
-
--   explicitly explain aims
-
-\color{black}
+In our study, we aimed to compare the expression of *ANGPT2* and *THBS1* in HUVECs exposed to atheroprone low shear stress (LSS) and atheroprotective high shear stress (HSS) using an orbital shaker model.
+The model, described by @Warboys2014, exposes cells to variable stress of approximately 5 dynes in the centre and approximately 15 dynes in the periphery of the plate (Figure \@ref(fig:orbital)).
+The purpose of this is to replicate the forces exerted in atheroprone and atheroprotective regions, respectively.
+Based on the prior work mentioned, we expect LSS to upregulate *ANGPT2* and downregulate *THSB1* when compared to HSS.
+We also used an inhibitor to examine whether altered expression of these genes is controlled by shear stress mediated canonical Wnt signalling.
 
 # Materials and Methods
 
@@ -163,9 +158,9 @@ Expression in the presence of XAV939 was then compared to DMSO (Figure \@ref(fig
 Exposure to LSS with the addition XAV939 intensified the expression of *AXIN2* by 18.82-fold, *ANGPT* by 33.35-fold, and *THBS1* by 35.59-fold.
 Whereas XAV929 decreased expression in HSS.
 *AXIN2* decreased 0.68-fold, *ANGPT2* by 0.42-fold, and *THBS1* by 0.87-fold.
-Results were analysed using the Students *t* test, which regarded them insignificant due to the sample size.
+Results were analysed using the Students *t* test, which regarded them insignificant due to the small sample size.
 
-```{r plots, fig.width = 8, fig.height = 4, fig.cap = "**Low shear stress downregulates gene expression in the presence Wnt, and upregulates gene expression in the absence of Wnt.**. Cells were treated with DMSO(-) or XAV939(+) and exposed to low or high shear stress. Levels of angiopoietin-2, axin-2, and thrombospondin-1 mRNA were quantified by qPCR. (**A**) Low shear stress upregulated the expression of all genes. *AXIN*: 0.28±0.12, *ANGPT2*: 0.15±0.09, *THBS1*: 0.12±0.15. Data is shown as fold change ± SEM of low shear stress relative to high shear stress. (**B**) XAV939 upregulated expression of all genes in low shear stress and downregulated expression of all genes in high shear stress. *AXIN*: 18.82±2.66 & 0.68±0.50, *ANGPT2*: 33.36±15.80 & 0.42±0.14, *THBS1*: 35.59±4.55 & 0.87±0.33. Data is shown as fold change ± SEM of XAV939 relative to DMSO."}
+```{r plots, fig.width = 8, fig.height = 4, fig.cap = "Low shear stress downregulates AXIN2, ANGPT2, and THSB1 expression via Wnt signalling. Cells were treated with DMSO(-) or XAV939(+) and exposed to low or high shear stress. Levels of angiopoietin-2, axin-2, and thrombospondin-1 mRNA were quantified by qPCR. (\\textbf{A}) Low shear stress upregulated the expression of all genes. \\emph{AXIN}: 0.28±0.12, \\emph{ANGPT2}: 0.15±0.09, \\emph{THBS1}: 0.12±0.15. Data is shown as fold change ± SEM of low shear stress relative to high shear stress. (\\textbf{B}) XAV939 upregulated expression of all genes in low shear stress and downregulated expression of all genes in high shear stress. \\emph{AXIN}: 18.82±2.66 and 0.68±0.50. \\emph{ANGPT2}: 33.36±15.80 and 0.42±0.14, \\emph{THBS1}: 35.59±4.55 and 0.87±0.33. Data is shown as fold change ± SEM of XAV939 relative to DMSO."}
 
 plots <- ggarrange(location_plot, drug_plot, nrow = 1,
     labels = c("A", "B", "C"),
@@ -176,24 +171,11 @@ ggsave("plots.png", plots, width = 10, height = 8)
 plots
 ```
 
-```{=html}
-<!-- 
-Clear and well-structured description of findings 
-Appropriate narrative of the experimental rationale and the major conclusions 
-May include descriptions of problem solving and troubleshooting
-Well-prepared and consistently presented tables and figures 
-Numbered tables and figures with legends (captions).
-Legends should provide enough information to allow the reader to understand the table/figure.
-Get your figures and tables ready first
-Use enough text to provide a clear narrative through those figures and tables
-Do start with some basic results
-Highlight the key findings, but don’t discuss them
-Make sure statistics are reported in the correct format
-Few references -->
-```
 # Discussion
 
-In our study, we compare the effects of low shear stress and high shear stress on the expression of two regulators of angiogenesis, *ANGPT2* and *THBS1*, and whether their expression is controlled by Wnt. This was achieved using an orbital shaker model, first described by @Warboys2014. Direct Wnt target, *AXIN2*, was also measured to quantify Wnt expression [@Jho2002].
+In our study, we analyse the effects of low shear stress and high shear stress on the expression of two regulators of angiogenesis, *ANGPT2* and *THBS1*, and whether their expression is controlled by Wnt.
+This was achieved using an orbital shaker model, first described by @Warboys2014.
+Direct Wnt target, *AXIN2*, was also measured to quantify Wnt expression [@Jho2002].
 Finally, we compared gene expression in LSS to HSS, and XAV939 to DMSO.
 
 Our findings indicate that *AXIN2*, *ANGPT*, and *THBS1* is downregulated in HUVECs exposed to LSS (Figure \@ref(fig:plots)A).
@@ -210,16 +192,13 @@ This was not the case, suggesting that it is not repressed by the Wnt pathway as
 
 \color{red}
 
--   This is a very different context - you should make this clear, and if it's the basis of choosing it as a target mention it in the introduction.
-    If it's not regulated by Wnt in this context - then that is fine but you need to be quite explicit in how you discuss it.
+-   This is a very different context - you should make this clear, and if it's the basis of choosing it as a target mention it in the introduction. If it's not regulated by Wnt in this context - then that is fine but you need to be quite explicit in how you discuss it.
 
 \color{black}
 
 In the presence of XAV939, all genes were upregulated in both low and high shear stress (Figure \@ref(fig:plots)B).
 Initially, this would imply that Wnt is an inhibitor of *ANGPT2* and *THSB1*.
-
-However, since *AXIN2* is a direct inhibitor of Wnt, this suggests that the inhibitor in fact failed to inhibit Wnt.
-?
+However, since *AXIN2* is a direct inhibitor of canonical Wnt, this suggests that the inhibitor in fact failed to inhibit Wnt.
 
 \color{red}
 
@@ -227,6 +206,8 @@ However, since *AXIN2* is a direct inhibitor of Wnt, this suggests that the inhi
     Also - is this canonical or non-canonical Wnt?
     There is cross talk between the two kinds of pathway, but they are quite separate.
     XAV939 won't inhibit non-canonical Wnt signalling.
+
+    -   These Are where the marks are. You should think about how you could confirm if you are inhibiting signalling (usually a WEstern blot for phospho proteins involved in the signalling pathway - if you look up the vendor page of the inhibition there is usually a paper where they confirm the inhibitor in some system or another).
 
 -   If Inhibitor failed, why not consistent with the DMSO samples?
 
@@ -244,13 +225,16 @@ There are many discrepancies between our results and prior studies, likely due t
 
     -   No prior PCR experience
 
--   Melt curve suggests primer dimers & contamination (include images of curves or include in supplementary?)
+-   Melt curve suggests primer dimers and contamination (include images of curves or include in supplementary?)
 
 -   en face staining for gene markers in inner curvature [@Warboys2014]
 
 -   Direct interaction with Wnt or via VEGF?
 
     -   *THSB1* inhibits VEGF by competing for heparin (which is used in our medium) [@gupta1999; @dias2012; @tolsma1993]
+
+-   Then you can start tying in non canonical Wnt signalling and seeing whether there is cross talk with either this pathway or other pathways that could explain the result.
+    Then what sort of experiments in other systems you could do.
 
 -   Methods used in other studies
 
@@ -264,19 +248,6 @@ There are many discrepancies between our results and prior studies, likely due t
 
 \color{black}
 
-```{=html}
-<!-- Do not simply recapitulate the results
-Explore the wider meaning of the results
-To what extent has your investigation addressed the aims provided in the introduction?
-How have your findings advanced understanding of the problem under investigation?
-How do your findings relate to previous studies in this area?
-Based on your findings, what new investigations might be conducted?
-Work in parallel with the introduction
-Don’t just give a commentary of the results
-How does your work compare with previous work?
-Why might you have got different results?
-How could you improve the project? (Don’t just say ‘collect more data’!) -->
-```
 <!-- In future look at vascular repair with scratch wound assay.  Flow chamber more control over force nut expensive-->
 
 # Acknowledgements
