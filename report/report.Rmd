@@ -56,14 +56,20 @@ library(wordcountaddin) # Load wordcountaddin. Counts words and characters in te
 # Introduction
 
 Atherosclerosis is a chronic inflammatory disease characterised by the formation of arterial plaques.
-Haemodynamic shear stress has been identified as a modulator of site-specificity in atherosclerosis, which occurs preferentially in regions exposed to low, oscillatory shear stress [@stone2007]. Whereas areas of high, laminar shear stress are atheroprotective [@timmins2017]. Shear stress is an important factor in regulating gene expression in vascular endothelial cells [@Ni2010], which is thought to contribute to the susceptibility of plaque formation in atheroprone sites. Multiple omics studies have implicated variations in flow with the regulation of developmental signalling pathways in atherosclerosis, including the Wnt Pathway [@Souilhol2020; @Gelfand2011].
+Haemodynamic shear stress has been identified as a modulator of site-specificity in atherosclerosis, which occurs preferentially in regions exposed to low, oscillatory shear stress [@stone2007].
+Whereas areas of high, laminar shear stress are atheroprotective [@timmins2017].
+Shear stress is an important factor in regulating gene expression in vascular endothelial cells [@Ni2010], which is thought to contribute to the susceptibility of plaque formation in atheroprone sites.
+Multiple omics studies have implicated variations in flow with the regulation of developmental signalling pathways in atherosclerosis, including the Wnt Pathway [@Souilhol2020; @Gelfand2011].
 
 Wnt is an evolutionarily conserved pathway with a critical role in axis patterning during embryonic development.
 In the absence of Wnt, axin forms a destruction complex with glycogen synthase kinase 3β (GSK-3) and adenomatous polyposis coli (APC), which phosphorylates β-catenin and targets it for degradation.
 However, in the active canonical Wnt pathway, Wnt ligands interact with Frizzled and LRP receptors.
-This leads to the translocation of axin, inhibiting the formation of the destruction complex, allowing β-catenin to accumulate and translocate to the nucleus, where it will activate the transcription of Wnt target genes [@gordon2006]. Of these includes axin, which acts as a negative regulator of Wnt signalling [@Jho2002; @Lustig2002].
+This leads to the translocation of axin, inhibiting the formation of the destruction complex, allowing β-catenin to accumulate and translocate to the nucleus, where it will activate the transcription of Wnt target genes [@gordon2006].
+Of these includes axin, which acts as a negative regulator of Wnt signalling [@Jho2002; @Lustig2002].
 
-Shear stress-mediated Wnt orchestrates a range of endothelial responses, including angiogenesis, which is increased in regions of low shear stress compared to high shear stress [@du2018]. One target of Wnt, angiopoietin-2 (ANGPT2), is an established growth factor involved in angiogenesis. Studies in both zebrafish and mice have shown that the increase in ANGPT2 contributes to the development of atherosclerosis [@Li2014-mx; @farhat2013].
+Shear stress-mediated Wnt orchestrates a range of endothelial responses, including angiogenesis, which is increased in regions of low shear stress compared to high shear stress [@du2018].
+One target of Wnt, angiopoietin-2 (ANGPT2), is an established growth factor involved in angiogenesis.
+Studies in both zebrafish and mice have shown that the increase in ANGPT2 contributes to the development of atherosclerosis [@Li2014-mx; @farhat2013].
 
 Thrombospondin-1 (THBS1) is a glycoprotein involved in endothelial cell interactions and is a potential target of Wnt.
 High levels of THBS1 has been correlated with the inhibition of tumour angiogenesis [@naumov2006], possibly by induction of apoptosis via the TGF-β pathway [@Miao2001; @yee2004], or by inhibition of the VEGF pathway [@gupta1999; @kaur2010].
@@ -145,7 +151,7 @@ Normality was determined with Kolmogorov-Smirnov Tests.
 Comparison analysis was performed using the Student's t-test.
 All plots and analyses were performed in R [@R].
 
-# Results
+# Results REWRITE MAKE CLEARER
 
 To asses the effect of low and high shear stress on gene express, HUVECs were exposed to flow using an orbital shaker system.
 Gene expression of *ANGPT2*, *THSB1*, and Wnt reporter *AXIN2* was quantified by qPCR.
@@ -153,6 +159,7 @@ Gene expression in HUVECs exposed LSS was compared to those exposed to HSS (Figu
 Low shear stress downregulated the expression of *AXIN2*, *ANGPT2*, and *THBS1*.
 *AXIN2*, a known Wnt target, decreased by 0.28-fold in low shear stress.
 Similarly, *ANGPT2* was decreased by 0.15-fold, and THBS1 was decreased 0.12-fold.
+
 Using the same method, HUVECs were also treated with either DMSO or canonical Wnt inhibitor XAV929, to assess for regulation by Wnt signalling.
 Expression in the presence of XAV939 was then compared to DMSO (Figure \@ref(fig:plots)B).
 Exposure to LSS with the addition XAV939 intensified the expression of *AXIN2* by 18.82-fold, *ANGPT* by 33.35-fold, and *THBS1* by 35.59-fold.
@@ -185,70 +192,30 @@ Previous studies demonstrate that canonical Wnt is activated by low shear stress
 Thus, *ANGPT2* was also expected to be upregulated in LSS.
 However, the results imply that Wnt is downregulated by LSS compared to HSS, and in doing so, downregulates both *ANGPT2* and *AXIN2*.
 
-On the other hand, the lower expression of *THSB1* in low shear stress was anticipated [@Moura2008].
+Conversely, the lower expression of *THSB1* in low shear stress was anticipated [@Moura2008].
 Wnt has been shown to inhibit *THBS1*, a negative regulator of angiogenesis, in colonic tumours [@jo2005].
 Therefore, its expression should increase with the downregulation of *AXIN2*.
 This was not the case, suggesting that it is not repressed by the Wnt pathway as previously reported.
+\*\*\*\*
 
-\color{red}
+In the presence of inhibitor XAV939, all genes were upregulated in LSS and downregulated in HSS (Figure \@ref(fig:plots)B).
+Initially, this would imply that canonical Wnt inhibits *ANGPT2* and *THSB1*.
+However, since *AXIN2* is a direct target of canonical Wnt, it could be that the inhibitor failed.
+Inhibition of canonical Wnt signalling leads to the phosphorylation of β-catenin, targeting it for degradation.
+Therefore, inhibitor efficiency can be assessed using a Western blot with antibodies targeting β-catenin and phospho-β-catenin, comparing their abundance after treatment with DMSO or XAV939 [@Huang2009].
+If XAV939 is functioning, we will see a decrease in β-catenin and increase phospho-β-catenin.
 
--   This is a very different context - you should make this clear, and if it's the basis of choosing it as a target mention it in the introduction. If it's not regulated by Wnt in this context - then that is fine but you need to be quite explicit in how you discuss it.
-
-\color{black}
-
-In the presence of XAV939, all genes were upregulated in both low and high shear stress (Figure \@ref(fig:plots)B).
-Initially, this would imply that Wnt is an inhibitor of *ANGPT2* and *THSB1*.
-However, since *AXIN2* is a direct inhibitor of canonical Wnt, this suggests that the inhibitor in fact failed to inhibit Wnt.
-
-\color{red}
-
--   Maybe - how could you find out?
-    Also - is this canonical or non-canonical Wnt?
-    There is cross talk between the two kinds of pathway, but they are quite separate.
-    XAV939 won't inhibit non-canonical Wnt signalling.
-
-    -   These Are where the marks are. You should think about how you could confirm if you are inhibiting signalling (usually a WEstern blot for phospho proteins involved in the signalling pathway - if you look up the vendor page of the inhibition there is usually a paper where they confirm the inhibitor in some system or another).
-
--   If Inhibitor failed, why not consistent with the DMSO samples?
-
-    -   XAV939 works but issue with primers specificity? Bind to another protein upregulated in LSS. Wnt downregulated in HSS hence why fold changes smaller? Small sample size so downregulation seems more prominent then it actually is
-
-\color{black}
+On the other hand, the possibility of XAV939 failure is contradicted by contrasts between the DMSO and XAV939 results; if canonical Wnt is not inhibited, we would expect the XAV939 sample to reflect cells that were treated DMSO .
+This could be explained by a fault in the specificity of our primers for *AXIN2*, *ANGPT2*, and *THSB1*.
+For instance, the primers may also target other flow mediated genes that are downregulated by Wnt.
+Thus, falsely altering the abundance of the genes when treated with XAV939.
+The qPCR melt curves imply that there were primer dimers, therefore, more optimal primers should be used.
+Primer specificity can be ensured using melt curve analysis with serial dilutions.
+Alternatively, previously published primers could be used [@Li2014-mx; @lopes2003].
 
 There are many discrepancies between our results and prior studies, likely due to limitations and errors in our method...
 
-\color{red}
-
--   Possible Errors and Refine Methods
-
-    -   Small sample = not enough to confirm spectrophotometer was consistent
-
-    -   No prior PCR experience
-
--   Melt curve suggests primer dimers and contamination (include images of curves or include in supplementary?)
-
--   en face staining for gene markers in inner curvature [@Warboys2014]
-
--   Direct interaction with Wnt or via VEGF?
-
-    -   *THSB1* inhibits VEGF by competing for heparin (which is used in our medium) [@gupta1999; @dias2012; @tolsma1993]
-
--   Then you can start tying in non canonical Wnt signalling and seeing whether there is cross talk with either this pathway or other pathways that could explain the result.
-    Then what sort of experiments in other systems you could do.
-
--   Methods used in other studies
-
--   animal studies, zebrafish, mice, pigs [@serbanovic-canic2017; @Li2014-mx; @farhat2013a; @Moura2008; @moonen2015
-
--   non-canonical wnt [@franco2016]
-
--   relative vs quantitative expression
-
--   flow chamber instead of orbital shaker
-
-\color{black}
-
-<!-- In future look at vascular repair with scratch wound assay.  Flow chamber more control over force nut expensive-->
+Inhibition of canonical Wnt may lead to upregulation of non-canonical Wnt.
 
 # Acknowledgements
 
