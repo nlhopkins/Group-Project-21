@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.6)  8 APR 2022 16:06
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.6)  14 APR 2022 18:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1074,97 +1074,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--170
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/it' will be
 (Font)              scaled to size 10.95pt on input line 172.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 204.
+(Font)              scaled to size 10.95pt on input line 205.
 [1]
 File: ../images/orbital.png Graphic file (type bmp)
 <../images/orbital.png>
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 214.
+(Font)              scaled to size 9.0pt on input line 213.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 214.
+(Font)              scaled to size 9.0pt on input line 213.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 227.
+(Font)              scaled to size 12.0pt on input line 226.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 227.
+(Font)              scaled to size 12.0pt on input line 226.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 7.665pt on input line 234.
+(Font)              scaled to size 7.665pt on input line 233.
 [2]
 File: report_files/figure-latex/plots-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/plots-1.pdf>
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 302.
+(Font)              scaled to size 9.0pt on input line 301.
 [3] [4]
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 355.
+(Font)              scaled to size 10.0pt on input line 375.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 361.
-
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 359--362
-[] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 359--362
-
- []
-
-
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 363--366
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 363--366
-
- []
-
-
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 367--370
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--370
-
- []
-
-
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 371--374
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 371--374
-
- []
-
-
-Underfull \hbox (badness 2698) in paragraph at lines 377--377
-[]\TU/Palatino(0)/m/n/10 Gupta, K. et al. (1999). \TU/Palatino(0)/m/it/10 Angiogenesis\TU/Palatino(0)/m/n/10 , 3 (2), pp.147–158. [Online]. Available at:
- []
-
-
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 375--378
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 375--378
-
- []
-
+(Font)              scaled to size 10.0pt on input line 381.
 
 Overfull \hbox (1.66667pt too wide) in paragraph at lines 379--382
-[][] []
+[] []
  []
 
 
@@ -1172,7 +1117,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 379--382
 
  []
 
-
+[5]
 Overfull \hbox (1.66667pt too wide) in paragraph at lines 383--386
 [][] []
  []
@@ -1223,6 +1168,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--402
  []
 
 
+Underfull \hbox (badness 2698) in paragraph at lines 405--405
+[]\TU/Palatino(0)/m/n/10 Gupta, K. et al. (1999). \TU/Palatino(0)/m/it/10 Angiogenesis\TU/Palatino(0)/m/n/10 , 3 (2), pp.147–158. [Online]. Available at:
+ []
+
+
 Overfull \hbox (1.66667pt too wide) in paragraph at lines 403--406
 [][] []
  []
@@ -1232,7 +1182,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 403--406
 
  []
 
-[5]
+
 Overfull \hbox (1.66667pt too wide) in paragraph at lines 407--410
 [][] []
  []
@@ -1252,26 +1202,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 411--414
 
  []
 
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.89157pt on input line 417.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.6241pt on input line 417.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.44579pt on input line 417.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.89279pt on input line 417.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.62495pt on input line 417.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.4464pt on input line 417.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.8905pt on input line 417.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.62335pt on input line 417.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.44525pt on input line 417.
-LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 417.
 
 Overfull \hbox (1.66667pt too wide) in paragraph at lines 415--418
 [][] []
@@ -1362,6 +1292,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 447--450
 
  []
 
+[6]
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.89157pt on input line 453.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.6241pt on input line 453.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.44579pt on input line 453.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.89279pt on input line 453.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.62495pt on input line 453.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.4464pt on input line 453.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.8905pt on input line 453.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.62335pt on input line 453.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.44525pt on input line 453.
+LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 453.
 
 Overfull \hbox (1.66667pt too wide) in paragraph at lines 451--454
 [][] []
@@ -1382,18 +1333,108 @@ Underfull \hbox (badness 10000) in paragraph at lines 455--458
 
  []
 
-[6] (./report.aux)
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 459--462
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--462
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 463--466
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--466
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 467--470
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--470
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 471--474
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--474
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 475--478
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--478
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 479--482
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 479--482
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 483--486
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--486
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 487--490
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--490
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 491--494
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--494
+
+ []
+
+[7] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22961 strings out of 478178
- 423339 string characters out of 5853614
- 909408 words of memory out of 5000000
- 43218 multiletter control sequences out of 15000+600000
+ 22963 strings out of 478178
+ 423352 string characters out of 5853614
+ 910441 words of memory out of 5000000
+ 43220 multiletter control sequences out of 15000+600000
  475962 words of font info for 99 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,16n,122p,1003b,547s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (8 pages).
+Output written on report.pdf (9 pages).

@@ -198,12 +198,11 @@ Studies in both zebrafish and mice have shown that the increase in ANGPT2 contri
 
 Thrombospondin-1 (THBS1) is a glycoprotein involved in endothelial cell interactions and is a potential target of Wnt.
 High levels of THBS1 has been correlated with the inhibition of tumour angiogenesis (\protect\hyperlink{ref-naumov2006}{Naumov et al., 2006}), possibly by induction of apoptosis via the TGF-β pathway (\protect\hyperlink{ref-Miao2001}{Miao et al., 2001}; \protect\hyperlink{ref-yee2004}{Yee et al., 2004}), or by inhibition of the VEGF pathway (\protect\hyperlink{ref-gupta1999}{Gupta et al., 1999}; \protect\hyperlink{ref-kaur2010}{Kaur et al., 2010}).
-Jo et al. (\protect\hyperlink{ref-jo2005}{2005}) demonstrated that activation of the Wnt pathway downregulates THBS1 in colon cancer.
-
-Thus, we were curious as to whether Wnt mediates the expression of THBS1 in response to flow.
+THBS1 deficiency has also been implicated in atherosclerosis disease mice (\protect\hyperlink{ref-Moura2008}{Moura et al., 2008}).
+However, little is known of the mechanism behind this.
+Jo et al. (\protect\hyperlink{ref-jo2005}{2005}) demonstrated that activation of the Wnt pathway downregulates THBS1 in colon cancer, but it is not known whether WNT regulates THBS1 in atherosclerosis.
+Thus, we analysed whether Wnt mediates the expression of THBS1 in response to flow.
 Since atherosclerosis occurs in regions of increased angiogenesis, we would expect \emph{THSB1} to be downregulated in low shear stress.
-This has been confirmed in a study by Moura et al. (\protect\hyperlink{ref-Moura2008}{2008}).
-*****
 
 \begin{figure}
 
@@ -317,11 +316,10 @@ Previous studies demonstrate that canonical Wnt is activated by low shear stress
 Thus, \emph{ANGPT2} was also expected to be upregulated in LSS.
 However, the results imply that Wnt is downregulated by LSS compared to HSS, and in doing so, downregulates both \emph{ANGPT2} and \emph{AXIN2}.
 
-Conversely, the lower expression of \emph{THSB1} in low shear stress was anticipated (\protect\hyperlink{ref-Moura2008}{Moura et al., 2008}).
-Wnt has been shown to inhibit \emph{THBS1}, a negative regulator of angiogenesis, in colonic tumours (\protect\hyperlink{ref-jo2005}{Jo et al., 2005}).
-Therefore, its expression should increase with the downregulation of \emph{AXIN2}.
-This was not the case, suggesting that it is not repressed by the Wnt pathway as previously reported.
-****
+Conversely, the lower expression of \emph{THSB1} in low shear stress was anticipated --- Moura et al. (\protect\hyperlink{ref-Moura2008}{2008}) demonstrated that \emph{THBS1} deficiency accelerated plaque formation in atherosclerosis.
+In colonic tumours, \emph{THBS1} expression is mediated by Wnt signalling.
+We assessed whether this was the case in atherosclerosis.
+However, \emph{THBS1} increased in the presence of XAV939, suggesting that it is upregulated by the Wnt pathway.
 
 In the presence of inhibitor XAV939, all genes were upregulated in LSS and downregulated in HSS (Figure \ref{fig:plots}B).
 Initially, this would imply that canonical Wnt inhibits \emph{ANGPT2} and \emph{THSB1}.
@@ -330,23 +328,45 @@ Inhibition of canonical Wnt signalling leads to the phosphorylation of β-cateni
 Therefore, inhibitor efficiency can be assessed using a Western blot with antibodies targeting β-catenin and phospho-β-catenin, comparing their abundance after treatment with DMSO or XAV939 (\protect\hyperlink{ref-Huang2009}{Huang et al., 2009}).
 If XAV939 is functioning, we will see a decrease in β-catenin and increase phospho-β-catenin.
 
-On the other hand, the possibility of XAV939 failure is contradicted by contrasts between the DMSO and XAV939 results; if canonical Wnt is not inhibited, we would expect the XAV939 sample to reflect cells that were treated DMSO .
+On the other hand, the possibility of XAV939 failure is contradicted by the DMSO and XAV939 results; if canonical Wnt is not inhibited, we would expect the XAV939 sample to reflect cells that were treated DMSO, but this was not the case.
 This could be explained by a fault in the specificity of our primers for \emph{AXIN2}, \emph{ANGPT2}, and \emph{THSB1}.
 For instance, the primers may also target other flow mediated genes that are downregulated by Wnt.
-Thus, falsely altering the abundance of our desired genes when treated with XAV939.
-
---- Melt Curve suggests primer dimers ---
-
-Primer specificity can be ensured using melt curve analysis with serial dilutions.
+Thus, falsely altering the abundance of the genes when treated with XAV939.
+In addition to this, qPCR melt curves imply that there were primer dimers, therefore, more optimal primers should be used.
+Primer specificity could be ensured using melt curve analysis with serial dilutions.
 Alternatively, previously published primers could be used (\protect\hyperlink{ref-Li2014-mx}{Li et al., 2014}; \protect\hyperlink{ref-lopes2003}{Lopes et al., 2003}).
 
-There are many discrepancies between our results and prior studies, likely due to limitations and errors in our method\ldots{}
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Wnt5a mediated non-canonical Wnt signalling is upregulated in advanced atherosclerotic lesions (\protect\hyperlink{ref-Bhatt2012}{M. Bhatt, 2012}; \protect\hyperlink{ref-Christman2008}{Christman et al., 2008}), and has been shown to inhibit canonical Wnt by downregulation β-catenin reporter gene expression (\protect\hyperlink{ref-Mikels2006}{Mikels and Nusse, 2006}).
+An increase in Wnt5a in low shear stress could decrease canonical-Wnt signalling, explaining the downregulation of all 3 genes.
+
+Wnt5a signalling could play a role in regulating ANGPT2 signalling; it has been shown to upregulate expression of Tie-2, an angiopoietin receptor.
+
+Many previous studies
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+There are many discrepancies between our results and prior studies, likely due to limitations and errors in our method.
+
+Firstly, our sample size was extremely small, and did not include biological replicates, so our results cannot be generalised.
+For our work to be generalisable, HUVECs from multiple donors should be used, so that there are both biological and technical repeats.
+
+One issue with our model is the lack of distinction between cells exposed to low or high shear stress; as both of these cells inhabit the same plate, there is a high risk of cross-contamination.
+A solution to this would be using non-adherent PEG-gel to selectively grow cells in either the centre or periphery of the plates (\protect\hyperlink{ref-Fernandes2022}{Fernandes et al., 2022}).
+
+Another limitation of the orbital shaker is that it exerts non-uniform stress, so the levels of shear stress can only be estimated.
+
+Arguably most importantly, the majority previous studies are conducted in vivo with either zebrafish or mice.
+So, our results may be exclusive to our in vitro orbital shaker model with HUVECs.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \hypertarget{acknowledgements}{%
 \section{Acknowledgements}\label{acknowledgements}}
 
 \begin{flushright}
-Word Count: 1463 Words
+Word Count: 1725 Words
 \end{flushright}
 
 \hypertarget{references}{%
@@ -356,105 +376,121 @@ Word Count: 1463 Words
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{0}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-du2018}{}}%
+\leavevmode\vadjust pre{\hypertarget{ref-Christman2008}{}}%
 \CSLLeftMargin{1. }
+\CSLRightInline{Christman, M. A. {et al.} (2008). {Wnt5a is expressed in murine and human atherosclerotic lesions}. \emph{American Journal of Physiology-Heart and Circulatory Physiology}, 294 (6), pp.H2864--H2870. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1152/ajpheart.00982.2007}{10.1152/ajpheart.00982.2007}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-du2018}{}}%
+\CSLLeftMargin{2. }
 \CSLRightInline{Du, J. and Li, J. (2018). {The role of wnt signaling pathway in atherosclerosis and its relationship with angiogenesis}. \emph{Experimental and Therapeutic Medicine}. {[}Online{]}. Available at: doi:\href{https://doi.org/10.3892/etm.2018.6397}{10.3892/etm.2018.6397}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-farhat2013}{}}%
-\CSLLeftMargin{2. }
+\CSLLeftMargin{3. }
 \CSLRightInline{Farhat, N. {et al.} (2013). {Angiopoietin{-}Like 2 Promotes Atherogenesis in Mice}. \emph{Journal of the American Heart Association}, 2 (3). {[}Online{]}. Available at: doi:\href{https://doi.org/10.1161/jaha.113.000201}{10.1161/jaha.113.000201}.}
 
+\leavevmode\vadjust pre{\hypertarget{ref-Fernandes2022}{}}%
+\CSLLeftMargin{4. }
+\CSLRightInline{Fernandes, A. {et al.} (2022). {Engineering solutions for biological studies of flow-exposed endothelial cells on orbital shakers}. Maghsoudlou, P. (Ed). \emph{PLOS ONE}, 17 (1), p.e0262044. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1371/journal.pone.0262044}{10.1371/journal.pone.0262044}.}
+
 \leavevmode\vadjust pre{\hypertarget{ref-Gelfand2011}{}}%
-\CSLLeftMargin{3. }
+\CSLLeftMargin{5. }
 \CSLRightInline{Gelfand, B. D. {et al.} (2011). {Hemodynamic Activation of β-Catenin and T-Cell-Specific Transcription Factor Signaling in Vascular Endothelium Regulates Fibronectin Expression}. \emph{Arteriosclerosis, Thrombosis, and Vascular Biology}, 31 (7), pp.1625--1633. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1161/atvbaha.111.227827}{10.1161/atvbaha.111.227827}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-gordon2006}{}}%
-\CSLLeftMargin{4. }
+\CSLLeftMargin{6. }
 \CSLRightInline{Gordon, M. D. and Nusse, R. (2006). {Wnt Signaling: Multiple Pathways, Multiple Receptors, and Multiple Transcription Factors}. \emph{Journal of Biological Chemistry}, 281 (32), pp.22429--22433. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1074/jbc.r600015200}{10.1074/jbc.r600015200}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-gupta1999}{}}%
-\CSLLeftMargin{5. }
+\CSLLeftMargin{7. }
 \CSLRightInline{Gupta, K. {et al.} (1999). \emph{Angiogenesis}, 3 (2), pp.147--158. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1023/a:1009018702832}{10.1023/a:1009018702832}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-howe2020}{}}%
-\CSLLeftMargin{6. }
+\CSLLeftMargin{8. }
 \CSLRightInline{Howe, K. L. {et al.} (2020). {Ensembl 2021}. \emph{Nucleic Acids Research}, 49 (D1), pp.D884--D891. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1093/nar/gkaa942}{10.1093/nar/gkaa942}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Huang2009}{}}%
-\CSLLeftMargin{7. }
+\CSLLeftMargin{9. }
 \CSLRightInline{Huang, S.-M. A. {et al.} (2009). {Tankyrase inhibition stabilizes axin and antagonizes Wnt signalling}. \emph{Nature}, 461 (7264), pp.614--620. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1038/nature08356}{10.1038/nature08356}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Jho2002}{}}%
-\CSLLeftMargin{8. }
+\CSLLeftMargin{10. }
 \CSLRightInline{Jho, E. {et al.} (2002). {Wnt/β-Catenin/Tcf Signaling Induces the Transcription of Axin2, a Negative Regulator of the Signaling Pathway}. \emph{Molecular and Cellular Biology}, 22 (4), pp.1172--1183. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1128/mcb.22.4.1172-1183.2002}{10.1128/mcb.22.4.1172-1183.2002}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-jo2005}{}}%
-\CSLLeftMargin{9. }
+\CSLLeftMargin{11. }
 \CSLRightInline{Jo, W.-S. {et al.} (2005). {Wnt signaling can repress thrombospondin-1 expression in colonic tumorigenesis}. \emph{Cancer Biology \& Therapy}, 4 (12), pp.1361--1366. {[}Online{]}. Available at: doi:\href{https://doi.org/10.4161/cbt.4.12.2201}{10.4161/cbt.4.12.2201}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-kaur2010}{}}%
-\CSLLeftMargin{10. }
+\CSLLeftMargin{12. }
 \CSLRightInline{Kaur, S. {et al.} (2010). {Thrombospondin-1 Inhibits VEGF Receptor-2 Signaling by Disrupting Its Association with CD47}. \emph{Journal of Biological Chemistry}, 285 (50), pp.38923--38932. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1074/jbc.m110.172304}{10.1074/jbc.m110.172304}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Li2014-mx}{}}%
-\CSLLeftMargin{11. }
+\CSLLeftMargin{13. }
 \CSLRightInline{Li, R. {et al.} (2014). {Shear stress-activated wnt-angiopoietin-2 signaling recapitulates vascular repair in zebrafish embryos}. \emph{Arteriosclerosis, thrombosis, and vascular biology}, 34 (10), pp.2268--2275.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-lopes2003}{}}%
-\CSLLeftMargin{12. }
+\CSLLeftMargin{14. }
 \CSLRightInline{Lopes, N. {et al.} (2003). {Thrombospondin 2 Regulates Cell Proliferation Induced by Rac1 Redox-Dependent Signaling}. \emph{Molecular and Cellular Biology}, 23 (15), pp.5401--5408. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1128/mcb.23.15.5401-5408.2003}{10.1128/mcb.23.15.5401-5408.2003}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Lustig2002}{}}%
-\CSLLeftMargin{13. }
+\CSLLeftMargin{15. }
 \CSLRightInline{Lustig, B. {et al.} (2002). {Negative Feedback Loop of Wnt Signaling through Upregulation of Conductin/Axin2 in Colorectal and Liver Tumors}. \emph{Molecular and Cellular Biology}, 22 (4), pp.1184--1193. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1128/mcb.22.4.1184-1193.2002}{10.1128/mcb.22.4.1184-1193.2002}.}
 
+\leavevmode\vadjust pre{\hypertarget{ref-Bhatt2012}{}}%
+\CSLLeftMargin{16. }
+\CSLRightInline{M. Bhatt, P. (2012). {Increased Wnt5a mRNA Expression in Advanced Atherosclerotic Lesions, and Oxidized LDL Treated Human Monocyte-Derived Macrophages}. \emph{The Open Circulation and Vascular Journal}, 5 (1), pp.1--7. {[}Online{]}. Available at: doi:\href{https://doi.org/10.2174/1877382601205010001}{10.2174/1877382601205010001}.}
+
 \leavevmode\vadjust pre{\hypertarget{ref-Miao2001}{}}%
-\CSLLeftMargin{14. }
+\CSLLeftMargin{17. }
 \CSLRightInline{Miao, W. M. {et al.} (2001). {Thrombospondin-1 type 1 repeat recombinant proteins inhibit tumor growth through transforming growth factor-beta-dependent and -independent mechanisms.} \emph{Cancer research}, 61 21, pp.7830--7839.}
 
+\leavevmode\vadjust pre{\hypertarget{ref-Mikels2006}{}}%
+\CSLLeftMargin{18. }
+\CSLRightInline{Mikels, A. J. and Nusse, R. (2006). {Purified Wnt5a Protein Activates or Inhibits β-Catenin{\textendash}TCF Signaling Depending on Receptor Context}. Arias, A. M. (Ed). \emph{PLoS Biology}, 4 (4), p.e115. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1371/journal.pbio.0040115}{10.1371/journal.pbio.0040115}.}
+
 \leavevmode\vadjust pre{\hypertarget{ref-Moura2008}{}}%
-\CSLLeftMargin{15. }
+\CSLLeftMargin{19. }
 \CSLRightInline{Moura, R. {et al.} (2008). {Thrombospondin-1 Deficiency Accelerates Atherosclerotic Plaque Maturation in {\emph{ApoE}} {\textsuperscript{{-}/{-}}} Mice}. \emph{Circulation Research}, 103 (10), pp.1181--1189. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1161/circresaha.108.185645}{10.1161/circresaha.108.185645}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-naumov2006}{}}%
-\CSLLeftMargin{16. }
+\CSLLeftMargin{20. }
 \CSLRightInline{Naumov, G. N. {et al.} (2006). {A Model of Human Tumor Dormancy: An Angiogenic Switch From the Nonangiogenic Phenotype}. \emph{JNCI: Journal of the National Cancer Institute}, 98 (5), pp.316--325. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1093/jnci/djj068}{10.1093/jnci/djj068}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Ni2010}{}}%
-\CSLLeftMargin{17. }
+\CSLLeftMargin{21. }
 \CSLRightInline{Ni, C.-W. {et al.} (2010). {Discovery of novel mechanosensitive genes in vivo using mouse carotid artery endothelium exposed to disturbed flow}. \emph{Blood}, 116 (15), pp.e66--e73. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1182/blood-2010-04-278192}{10.1182/blood-2010-04-278192}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-R}{}}%
-\CSLLeftMargin{18. }
+\CSLLeftMargin{22. }
 \CSLRightInline{R Core Team. (2018). {\emph{R: A language and environment for statistical computing}}. Vienna, Austria: R Foundation for Statistical Computing. {[}Online{]}. Available at: \url{https://www.R-project.org/}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Souilhol2020}{}}%
-\CSLLeftMargin{19. }
+\CSLLeftMargin{23. }
 \CSLRightInline{Souilhol, C. {et al.} (2019). {Endothelial responses to shear stress in atherosclerosis: a novel role for developmental genes}. \emph{Nature Reviews Cardiology}, 17 (1), pp.52--63. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1038/s41569-019-0239-5}{10.1038/s41569-019-0239-5}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-stone2007}{}}%
-\CSLLeftMargin{20. }
+\CSLLeftMargin{24. }
 \CSLRightInline{Stone, P. H. {et al.} (2007). {Regions of low endothelial shear stress are the sites where coronary plaque progresses and vascular remodelling occurs in humans: an in vivo serial study}. \emph{European Heart Journal}, 28 (6), pp.705--710. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1093/eurheartj/ehl575}{10.1093/eurheartj/ehl575}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-timmins2017}{}}%
-\CSLLeftMargin{21. }
+\CSLLeftMargin{25. }
 \CSLRightInline{Timmins, L. H. {et al.} (2017). {Oscillatory wall shear stress is a dominant flow characteristic affecting lesion progression patterns and plaque vulnerability in patients with coronary artery disease}. \emph{Journal of The Royal Society Interface}, 14 (127), p.20160972. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1098/rsif.2016.0972}{10.1098/rsif.2016.0972}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Warboys2014}{}}%
-\CSLLeftMargin{22. }
+\CSLLeftMargin{26. }
 \CSLRightInline{Warboys, C. M. {et al.} (2014). {Disturbed Flow Promotes Endothelial Senescence via a p53-Dependent Pathway}. \emph{Arteriosclerosis, Thrombosis, and Vascular Biology}, 34 (5), pp.985--995. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1161/atvbaha.114.303415}{10.1161/atvbaha.114.303415}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Warboys2019}{}}%
-\CSLLeftMargin{23. }
+\CSLLeftMargin{27. }
 \CSLRightInline{Warboys, C. M., Ghim, M. and Weinberg, P. D. (2019). {Understanding mechanobiology in cultured endothelium: A review of the orbital shaker method}. \emph{Atherosclerosis}, 285, pp.170--177. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1016/j.atherosclerosis.2019.04.210}{10.1016/j.atherosclerosis.2019.04.210}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-yee2004}{}}%
-\CSLLeftMargin{24. }
+\CSLLeftMargin{28. }
 \CSLRightInline{Yee, K. O. {et al.} (2004). {Expression of the Type-1 Repeats of Thrombospondin-1 Inhibits Tumor Growth Through Activation of Transforming Growth Factor-β}. \emph{The American Journal of Pathology}, 165 (2), pp.541--552. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1016/s0002-9440(10)63319-6}{10.1016/s0002-9440(10)63319-6}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Zhu2017}{}}%
-\CSLLeftMargin{25. }
-\CSLRightInline{Zhu, J. {et al.} (2017). {Regulation of angiogenic behaviors by oxytocin receptor through Gli1-indcued transcription of HIF-1? in human umbilical vein endothelial cells}. \emph{Biomedicine \& Pharmacotherapy}, 90, pp.928--934. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1016/j.biopha.2017.04.021}{10.1016/j.biopha.2017.04.021}.}
+\CSLLeftMargin{29. }
+\CSLRightInline{Zhu, J. {et al.} (2017). {Regulation of angiogenic behaviors by oxytocin receptor through Gli1-indcued transcription of HIF-1α in human umbilical vein endothelial cells}. \emph{Biomedicine \& Pharmacotherapy}, 90, pp.928--934. {[}Online{]}. Available at: doi:\href{https://doi.org/10.1016/j.biopha.2017.04.021}{10.1016/j.biopha.2017.04.021}.}
 
 \end{CSLReferences}
 

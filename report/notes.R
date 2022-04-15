@@ -7,19 +7,23 @@
     There is cross talk between the two kinds of pathway, but they are quite separate.
     XAV939 won't inhibit non-canonical Wnt signalling.
 
-    -   These Are where the marks are. You should think about how you could confirm if you are inhibiting signalling (usually a WEstern blot for phospho proteins involved in the signalling pathway - if you look up the vendor page of the inhibition there is usually a paper where they confirm the inhibitor in some system or another).
+-   These Are where the marks are.
+    You should think about how you could confirm if you are inhibiting signalling (usually a WEstern blot for phospho proteins involved in the signalling pathway - if you look up the vendor page of the inhibition there is usually a paper where they confirm the inhibitor in some system or another).
 
 -   If Inhibitor failed, why not consistent with the DMSO samples?
 
-    -   XAV939 works but issue with primers specificity? Bind to another protein upregulated in LSS. Wnt downregulated in HSS hence why fold changes smaller? Small sample size so downregulation seems more prominent then it actually is
+-   XAV939 works but issue with primers specificity?
+    Bind to another protein upregulated in LSS.
+    Wnt downregulated in HSS hence why fold changes smaller?
+    Small sample size so downregulation seems more prominent then it actually is
 
 <!-- -->
 
 -   Possible Errors and Refine Methods
 
-    -   Small sample = not enough to confirm spectrophotometer was consistent
+-   Small sample = not enough to confirm spectrophotometer was consistent
 
-    -   No prior PCR experience
+-   No prior PCR experience
 
 -   Melt curve suggests primer dimers and contamination (include images of curves or include in supplementary?)
 

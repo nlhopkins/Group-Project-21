@@ -73,12 +73,11 @@ Studies in both zebrafish and mice have shown that the increase in ANGPT2 contri
 
 Thrombospondin-1 (THBS1) is a glycoprotein involved in endothelial cell interactions and is a potential target of Wnt.
 High levels of THBS1 has been correlated with the inhibition of tumour angiogenesis [@naumov2006], possibly by induction of apoptosis via the TGF-β pathway [@Miao2001; @yee2004], or by inhibition of the VEGF pathway [@gupta1999; @kaur2010].
-@jo2005 demonstrated that activation of the Wnt pathway downregulates THBS1 in colon cancer.
-
-Thus, we were curious as to whether Wnt mediates the expression of THBS1 in response to flow.
+THBS1 deficiency has also been implicated in atherosclerosis disease mice [@Moura2008].
+However, little is known of the mechanism behind this.
+@jo2005 demonstrated that activation of the Wnt pathway downregulates THBS1 in colon cancer, but it is not known whether WNT regulates THBS1 in atherosclerosis.
+Thus, we analysed whether Wnt mediates the expression of THBS1 in response to flow.
 Since atherosclerosis occurs in regions of increased angiogenesis, we would expect *THSB1* to be downregulated in low shear stress.
-This has been confirmed in a study by @Moura2008.
-\*\*\*\*\*
 
 ```{r orbital, out.width = "80%", fig.cap = "The orbital shaker model replicates the shear stress exterted in atheroprone and atheroprotective regions. Image created with BioRender."}
 knitr::include_graphics("../images/orbital.png")
@@ -192,11 +191,10 @@ Previous studies demonstrate that canonical Wnt is activated by low shear stress
 Thus, *ANGPT2* was also expected to be upregulated in LSS.
 However, the results imply that Wnt is downregulated by LSS compared to HSS, and in doing so, downregulates both *ANGPT2* and *AXIN2*.
 
-Conversely, the lower expression of *THSB1* in low shear stress was anticipated [@Moura2008].
-Wnt has been shown to inhibit *THBS1*, a negative regulator of angiogenesis, in colonic tumours [@jo2005].
-Therefore, its expression should increase with the downregulation of *AXIN2*.
-This was not the case, suggesting that it is not repressed by the Wnt pathway as previously reported.
-\*\*\*\*
+Conversely, the lower expression of *THSB1* in low shear stress was anticipated --- @Moura2008 demonstrated that *THBS1* deficiency accelerated plaque formation in atherosclerosis.
+In colonic tumours, *THBS1* expression is mediated by Wnt signalling.
+We assessed whether this was the case in atherosclerosis.
+However, *THBS1* increased in the presence of XAV939, suggesting that it is upregulated by the Wnt pathway.
 
 In the presence of inhibitor XAV939, all genes were upregulated in LSS and downregulated in HSS (Figure \@ref(fig:plots)B).
 Initially, this would imply that canonical Wnt inhibits *ANGPT2* and *THSB1*.
@@ -205,17 +203,54 @@ Inhibition of canonical Wnt signalling leads to the phosphorylation of β-cateni
 Therefore, inhibitor efficiency can be assessed using a Western blot with antibodies targeting β-catenin and phospho-β-catenin, comparing their abundance after treatment with DMSO or XAV939 [@Huang2009].
 If XAV939 is functioning, we will see a decrease in β-catenin and increase phospho-β-catenin.
 
-On the other hand, the possibility of XAV939 failure is contradicted by contrasts between the DMSO and XAV939 results; if canonical Wnt is not inhibited, we would expect the XAV939 sample to reflect cells that were treated DMSO .
+On the other hand, the possibility of XAV939 failure is contradicted by the DMSO and XAV939 results; if canonical Wnt is not inhibited, we would expect the XAV939 sample to reflect cells that were treated DMSO, but this was not the case.
 This could be explained by a fault in the specificity of our primers for *AXIN2*, *ANGPT2*, and *THSB1*.
 For instance, the primers may also target other flow mediated genes that are downregulated by Wnt.
 Thus, falsely altering the abundance of the genes when treated with XAV939.
-The qPCR melt curves imply that there were primer dimers, therefore, more optimal primers should be used.
-Primer specificity can be ensured using melt curve analysis with serial dilutions.
+In addition to this, qPCR melt curves imply that there were primer dimers, therefore, more optimal primers should be used.
+Primer specificity could be ensured using melt curve analysis with serial dilutions.
 Alternatively, previously published primers could be used [@Li2014-mx; @lopes2003].
 
-There are many discrepancies between our results and prior studies, likely due to limitations and errors in our method...
+------------------------------------------------------------------------
 
-Inhibition of canonical Wnt may lead to upregulation of non-canonical Wnt.
+## Other Pathways
+
+\*\*What is WNT5a Pathway/calcium)
+
+"PKC, activated by the Wnt-Ca^2+^ signaling pathway blocks the canonical pathway upstream of β-catenin by phosphorylating DSH ([Fig.1](https://www.sciencedirect.com/science/article/pii/S0021915014013549#fig1)). " [@Mikels2006]
+
+\*\* Inflammation
+
+\*\* obesity [@karki2017; @akoumianakis2019]
+
+Wnt5a mediated non-canonical Wnt signalling is upregulated in advanced atherosclerotic lesions [@Bhatt2012; @Christman2008].
+It has been shown to inhibit canonical Wnt by downregulation β-catenin reporter gene expression [@Mikels2006].
+An increase in Wnt5a in low shear stress could decrease canonical-Wnt signalling, explaining the downregulation of all 3 genes.
+
+Despite it's potential to inhibit pro-angiogenic canonical-Wnt, Wnt5a
+
+has been shown to upregulate expression of Tie-2, an angiopoietin receptor.
+
+Many previous studies
+
+------------------------------------------------------------------------
+
+## Future Directions
+
+There are many discrepancies between our results and prior studies, likely due to limitations and errors in our method.
+
+Firstly, our sample size was extremely small, and did not include biological replicates, so our results cannot be generalised.
+For our work to be generalisable, HUVECs from multiple donors should be used, so that there are both biological and technical repeats.
+
+One issue with our model is the lack of distinction between cells exposed to low or high shear stress; as both of these cells inhabit the same plate, there is a high risk of cross-contamination.
+A solution to this would be using non-adherent PEG-gel to selectively grow cells in either the centre or periphery of the plates [@Fernandes2022].
+
+Another limitation of the orbital shaker is that it exerts non-uniform stress, so the levels of shear stress can only be estimated.
+
+Arguably most importantly, the majority previous studies are conducted in vivo with either zebrafish or mice.
+So, our results may be exclusive to our in vitro orbital shaker model with HUVECs.
+
+------------------------------------------------------------------------
 
 # Acknowledgements
 
