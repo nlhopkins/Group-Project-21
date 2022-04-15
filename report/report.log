@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.6)  14 APR 2022 18:40
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.6)  15 APR 2022 23:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1099,342 +1099,397 @@ File: report_files/figure-latex/plots-1.pdf Graphic file (type pdf)
 <use report_files/figure-latex/plots-1.pdf>
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/it' will be
 (Font)              scaled to size 9.0pt on input line 301.
-[3] [4]
+[3] [4] [5]
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 375.
+(Font)              scaled to size 10.0pt on input line 393.
 Package microtype Info: Character `\textservicemark ' is missing
 (microtype)             in font `\TU/Palatino(0)/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 381.
+(Font)              scaled to size 10.0pt on input line 399.
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 379--382
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 397--400
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--382
+Underfull \hbox (badness 10000) in paragraph at lines 397--400
 
  []
 
-[5]
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 383--386
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 401--404
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--386
+Underfull \hbox (badness 10000) in paragraph at lines 401--404
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 387--390
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 405--408
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--390
+Underfull \hbox (badness 10000) in paragraph at lines 405--408
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 391--394
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 409--412
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 391--394
+Underfull \hbox (badness 10000) in paragraph at lines 409--412
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 395--398
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 413--416
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--398
+Underfull \hbox (badness 10000) in paragraph at lines 413--416
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 399--402
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 417--420
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--402
+Underfull \hbox (badness 10000) in paragraph at lines 417--420
 
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 405--405
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 421--424
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--424
+
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 427--427
 []\TU/Palatino(0)/m/n/10 Gupta, K. et al. (1999). \TU/Palatino(0)/m/it/10 Angiogenesis\TU/Palatino(0)/m/n/10 , 3 (2), pp.147–158. [Online]. Available at:
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 403--406
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 425--428
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--406
+Underfull \hbox (badness 10000) in paragraph at lines 425--428
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 407--410
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 429--432
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 407--410
+Underfull \hbox (badness 10000) in paragraph at lines 429--432
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 411--414
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 433--436
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--414
+Underfull \hbox (badness 10000) in paragraph at lines 433--436
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 415--418
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 437--440
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--418
+Underfull \hbox (badness 10000) in paragraph at lines 437--440
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 419--422
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 441--444
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--422
-
- []
-
-
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 423--426
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--426
-
- []
-
-
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 427--430
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 427--430
-
- []
-
-
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 431--434
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 431--434
-
- []
-
-
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 435--438
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 435--438
-
- []
-
-
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 439--442
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 439--442
-
- []
-
-
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 443--446
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 443--446
-
- []
-
-
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 447--450
-[][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 447--450
+Underfull \hbox (badness 10000) in paragraph at lines 441--444
 
  []
 
 [6]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.89157pt on input line 453.
+(Font)              scaled to size 10.89157pt on input line 447.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.6241pt on input line 453.
+(Font)              scaled to size 7.6241pt on input line 447.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.44579pt on input line 453.
+(Font)              scaled to size 5.44579pt on input line 447.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.89279pt on input line 453.
+(Font)              scaled to size 10.89279pt on input line 447.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.62495pt on input line 453.
+(Font)              scaled to size 7.62495pt on input line 447.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.4464pt on input line 453.
+(Font)              scaled to size 5.4464pt on input line 447.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.8905pt on input line 453.
+(Font)              scaled to size 10.8905pt on input line 447.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.62335pt on input line 453.
+(Font)              scaled to size 7.62335pt on input line 447.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.44525pt on input line 453.
+(Font)              scaled to size 5.44525pt on input line 447.
 LaTeX Font Info:    Font shape `TU/Palatino(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 453.
+(Font)              scaled to size 7.0pt on input line 447.
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 451--454
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 445--448
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--454
+Underfull \hbox (badness 10000) in paragraph at lines 445--448
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 455--458
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 449--452
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--458
+Underfull \hbox (badness 10000) in paragraph at lines 449--452
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 459--462
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 453--456
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 459--462
+Underfull \hbox (badness 10000) in paragraph at lines 453--456
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 463--466
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 457--460
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--466
+Underfull \hbox (badness 10000) in paragraph at lines 457--460
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 467--470
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 461--464
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--470
+Underfull \hbox (badness 10000) in paragraph at lines 461--464
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 471--474
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 465--468
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--474
+Underfull \hbox (badness 10000) in paragraph at lines 465--468
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 475--478
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 469--472
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--478
+Underfull \hbox (badness 10000) in paragraph at lines 469--472
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 479--482
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 473--476
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--482
+Underfull \hbox (badness 10000) in paragraph at lines 473--476
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 483--486
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 477--480
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--486
+Underfull \hbox (badness 10000) in paragraph at lines 477--480
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 487--490
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 481--484
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--490
+Underfull \hbox (badness 10000) in paragraph at lines 481--484
 
  []
 
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 491--494
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 485--488
 [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--494
+Underfull \hbox (badness 10000) in paragraph at lines 485--488
 
  []
 
-[7] (./report.aux)
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 489--492
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--492
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 493--496
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--496
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 497--500
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--500
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 501--504
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 501--504
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 505--508
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 505--508
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 509--512
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 509--512
+
+ []
+
+[7]
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 513--516
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--516
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 517--520
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--520
+
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 523--523
+\TU/Palatino(0)/m/n/10 Cells. \TU/Palatino(0)/m/it/10 International Journal of Endocrinology\TU/Palatino(0)/m/n/10 , 2020, pp.1–12. [Online]. Available at:
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 521--524
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--524
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 525--528
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--528
+
+ []
+
+
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 529--532
+[][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--532
+
+ []
+
+[8] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22963 strings out of 478178
- 423352 string characters out of 5853614
- 910441 words of memory out of 5000000
- 43220 multiletter control sequences out of 15000+600000
+ 22969 strings out of 478178
+ 423430 string characters out of 5853614
+ 913573 words of memory out of 5000000
+ 43226 multiletter control sequences out of 15000+600000
  475962 words of font info for 99 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,16n,122p,1003b,547s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (9 pages).
+Output written on report.pdf (10 pages).

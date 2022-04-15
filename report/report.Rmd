@@ -213,19 +213,20 @@ Alternatively, previously published primers could be used [@Li2014-mx; @lopes200
 
 ------------------------------------------------------------------------
 
-## Other Pathways
+## Interactions With Other Pathways
 
 \*\*What is WNT5a Pathway/calcium)
 
 "PKC, activated by the Wnt-Ca^2+^ signaling pathway blocks the canonical pathway upstream of β-catenin by phosphorylating DSH ([Fig.1](https://www.sciencedirect.com/science/article/pii/S0021915014013549#fig1)). " [@Mikels2006]
 
-\*\* Inflammation
+Non-canonical Wnt signalling are less established pathways which do not involve β-catenin.
+Wnt5a is a glycoprotein which activates the non-canonical Wnt-Ca^2+^ pathway, which stimulates Ca^2+^ release from the endoplasmic reticulum [@Kohn2005]. Wnt5a is upregulated in advanced atherosclerotic lesions [@Bhatt2012; @Christman2008] and other conditions associated with increased risk of atherosclerosis, such as obesity [@karki2017; @fuster2014] and diabetes[@Li2021; @Xu2020].
 
-\*\* obesity [@karki2017; @akoumianakis2019]
+Wnt5a has also been shown to antagonize canonical Wnt by inhibiting β-catenin reporter gene expression [@Mikels2006], but the mechanism behind this is unclear.
 
-Wnt5a mediated non-canonical Wnt signalling is upregulated in advanced atherosclerotic lesions [@Bhatt2012; @Christman2008].
-It has been shown to inhibit canonical Wnt by downregulation β-catenin reporter gene expression [@Mikels2006].
-An increase in Wnt5a in low shear stress could decrease canonical-Wnt signalling, explaining the downregulation of all 3 genes.
+-- MECHANISM SUGGESTIONS ---
+
+Therefore, an increase in Wnt5a in low shear stress could decrease canonical-Wnt signalling, explaining the downregulation of all 3 genes in response to LSS.
 
 Despite it's potential to inhibit pro-angiogenic canonical-Wnt, Wnt5a
 
