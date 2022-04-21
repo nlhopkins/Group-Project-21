@@ -38,7 +38,7 @@
 
 -   Methods used in other studies
 
--   animal studies, zebrafish, mice, pigs [@serbanovic-canic2017; @Li2014-mx; @farhat2013; @Moura2008; @moonen2015
+-   animal studies, zebrafish, mice, pigs [@serbanovic-canic2017; @Li2014-mx; @farhat2013; @Moura2008; @moonen2015]
 
 -   non-canonical wnt [@franco2016]
 
